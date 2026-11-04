@@ -1,0 +1,74 @@
+# ─────────────────────────────────────────────────────────────
+#  YouTube Channel Tracker — configuration
+#  Add or remove channels here, then commit. The next run picks them up.
+# ─────────────────────────────────────────────────────────────
+
+settings:
+  # Gemini model. "gemini-flash-latest" always points at Google's current Flash model.
+  # Pin a specific ID (e.g. "gemini-3.8-flash") if you want results to stay consistent.
+  model: gemini-flash-latest
+
+  # Google's free YouTube-URL limit is 8 hours of video per day. Stay a bit under it.
+  daily_video_minutes_budget: 450
+
+  # Skip Shorts and very short clips (seconds).
+  min_duration_seconds: 180
+
+  # Videos longer than this go to the transcript fallback instead of Gemini video input.
+  max_video_minutes: 60
+
+  # How far back to go the first time a channel is added (days). Per-channel override below.
+  default_backfill_days: 180
+
+  # A failed video is retried on later runs, up to this many attempts.
+  max_attempts: 3
+
+  # Title of the dashboard page.
+  report_title: "YouTube Channel Intelligence"
+
+channels:
+  # Each entry needs ONE of: handle (@name), id (UC...), or url.
+  # profile: "stocks"  → extracts buys/sells/trims, tickers, rationale, portfolio snapshot
+  # profile: "general" → summary, key points, topics only
+  #
+  # - handle: "@SomeInvestingChannel"
+  #   profile: stocks
+  #   backfill_days: 180        # optional override
+  #   label: "Dividend Dave"    # optional display name
+  #   group: "Dave"             # optional: channels with the same group share one position per ticker
+  #   notes: |                  # optional: extra instructions for this channel's summaries
+  #     He reacts to CNBC clips; only log his own trades.
+  #
+  # - url: "https://www.youtube.com/@AnotherChannel"
+  #   profile: general
+
+  - handle: "@jeremylefebvremakesmoney7934"
+    label: "Jeremy Lefebvre Makes Money"
+    group: "Jeremy Lefebvre"
+    profile: stocks
+    notes: |
+      Jeremy Lefebvre. Mostly reaction videos: he plays news clips (often CNBC) or other
+      creators' videos and comments on them. Only log HIS positions and opinions, never the
+      clip speaker's picks unless he says he owns or bought them.
+      He usually says plainly when he bought, added or sold ("I bought more today", "I sold my
+      position") and often gives dollar amounts or his account value. Capture those.
+      Phrases like "buy the dip" or "I love this company" without an actual purchase are HOLD
+      (if he owns it) or MENTION, not BUY.
+      Ignore plugs for his Patreon, stock group or 1000x Stocks software.
+
+  - id: "UCnMn36GT_H0X-w5_ckLtlgQ"          # Financial Education (main channel)
+    label: "Financial Education"
+    group: "Jeremy Lefebvre"
+    profile: stocks
+    notes: |
+      Jeremy Lefebvre's main channel. This is where he posts portfolio updates, "stocks I
+      bought this week" lists, "stocks to buy now" picks and account-value reveals.
+      - Videos often cover many tickers at once. Log every one he says he bought, added to,
+        trimmed or sold, even when it's a quick mention in a list.
+      - "Stocks to buy now" picks are only BUY/ADD if he says he bought them himself. Otherwise
+        HOLD (if he already owns them) or WATCH.
+      - "Stocks I will sell" or "sell if it runs up" lists are conditional plans, not sales.
+      - He sometimes uses inverse or leveraged ETFs (e.g. TSLZ) as hedges. Mark those "Hedge:".
+      - If he shows his brokerage account or full holdings on screen, fill portfolio_snapshot
+        with every ticker and weight you can read, and put the total account value in market_view.
+      - Ignore plugs for his Patreon, stock group, Wealth Group or 1000x Stocks software.
