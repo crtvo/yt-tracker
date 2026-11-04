@@ -26,14 +26,16 @@
   "url": "https://www.youtube.com/watch?v=-fhON4Ll9DI"
  },
  "-pK9xC1M7wE": {
-  "attempts": 0,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2197,
+  "error": "video: Gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n | transcript: RequestBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=-pK9xC1M7wE! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the",
   "id": "-pK9xC1M7wE",
+  "last_attempt_at": "2026-11-04T21:07:23Z",
   "live_status": "none",
   "published_at": "2026-10-30T20:13:50Z",
-  "status": "pending",
+  "status": "error",
   "thumbnail": "https://i.ytimg.com/vi/-pK9xC1M7wE/mqdefault.jpg",
   "title": "Tech Stocks Plunge, Here’s What’s Next",
   "url": "https://www.youtube.com/watch?v=-pK9xC1M7wE"
@@ -537,16 +539,154 @@
   "url": "https://www.youtube.com/watch?v=J7qgSR8vzzA"
  },
  "JMaLx81fnGs": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Buy/Sell Decision",
+   "key_points": [
+    "Sold entire position in ServiceNow (NOW) for roughly $75,300 to take profits amid slowing growth and question marks around enterprise execution.",
+    "Reallocated proceeds by buying $20,000 of Celsius (CELH), $27,600 of American Express (AXP), and $27,800 of Netflix (NFLX).",
+    "Views Amazon (AMZN) and Alphabet (GOOG) as long-term steals despite near-term market panic over ballooning AI capital expenditures.",
+    "Argues that Intel's (INTC) poor results won't hurt AMD (AMD) long term because AMD continues to capture market share in CPUs and GPUs.",
+    "Identifies broader weakness in consumer product spending across retail and tech as a sign of an economic slowdown rather than company-specific failures."
+   ],
+   "market_view": "Sees current macroeconomic weakness reflected in softening consumer product sales across multiple retail and tech companies, alongside market anxiety regarding aggressive AI capital expenditure plans reducing hyperscaler free cash flows.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "SELL",
+     "company": "ServiceNow",
+     "is_own_position": true,
+     "position_note": "Sold all 687 shares for $75,301.31",
+     "price": "109.61",
+     "rationale": "Took profits after a large post-earnings drop, citing deceleration in growth, preference for Salesforce, and more attractive risk/reward elsewhere.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "44:32"
+    },
+    {
+     "action": "ADD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Bought 714 shares ($19,992.00); position now roughly $250k",
+     "price": "28.00",
+     "rationale": "Used proceeds from the ServiceNow sale to add to a high-conviction growth holding expected to generate strong multi-year returns.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "45:09"
+    },
+    {
+     "action": "ADD",
+     "company": "American Express",
+     "is_own_position": true,
+     "position_note": "Bought 85 shares ($27,607.91); position now roughly $250k",
+     "price": "324.80",
+     "rationale": "Reinvested capital into a premier, top-tier business with durable fundamentals.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "45:19"
+    },
+    {
+     "action": "ADD",
+     "company": "Netflix",
+     "is_own_position": true,
+     "position_note": "Bought 45 shares ($27,847.80); position now just under $180k",
+     "price": "618.84",
+     "rationale": "Added to a core winner using proceeds from the ServiceNow liquidation.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "45:31"
+    },
+    {
+     "action": "HOLD",
+     "company": "Amazon",
+     "is_own_position": true,
+     "position_note": "Top 5 position across portfolio",
+     "price": "",
+     "rationale": "Considers the post-earnings pullback a long-term buying opportunity despite weak product sales and massive upcoming AI capex spend.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "10:48"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet",
+     "is_own_position": true,
+     "position_note": "$62k position remaining after earlier profit taking",
+     "price": "",
+     "rationale": "Acknowledges capex fears will hit free cash flow in the medium term, but considers the core search and cloud business an attractive multi-year hold.",
+     "ticker": "GOOG",
+     "timeframe": "this video",
+     "timestamp": "01:21"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Gigantic position",
+     "price": "",
+     "rationale": "Believes Intel's weakness is AMD's long-term strength as AMD consistently takes market share across CPUs and data center GPUs.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "32:02"
+    },
+    {
+     "action": "HOLD",
+     "company": "Salesforce",
+     "is_own_position": true,
+     "position_note": "Big position",
+     "price": "",
+     "rationale": "Trusts Marc Benioff and Salesforce's business model more than ServiceNow in the enterprise software space.",
+     "ticker": "CRM",
+     "timeframe": "this video",
+     "timestamp": "46:58"
+    },
+    {
+     "action": "MENTION",
+     "company": "Microsoft",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Ran projections concluding Microsoft is an okay buy capable of delivering mid-teens compound annual growth, though less attractive than Amazon.",
+     "ticker": "MSFT",
+     "timeframe": "this video",
+     "timestamp": "29:00"
+    },
+    {
+     "action": "MENTION",
+     "company": "Intel",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Criticized Intel as a declining business that relied on government intervention and continues to face structural headwinds.",
+     "ticker": "INTC",
+     "timeframe": "this video",
+     "timestamp": "32:34"
+    }
+   ],
+   "summary": "Jeremy discusses recent tech market volatility following earnings reports from Google, ServiceNow, Intel, and Amazon. He analyzes big tech earnings, arguing that consumer product softness signals a weakening general economy while massive rising AI capex spending is alarming Wall Street over free cash flow. Consequently, Jeremy decided to completely sell out of his ServiceNow (NOW) position to take profits and reallocated the capital into heavy additions of Celsius (CELH), American Express (AXP), and Netflix (NFLX).",
+   "topics": [
+    "Big Tech earnings",
+    "AI capex",
+    "Portfolio moves",
+    "Cloud computing",
+    "Economic slowdown"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 3410,
   "id": "JMaLx81fnGs",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-04T21:15:41Z",
   "published_at": "2026-10-30T01:01:43Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/JMaLx81fnGs/mqdefault.jpg",
   "title": "I Sold it all",
+  "tokens": 293752,
   "url": "https://www.youtube.com/watch?v=JMaLx81fnGs"
  },
  "JjllTy0wfhA": {
@@ -1144,14 +1284,16 @@
   "url": "https://www.youtube.com/watch?v=hGruKBJfqIM"
  },
  "hZHvYGnaxGQ": {
-  "attempts": 0,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2216,
+  "error": "video: Gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n | transcript: RequestBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=hZHvYGnaxGQ! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the",
   "id": "hZHvYGnaxGQ",
+  "last_attempt_at": "2026-11-04T21:23:20Z",
   "live_status": "none",
   "published_at": "2026-10-29T00:47:33Z",
-  "status": "pending",
+  "status": "error",
   "thumbnail": "https://i.ytimg.com/vi/hZHvYGnaxGQ/mqdefault.jpg",
   "title": "I F’d up‼️",
   "url": "https://www.youtube.com/watch?v=hZHvYGnaxGQ"
