@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>__TITLE__</title>
+<style>
+:root{
+  --bg:#f7f7f5; --panel:#fff; --ink:#16181d; --ink2:#4a4f5a; --mute:#868b95; --line:#e6e6e2; --hover:#f1f1ee;
+  --accent:#2f5bd3; --accent-soft:#e8eefc;
+  --buy:#0e7a3e; --add:#3a9a5f; --trim:#b56d00; --sell:#bf2a20; --hold:#5b6270; --watch:#2f5bd3; --mention:#9aa0a9;
+  --radius:10px; --shadow:0 1px 2px rgba(16,24,40,.05);
+  font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme=light]){
+  --bg:#111215; --panel:#191b1f; --ink:#ececec; --ink2:#b8bcc4; --mute:#7f8590; --line:#2a2d33; --hover:#202329;
+  --accent:#7d9cf5; --accent-soft:#1f2a45; --hold:#9097a3; --mention:#6d737d; } }
+:root[data-theme=dark]{ --bg:#111215; --panel:#191b1f; --ink:#ececec; --ink2:#b8bcc4; --mute:#7f8590; --line:#2a2d33; --hover:#202329;
+  --accent:#7d9cf5; --accent-soft:#1f2a45; --hold:#9097a3; --mention:#6d737d; }
+*{box-sizing:border-box} body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.45}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:22px 20px 60px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:16px}
+h1{font-size:21px;margin:0;letter-spacing:-.01em} .sub{color:var(--mute);font-size:12.5px;margin-top:3px}
+.stats{display:flex;gap:8px;flex-wrap:wrap}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:7px 12px;min-width:92px;box-shadow:var(--shadow)}
+.stat b{display:block;font-size:17px;font-variant-numeric:tabular-nums} .stat span{font-size:11.5px;color:var(--mute)}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0 10px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--line);margin-bottom:16px}
+.tabs{display:flex;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:3px}
+.tab{border:0;background:none;color:var(--ink2);padding:6px 13px;border-radius:7px;font:inherit;font-weight:500;cursor:pointer}
+.tab.on{background:var(--accent-soft);color:var(--accent)}
+input[type=search],select{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+input[type=search]{min-width:240px;flex:1;max-width:360px}
+.spacer{flex:1} .iconbtn{font:inherit;background:var(--panel);border:1px solid var(--line);color:var(--ink2);border-radius:8px;padding:6px 10px;cursor:pointer}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px;align-items:center}
+.chip{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink2);border-radius:999px;padding:3px 10px;cursor:pointer}
+.chip.on{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.chips label{font-size:12.5px;color:var(--ink2);display:flex;gap:5px;align-items:center;margin-left:6px}
+.pill{display:inline-block;min-width:58px;text-align:center;padding:2px 7px;border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.03em;color:#fff}
+.a-BUY{background:var(--buy)} .a-ADD{background:var(--add)} .a-TRIM{background:var(--trim)} .a-SELL{background:var(--sell)}
+.a-HOLD{background:var(--hold)} .a-WATCH{background:var(--watch)} .a-MENTION{background:var(--mention)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.day{margin-bottom:18px} .dayhead{font-size:12px;font-weight:600;color:var(--mute);text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px 2px}
+.vgroup{padding:10px 14px;border-bottom:1px solid var(--line)} .vgroup:last-child{border-bottom:0}
+.vgroup .vt{font-size:12.5px;color:var(--mute);margin-bottom:6px}
+.move{display:grid;grid-template-columns:72px 88px 1fr;gap:10px;padding:6px 0;align-items:start}
+.tk{font-weight:700;cursor:pointer} .tk:hover{color:var(--accent)} .co{font-size:11.5px;color:var(--mute);font-weight:400}
+.why{color:var(--ink2)} .meta{font-size:12px;color:var(--mute);margin-top:2px}
+table{width:100%;border-collapse:collapse}
+th{font-size:11.5px;text-align:left;color:var(--mute);font-weight:600;padding:9px 12px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:middle} tr:last-child td{border-bottom:0}
+tbody tr{cursor:pointer} tbody tr:hover{background:var(--hover)}
+.st{font-size:12px;font-weight:600;padding:2px 8px;border-radius:6px;white-space:nowrap}
+.st-Holding{color:var(--buy);background:color-mix(in srgb,var(--buy) 12%,transparent)}
+.st-Holdingtrimmed{color:var(--trim);background:color-mix(in srgb,var(--trim) 12%,transparent)}
+.st-Exited{color:var(--sell);background:color-mix(in srgb,var(--sell) 12%,transparent)}
+.st-Watching{color:var(--watch);background:color-mix(in srgb,var(--watch) 12%,transparent)}
+.st-Mentioned{color:var(--mute);background:var(--hover)}
+.dots{display:flex;gap:3px;align-items:center} .dot{width:9px;height:9px;border-radius:50%}
+.num{font-variant-numeric:tabular-nums;color:var(--ink2)}
+.cards{display:grid;gap:12px}
+.card{padding:14px 16px;display:grid;grid-template-columns:160px 1fr;gap:16px}
+.card img,.thumb{display:block;width:160px;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:var(--hover)}
+.card h3{font-size:15.5px;margin:2px 0 6px;line-height:1.3}
+.card p{margin:0 0 8px;color:var(--ink2)} .card ul{margin:6px 0 8px;padding-left:18px;color:var(--ink2)}
+.tag{font-size:11.5px;color:var(--ink2);background:var(--hover);border-radius:5px;padding:1px 7px;margin:0 4px 4px 0;display:inline-block;cursor:pointer}
+.more{font:inherit;font-size:12.5px;background:none;border:0;color:var(--accent);cursor:pointer;padding:0}
+.minipills{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
+.mp{font-size:11.5px;border-radius:5px;padding:1px 6px;color:#fff;cursor:pointer}
+.err{color:var(--sell);font-size:12px}
+.empty{padding:40px;text-align:center;color:var(--mute)}
+.drawer-bg{position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:20;display:none}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--panel);z-index:21;transform:translateX(100%);visibility:hidden;transition:transform .2s ease,visibility 0s .2s;overflow:auto;border-left:1px solid var(--line)}
+.drawer.open{transform:none;visibility:visible;transition:transform .2s ease} .drawer-bg.open{display:block}
+.dh{position:sticky;top:0;background:var(--panel);padding:16px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-start}
+.dh h2{margin:0;font-size:20px} .db{padding:14px 18px}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:16px}
+.tli{position:relative;padding:0 0 16px}
+.tli:before{content:"";position:absolute;left:-22px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--c,var(--mute));border:2px solid var(--panel)}
+.chcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.chc{padding:14px 16px} .chc h3{margin:0 0 2px;font-size:15px}
+.kv{display:flex;justify-content:space-between;font-size:13px;padding:3px 0;color:var(--ink2)}
+.demo{background:#fff4d6;color:#7a5200;border:1px solid #f1d58a;border-radius:8px;padding:8px 12px;font-size:12.5px;margin-bottom:12px}
+@media (max-width:720px){ .card{grid-template-columns:1fr} .card img,.thumb{width:100%} .move{grid-template-columns:64px 70px 1fr} .hide-sm{display:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><h1 id="title"></h1><div class="sub" id="gen"></div></div>
+    <div class="stats" id="stats"></div>
+  </header>
+  <div id="demo"></div>
+  <div class="bar">
+    <div class="tabs" role="tablist">
+      <button class="tab" data-tab="moves">Latest moves</button>
+      <button class="tab" data-tab="stocks">Stocks</button>
+      <button class="tab" data-tab="videos">Videos</button>
+      <button class="tab" data-tab="channels">Channels</button>
+    </div>
+    <input type="search" id="q" placeholder="Search ticker, company, topic, title…">
+    <select id="ch"><option value="">All channels</option></select>
+    <div class="spacer"></div>
+    <button class="iconbtn" id="csv" title="Download all stock moves as CSV">⬇ CSV</button>
+    <button class="iconbtn" id="theme" title="Toggle light/dark">Light/Dark</button>
+  </div>
+  <main id="view"></main>
+</div>
+<div class="drawer-bg" id="dbg"></div>
+<aside class="drawer" id="drawer" aria-live="polite"></aside>
+
+<script>
+const DATA = /*__DATA__*/null;
+const ACTIONS = ["BUY","ADD","TRIM","SELL","HOLD","WATCH","MENTION"];
+const COLOR = a => `var(--${a.toLowerCase()})`;
+const S = { tab:"moves", q:"", ch:"", acts:new Set(["BUY","ADD","TRIM","SELL","HOLD","WATCH"]), ownOnly:false,
+            statuses:new Set(), sort:{k:"last_date",d:-1}, cat:"", openVids:new Set() };
+const stc = s => "st-"+String(s).replace(/[^A-Za-z]+/g,"");
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDate = d => d ? new Date(d.length===10 ? d+"T12:00:00Z" : d).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}) : "";
+const ago = d => { const days = Math.round((Date.now()-new Date(d))/864e5); return days<=0?"today":days===1?"yesterday":days<30?days+"d ago":days<365?Math.round(days/30)+"mo ago":Math.round(days/365)+"y ago"; };
+const tsLink = (url, ts) => { if(!ts) return url; const p = ts.split(":").map(Number); if(p.some(isNaN)) return url; const s = p.reduce((a,b)=>a*60+b,0); return url+"&t="+s+"s"; };
+const dur = s => { s=s||0; const h=Math.floor(s/3600), m=Math.round((s%3600)/60); return h? `${h}h ${m}m` : `${m} min`; };
+
+function match(...fields){ if(!S.q) return true; const q=S.q.toLowerCase(); return fields.some(f => String(f||"").toLowerCase().includes(q)); }
+function chOk(id){ return !S.ch || S.ch===id; }
+function tOk(t){ return !S.ch || (t.channel_ids||[t.channel_id]).includes(S.ch); }
+
+/* ── header ── */
+function header(){
+  $("#title").textContent = DATA.title;
+  document.title = DATA.title;
+  const ok = DATA.videos.filter(v=>v.status==="ok");
+  const pend = DATA.videos.filter(v=>v.status!=="ok").length;
+  $("#gen").textContent = `Updated ${fmtDate(DATA.generated_at)} (${ago(DATA.generated_at)})` + (pend? ` · ${pend} video(s) queued or failed` : "");
+  const own = DATA.tickers.filter(t=>t.status.startsWith("Holding")).length;
+  const last = ok[0]?.published_at;
+  $("#stats").innerHTML = [
+    [DATA.channels.length,"channels"],[ok.length,"videos summarized"],
+    [DATA.moves.filter(m=>["BUY","ADD","TRIM","SELL"].includes(m.action)).length,"buy/sell moves"],
+    [own,"tickers held"],[last?ago(last):"—","latest video"]
+  ].map(([b,s])=>`<div class="stat"><b>${esc(b)}</b><span>${s}</span></div>`).join("");
+  const sel = $("#ch");
+  DATA.channels.forEach(c => sel.insertAdjacentHTML("beforeend", `<option value="${esc(c.id)}">${esc(c.title)}</option>`));
+  if (DATA.demo) $("#demo").innerHTML = `<div class="demo"><b>Demo data.</b> The channels, videos and moves below are made up to show the layout. Your real dashboard replaces this after the first run.</div>`;
+}
+
+/* ── moves tab ── */
+function viewMoves(){
+  const ms = DATA.moves.filter(m => chOk(m.channel_id) && S.acts.has(m.action) && (!S.ownOnly || m.is_own_position)
+              && match(m.ticker, m.company, m.rationale, m.video_title, m.channel_title));
+  let h = `<div class="chips">${ACTIONS.map(a=>`<button class="chip ${S.acts.has(a)?"on":""}" data-act="${a}">${a}</button>`).join("")}
+           <label><input type="checkbox" id="own" ${S.ownOnly?"checked":""}> Their own positions only</label></div>`;
+  if(!ms.length) return h + `<div class="panel empty">No moves match these filters.</div>`;
+  // group: date → video
+  const days = new Map();
+  ms.forEach(m => { if(!days.has(m.date)) days.set(m.date,new Map()); const d=days.get(m.date); if(!d.has(m.video_id)) d.set(m.video_id,[]); d.get(m.video_id).push(m); });
+  for (const [day, vids] of days){
+    h += `<div class="day"><div class="dayhead">${fmtDate(day)}</div><div class="panel">`;
+    for (const [, list] of vids){
+      const v = list[0];
+      h += `<div class="vgroup"><div class="vt">${esc(v.channel_title)} · <a href="${esc(v.video_url)}" target="_blank" rel="noopener">${esc(v.video_title)}</a></div>`;
+      list.sort((a,b)=>ACTIONS.indexOf(a.action)-ACTIONS.indexOf(b.action)).forEach(m => {
+        const extra = [m.position_note, m.price && "@ "+m.price, m.timeframe && m.timeframe!=="this video" && m.timeframe].filter(Boolean).join(" · ");
+        h += `<div class="move"><div><span class="pill a-${m.action}">${m.action}</span></div>
+              <div class="tk" data-tk="${esc(m.ticker)}">${esc(m.ticker)}<div class="co">${esc(m.company)}</div></div>
+              <div><div class="why">${esc(m.rationale)}</div>
+              <div class="meta">${extra?esc(extra)+" · ":""}${m.is_own_position?"own position":"not owned"}${m.timestamp?` · <a href="${esc(tsLink(m.video_url,m.timestamp))}" target="_blank" rel="noopener">▶ ${esc(m.timestamp)}</a>`:""}</div></div></div>`;
+      });
+      h += `</div>`;
+    }
+    h += `</div></div>`;
+  }
+  return h;
+}
+
+/* ── stocks tab ── */
+const STATUSES = ["Holding","Holding (trimmed)","Exited","Watching","Mentioned"];
+function viewStocks(){
+  let rows = DATA.tickers.filter(t => tOk(t) && (!S.statuses.size || S.statuses.has(t.status)) && match(t.ticker,t.company,t.channel_title));
+  const {k,d} = S.sort;
+  rows.sort((a,b)=> (a[k]>b[k]?1:a[k]<b[k]?-1:0)*d);
+  const moveIdx = {}; DATA.moves.forEach(m => { const key=m.group+"|"+m.ticker; (moveIdx[key] ||= []).push(m); });
+  const th = (key,label,cls="") => `<th class="${cls}" data-sort="${key}">${label}${S.sort.k===key?(S.sort.d>0?" ▲":" ▼"):""}</th>`;
+  let h = `<div class="chips">${STATUSES.map(s=>`<button class="chip ${S.statuses.has(s)?"on":""}" data-st="${esc(s)}">${s}</button>`).join("")}</div>`;
+  if(!rows.length) return h + `<div class="panel empty">No tickers match.</div>`;
+  const multi = new Set(DATA.tickers.map(t=>t.group)).size>1 && !S.ch;
+  h += `<div class="panel"><table><thead><tr>${th("ticker","Ticker")}${th("status","Status")}${th("last_ownership_action","Last buy/sell")}${th("last_ownership_date","On")}${th("last_date","Last discussed")}${th("mentions","Mentions","hide-sm")}<th class="hide-sm">History (old → new)</th>${multi?th("channel_title","Source","hide-sm"):""}</tr></thead><tbody>`;
+  rows.forEach(t => {
+    const hist = (moveIdx[t.group+"|"+t.ticker]||[]).slice().reverse().slice(-16);
+    h += `<tr data-tk="${esc(t.ticker)}"><td><b>${esc(t.ticker)}</b><div class="co">${esc(t.company)}</div></td>
+      <td><span class="st ${stc(t.status)}">${esc(t.status)}</span></td>
+      <td>${t.last_ownership_action?`<span class="pill a-${t.last_ownership_action}">${t.last_ownership_action}</span>`:"<span class='co'>—</span>"}</td>
+      <td class="num">${fmtDate(t.last_ownership_date)}</td><td class="num">${fmtDate(t.last_date)}</td>
+      <td class="num hide-sm">${t.mentions}</td>
+      <td class="hide-sm"><div class="dots">${hist.map(m=>`<span class="dot" title="${m.date} ${m.action}" style="background:${COLOR(m.action)}"></span>`).join("")}</div></td>
+      ${multi?`<td class="hide-sm co">${esc(t.channel_title)}</td>`:""}</tr>`;
+  });
+  return h + `</tbody></table></div>`;
+}
+
+/* ── videos tab ── */
+function viewVideos(){
+  const cats = [...new Set(DATA.videos.filter(v=>v.analysis).map(v=>v.analysis.category))].sort();
+  const vs = DATA.videos.filter(v => chOk(v.channel_id) && (!S.cat || v.analysis?.category===S.cat) &&
+      match(v.title, v.channel_title, v.analysis?.summary, (v.analysis?.key_points||[]).join(" "), (v.analysis?.topics||[]).join(" "), (v.analysis?.stock_moves||[]).map(m=>m.ticker+" "+m.company).join(" ")));
+  let h = `<div class="chips"><button class="chip ${!S.cat?"on":""}" data-cat="">All categories</button>${cats.map(c=>`<button class="chip ${S.cat===c?"on":""}" data-cat="${esc(c)}">${esc(c)}</button>`).join("")}</div>`;
+  if(!vs.length) return h + `<div class="panel empty">No videos match.</div>`;
+  h += `<div class="cards">`;
+  vs.forEach(v => {
+    const a = v.analysis, open = S.openVids.has(v.id);
+    h += `<article class="panel card"><a href="${esc(v.url)}" target="_blank" rel="noopener">${v.thumbnail?`<img loading="lazy" src="${esc(v.thumbnail)}" alt="">`:`<div class="thumb"></div>`}</a><div>
+      <div class="co">${esc(v.channel_title)} · ${fmtDate(v.published_at)} · ${dur(v.duration_sec)}${a?" · "+esc(a.category):""}${a&&a.sentiment?" · "+esc(a.sentiment):""}</div>
+      <h3><a href="${esc(v.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(v.title)}</a></h3>`;
+    if (!a){ h += v.status==="error" ? `<div class="err">Couldn't analyse: ${esc((v.error||"").slice(0,180))}</div>` : `<div class="co">Queued for analysis.</div>`; }
+    else {
+      h += `<p>${esc(a.summary)}</p>`;
+      if (open){
+        h += `<ul>${(a.key_points||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul>`;
+        if (a.market_view) h += `<p><b>Market view:</b> ${esc(a.market_view)}</p>`;
+        if ((a.portfolio_snapshot||[]).length) h += `<p><b>Portfolio shown:</b> ${a.portfolio_snapshot.map(p=>esc(p.ticker)+(p.weight_pct!=null?` ${p.weight_pct}%`:"")).join(", ")}</p>`;
+      }
+      h += `<div>${(a.topics||[]).map(t=>`<span class="tag" data-q="${esc(t)}">${esc(t)}</span>`).join("")}</div>`;
+      if ((a.stock_moves||[]).length) h += `<div class="minipills">${a.stock_moves.map(m=>`<span class="mp" data-tk="${esc(m.ticker)}" style="background:${COLOR(m.action)}" title="${esc(m.action+": "+m.rationale)}">${esc(m.action)} ${esc(m.ticker)}</span>`).join("")}</div>`;
+      h += `<button class="more" data-vid="${esc(v.id)}">${open?"Show less":"Key points & details"}</button>`;
+    }
+    h += `</div></article>`;
+  });
+  return h + `</div>`;
+}
+
+/* ── channels tab ── */
+function viewChannels(){
+  if(!DATA.channels.length) return `<div class="panel empty">No channels yet. Add some to channels.yaml.</div>`;
+  return `<div class="chcards">` + DATA.channels.map(c => {
+    const vs = DATA.videos.filter(v=>v.channel_id===c.id), ok = vs.filter(v=>v.status==="ok");
+    const tk = DATA.tickers.filter(t=>(t.channel_ids||[]).includes(c.id));
+    return `<div class="panel chc"><h3>${esc(c.title)}</h3><div class="co">${esc(c.handle||"")} · ${esc(c.profile)} profile</div><div style="margin-top:10px">
+      <div class="kv"><span>Videos summarized</span><b>${ok.length}</b></div>
+      <div class="kv"><span>Queued / failed</span><b>${vs.length-ok.length}</b></div>
+      <div class="kv"><span>Latest video</span><b>${ok[0]?fmtDate(ok[0].published_at):"—"}</b></div>
+      <div class="kv"><span>Tickers held</span><b>${tk.filter(t=>t.status.startsWith("Holding")).length}</b></div>
+      <div class="kv"><span>Tickers exited</span><b>${tk.filter(t=>t.status==="Exited").length}</b></div>
+      <div class="kv"><span>Subscribers</span><b>${c.subscribers?Number(c.subscribers).toLocaleString():"—"}</b></div></div>
+      <button class="more" style="margin-top:8px" data-gochan="${esc(c.id)}">See this channel's moves →</button></div>`;
+  }).join("") + `</div>`;
+}
+
+/* ── ticker drawer ── */
+function openTicker(tk){
+  const ms = DATA.moves.filter(m => m.ticker===tk && chOk(m.channel_id));
+  const rows = DATA.tickers.filter(t => t.ticker===tk && tOk(t));
+  const co = rows[0]?.company || ms[0]?.company || "";
+  $("#drawer").innerHTML = `<div class="dh"><div><h2>${esc(tk)}</h2><div class="co">${esc(co)}</div>
+     <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap">${rows.map(r=>`<span class="st ${stc(r.status)}">${esc(r.status)}${new Set(DATA.tickers.map(t=>t.group)).size>1?" · "+esc(r.group):""}</span>`).join("")}</div></div>
+     <button class="iconbtn" id="dclose">✕</button></div>
+     <div class="db"><div class="co" style="margin-bottom:12px">${ms.length} mention(s), newest first</div><div class="tl">` +
+     ms.map(m=>`<div class="tli" style="--c:${COLOR(m.action)}"><div><span class="pill a-${m.action}">${m.action}</span> <span class="co">${fmtDate(m.date)} · ${esc(m.channel_title)}</span></div>
+        <div style="margin-top:4px">${esc(m.rationale)}</div>
+        <div class="meta">${[m.position_note, m.price&&"@ "+m.price].filter(Boolean).map(esc).join(" · ")}</div>
+        <div class="meta"><a href="${esc(tsLink(m.video_url,m.timestamp))}" target="_blank" rel="noopener">${esc(m.video_title)}${m.timestamp?" ▶ "+esc(m.timestamp):""}</a></div></div>`).join("") +
+     `</div></div>`;
+  $("#drawer").classList.add("open"); $("#dbg").classList.add("open");
+  $("#dclose").onclick = closeDrawer;
+  history.replaceState(null,"",`#${S.tab}/${encodeURIComponent(tk)}`);
+}
+function closeDrawer(){ $("#drawer").classList.remove("open"); $("#dbg").classList.remove("open"); history.replaceState(null,"",`#${S.tab}`); }
+
+/* ── render + events ── */
+function render(){
+  document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("on", b.dataset.tab===S.tab));
+  $("#view").innerHTML = ({moves:viewMoves, stocks:viewStocks, videos:viewVideos, channels:viewChannels})[S.tab]();
+}
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-tab],[data-act],[data-st],[data-sort],[data-tk],[data-cat],[data-vid],[data-q],[data-gochan]");
+  if(!t) return;
+  const d = t.dataset;
+  if (d.tab){ S.tab=d.tab; history.replaceState(null,"","#"+S.tab); }
+  else if (d.act){ S.acts.has(d.act)?S.acts.delete(d.act):S.acts.add(d.act); }
+  else if (d.st){ S.statuses.has(d.st)?S.statuses.delete(d.st):S.statuses.add(d.st); }
+  else if (d.sort){ S.sort = {k:d.sort, d: S.sort.k===d.sort ? -S.sort.d : (d.sort==="ticker"||d.sort==="channel_title"?1:-1)}; }
+  else if (d.tk){ return openTicker(d.tk); }
+  else if (d.cat!==undefined){ S.cat=d.cat; }
+  else if (d.vid){ S.openVids.has(d.vid)?S.openVids.delete(d.vid):S.openVids.add(d.vid); }
+  else if (d.q){ S.q=d.q; $("#q").value=d.q; }
+  else if (d.gochan){ S.ch=d.gochan; $("#ch").value=d.gochan; S.tab="moves"; }
+  render();
+});
+document.addEventListener("change", e => { if(e.target.id==="own"){ S.ownOnly=e.target.checked; render(); } });
+let qt; $("#q").addEventListener("input", e => { clearTimeout(qt); qt=setTimeout(()=>{ S.q=e.target.value.trim(); render(); },120); });
+$("#ch").addEventListener("change", e => { S.ch=e.target.value; render(); });
+$("#dbg").addEventListener("click", closeDrawer);
+document.addEventListener("keydown", e => { if(e.key==="Escape") closeDrawer(); if(e.key==="/" && document.activeElement!==$("#q")){ e.preventDefault(); $("#q").focus(); } });
+$("#theme").onclick = () => { const r=document.documentElement; const dark = r.dataset.theme ? r.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches; r.dataset.theme = dark?"light":"dark"; try{localStorage.setItem("ytt-theme",r.dataset.theme)}catch(_){} };
+try{ const t=localStorage.getItem("ytt-theme"); if(t) document.documentElement.dataset.theme=t; }catch(_){}
+$("#csv").onclick = () => {
+  const cols=["date","channel_title","ticker","company","action","is_own_position","price","position_note","timeframe","rationale","video_title","video_url","timestamp"];
+  const q = v => `"${String(v??"").replace(/"/g,'""')}"`;
+  const csv = [cols.join(","), ...DATA.moves.map(m=>cols.map(c=>q(m[c])).join(","))].join("\n");
+  const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"})); a.download="stock_moves.csv"; a.click();
+};
+
+header();
+const [tab, tk] = location.hash.slice(1).split("/");
+if (["moves","stocks","videos","channels"].includes(tab)) S.tab = tab;
+render();
+if (tk) openTicker(decodeURIComponent(tk));
+</script>
+</body>
+</html>
