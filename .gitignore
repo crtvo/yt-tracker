@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+data/*.tmp
+data/last_digest.html
+.venv/
