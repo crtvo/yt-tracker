@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>YouTube Channel Intelligence</title>
+<style>
+:root{
+  --bg:#f7f7f5; --panel:#fff; --ink:#16181d; --ink2:#4a4f5a; --mute:#868b95; --line:#e6e6e2; --hover:#f1f1ee;
+  --accent:#2f5bd3; --accent-soft:#e8eefc;
+  --buy:#0e7a3e; --add:#3a9a5f; --trim:#b56d00; --sell:#bf2a20; --hold:#5b6270; --watch:#2f5bd3; --mention:#9aa0a9;
+  --radius:10px; --shadow:0 1px 2px rgba(16,24,40,.05);
+  font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme=light]){
+  --bg:#111215; --panel:#191b1f; --ink:#ececec; --ink2:#b8bcc4; --mute:#7f8590; --line:#2a2d33; --hover:#202329;
+  --accent:#7d9cf5; --accent-soft:#1f2a45; --hold:#9097a3; --mention:#6d737d; } }
+:root[data-theme=dark]{ --bg:#111215; --panel:#191b1f; --ink:#ececec; --ink2:#b8bcc4; --mute:#7f8590; --line:#2a2d33; --hover:#202329;
+  --accent:#7d9cf5; --accent-soft:#1f2a45; --hold:#9097a3; --mention:#6d737d; }
+*{box-sizing:border-box} body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.45}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:22px 20px 60px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:16px}
+h1{font-size:21px;margin:0;letter-spacing:-.01em} .sub{color:var(--mute);font-size:12.5px;margin-top:3px}
+.stats{display:flex;gap:8px;flex-wrap:wrap}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:7px 12px;min-width:92px;box-shadow:var(--shadow)}
+.stat b{display:block;font-size:17px;font-variant-numeric:tabular-nums} .stat span{font-size:11.5px;color:var(--mute)}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0 10px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--line);margin-bottom:16px}
+.tabs{display:flex;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:3px}
+.tab{border:0;background:none;color:var(--ink2);padding:6px 13px;border-radius:7px;font:inherit;font-weight:500;cursor:pointer}
+.tab.on{background:var(--accent-soft);color:var(--accent)}
+input[type=search],select{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+input[type=search]{min-width:240px;flex:1;max-width:360px}
+.spacer{flex:1} .iconbtn{font:inherit;background:var(--panel);border:1px solid var(--line);color:var(--ink2);border-radius:8px;padding:6px 10px;cursor:pointer}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px;align-items:center}
+.chip{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink2);border-radius:999px;padding:3px 10px;cursor:pointer}
+.chip.on{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.chips label{font-size:12.5px;color:var(--ink2);display:flex;gap:5px;align-items:center;margin-left:6px}
+.pill{display:inline-block;min-width:58px;text-align:center;padding:2px 7px;border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.03em;color:#fff}
+.a-BUY{background:var(--buy)} .a-ADD{background:var(--add)} .a-TRIM{background:var(--trim)} .a-SELL{background:var(--sell)}
+.a-HOLD{background:var(--hold)} .a-WATCH{background:var(--watch)} .a-MENTION{background:var(--mention)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.day{margin-bottom:18px} .dayhead{font-size:12px;font-weight:600;color:var(--mute);text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px 2px}
+.vgroup{padding:10px 14px;border-bottom:1px solid var(--line)} .vgroup:last-child{border-bottom:0}
+.vgroup .vt{font-size:12.5px;color:var(--mute);margin-bottom:6px}
+.move{display:grid;grid-template-columns:72px 88px 1fr;gap:10px;padding:6px 0;align-items:start}
+.tk{font-weight:700;cursor:pointer} .tk:hover{color:var(--accent)} .co{font-size:11.5px;color:var(--mute);font-weight:400}
+.why{color:var(--ink2)} .meta{font-size:12px;color:var(--mute);margin-top:2px}
+table{width:100%;border-collapse:collapse}
+th{font-size:11.5px;text-align:left;color:var(--mute);font-weight:600;padding:9px 12px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:middle} tr:last-child td{border-bottom:0}
+tbody tr{cursor:pointer} tbody tr:hover{background:var(--hover)}
+.st{font-size:12px;font-weight:600;padding:2px 8px;border-radius:6px;white-space:nowrap}
+.st-Holding{color:var(--buy);background:color-mix(in srgb,var(--buy) 12%,transparent)}
+.st-Holdingtrimmed{color:var(--trim);background:color-mix(in srgb,var(--trim) 12%,transparent)}
+.st-Exited{color:var(--sell);background:color-mix(in srgb,var(--sell) 12%,transparent)}
+.st-Watching{color:var(--watch);background:color-mix(in srgb,var(--watch) 12%,transparent)}
+.st-Mentioned{color:var(--mute);background:var(--hover)}
+.dots{display:flex;gap:3px;align-items:center} .dot{width:9px;height:9px;border-radius:50%}
+.num{font-variant-numeric:tabular-nums;color:var(--ink2)}
+.cards{display:grid;gap:12px}
+.card{padding:14px 16px;display:grid;grid-template-columns:160px 1fr;gap:16px}
+.card img,.thumb{display:block;width:160px;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:var(--hover)}
+.card h3{font-size:15.5px;margin:2px 0 6px;line-height:1.3}
+.card p{margin:0 0 8px;color:var(--ink2)} .card ul{margin:6px 0 8px;padding-left:18px;color:var(--ink2)}
+.tag{font-size:11.5px;color:var(--ink2);background:var(--hover);border-radius:5px;padding:1px 7px;margin:0 4px 4px 0;display:inline-block;cursor:pointer}
+.more{font:inherit;font-size:12.5px;background:none;border:0;color:var(--accent);cursor:pointer;padding:0}
+.minipills{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
+.mp{font-size:11.5px;border-radius:5px;padding:1px 6px;color:#fff;cursor:pointer}
+.err{color:var(--sell);font-size:12px}
+.empty{padding:40px;text-align:center;color:var(--mute)}
+.drawer-bg{position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:20;display:none}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--panel);z-index:21;transform:translateX(100%);visibility:hidden;transition:transform .2s ease,visibility 0s .2s;overflow:auto;border-left:1px solid var(--line)}
+.drawer.open{transform:none;visibility:visible;transition:transform .2s ease} .drawer-bg.open{display:block}
+.dh{position:sticky;top:0;background:var(--panel);padding:16px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-start}
+.dh h2{margin:0;font-size:20px} .db{padding:14px 18px}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:16px}
+.tli{position:relative;padding:0 0 16px}
+.tli:before{content:"";position:absolute;left:-22px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--c,var(--mute));border:2px solid var(--panel)}
+.chcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.chc{padding:14px 16px} .chc h3{margin:0 0 2px;font-size:15px}
+.kv{display:flex;justify-content:space-between;font-size:13px;padding:3px 0;color:var(--ink2)}
+.demo{background:#fff4d6;color:#7a5200;border:1px solid #f1d58a;border-radius:8px;padding:8px 12px;font-size:12.5px;margin-bottom:12px}
+@media (max-width:720px){ .card{grid-template-columns:1fr} .card img,.thumb{width:100%} .move{grid-template-columns:64px 70px 1fr} .hide-sm{display:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><h1 id="title"></h1><div class="sub" id="gen"></div></div>
+    <div class="stats" id="stats"></div>
+  </header>
+  <div id="demo"></div>
+  <div class="bar">
+    <div class="tabs" role="tablist">
+      <button class="tab" data-tab="moves">Latest moves</button>
+      <button class="tab" data-tab="stocks">Stocks</button>
+      <button class="tab" data-tab="videos">Videos</button>
+      <button class="tab" data-tab="channels">Channels</button>
+    </div>
+    <input type="search" id="q" placeholder="Search ticker, company, topic, title…">
+    <select id="ch"><option value="">All channels</option></select>
+    <div class="spacer"></div>
+    <button class="iconbtn" id="csv" title="Download all stock moves as CSV">⬇ CSV</button>
+    <button class="iconbtn" id="theme" title="Toggle light/dark">Light/Dark</button>
+  </div>
+  <main id="view"></main>
+</div>
+<div class="drawer-bg" id="dbg"></div>
+<aside class="drawer" id="drawer" aria-live="polite"></aside>
+
+<script>
+const DATA = {"title": "YouTube Channel Intelligence", "generated_at": "2026-11-04T19:17:02Z", "channels": [{"id": "UCdemoA", "title": "Northside Growth Investing (demo)", "handle": "@northsidegrowth", "profile": "stocks", "subscribers": 184000}, {"id": "UCdemoB", "title": "Dividend Porch (demo)", "handle": "@dividendporch", "profile": "stocks", "subscribers": 62000}], "videos": [{"id": "demoQ", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "title": "Live Q&A: Your Dividend Questions", "url": "https://www.youtube.com/watch?v=demoQ", "published_at": "2026-11-04T14:00:00Z", "duration_sec": 5400, "thumbnail": "", "status": "pending", "error": null, "analysis": null, "method": null}, {"id": "demo0000", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "title": "I SOLD Tesla and Bought This Instead | November Portfolio Update", "url": "https://www.youtube.com/watch?v=demo0000", "published_at": "2026-11-02T15:00:00Z", "duration_sec": 1140, "thumbnail": "", "status": "ok", "error": null, "analysis": {"summary": "Demo summary for \u201cI SOLD Tesla and Bought This Instead | November Portfolio Update\u201d. The creator walks through recent portfolio decisions, the reasoning behind each, and how they're thinking about the market over the next few months.", "key_points": ["Sell TSLA: Thinks the robotaxi timeline is priced in and wants less single-name volatility.", "Add NVDA: Data-center demand still outrunning supply after the latest earnings.", "Buy CRWD: Sees cybersecurity spending as recession-resistant; plans to build over 3 months.", "Keeps roughly 5% in cash for opportunities."], "category": "Portfolio Update", "sentiment": "bullish", "topics": ["dividends", "rate cuts", "AI stocks"], "market_view": "Cautiously optimistic; expects volatility around rate decisions.", "stock_moves": [{"ticker": "TSLA", "company": "Tesla", "action": "SELL", "is_own_position": true, "timeframe": "this video", "price": "$248", "position_note": "Closed full position", "rationale": "Thinks the robotaxi timeline is priced in and wants less single-name volatility.", "timestamp": "3:52"}, {"ticker": "NVDA", "company": "NVIDIA", "action": "ADD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Now ~14% of portfolio", "rationale": "Data-center demand still outrunning supply after the latest earnings.", "timestamp": "18:06"}, {"ticker": "CRWD", "company": "CrowdStrike", "action": "BUY", "is_own_position": true, "timeframe": "this video", "price": "$312", "position_note": "Starter position, 2%", "rationale": "Sees cybersecurity spending as recession-resistant; plans to build over 3 months.", "timestamp": "12:37"}], "portfolio_snapshot": []}, "method": "video"}, {"id": "demo0001", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "title": "3 Dividend Stocks I'm Buying in November", "url": "https://www.youtube.com/watch?v=demo0001", "published_at": "2026-10-31T15:00:00Z", "duration_sec": 600, "thumbnail": "", "status": "ok", "error": null, "analysis": {"summary": "Demo summary for \u201c3 Dividend Stocks I'm Buying in November\u201d. The creator walks through recent portfolio decisions, the reasoning behind each, and how they're thinking about the market over the next few months.", "key_points": ["Add O: Yield above 5.5% looks attractive if rates keep easing.", "Buy JNJ: Litigation overhang reduced; wants healthcare exposure.", "Hold KO: No change; fairly valued at current levels.", "Keeps roughly 5% in cash for opportunities."], "category": "Buy/Sell Decision", "sentiment": "neutral", "topics": ["earnings", "dividends", "AI stocks"], "market_view": "Cautiously optimistic; expects volatility around rate decisions.", "stock_moves": [{"ticker": "O", "company": "Realty Income", "action": "ADD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Reinvesting dividends + 15 shares", "rationale": "Yield above 5.5% looks attractive if rates keep easing.", "timestamp": "3:27"}, {"ticker": "JNJ", "company": "Johnson & Johnson", "action": "BUY", "is_own_position": true, "timeframe": "this video", "price": "$151", "position_note": "New position", "rationale": "Litigation overhang reduced; wants healthcare exposure.", "timestamp": "14:04"}, {"ticker": "KO", "company": "Coca-Cola", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "", "rationale": "No change; fairly valued at current levels.", "timestamp": "8:05"}], "portfolio_snapshot": []}, "method": "video"}, {"id": "demo0002", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "title": "Is the AI Trade Over? My Honest Take", "url": "https://www.youtube.com/watch?v=demo0002", "published_at": "2026-10-26T15:00:00Z", "duration_sec": 1560, "thumbnail": "", "status": "ok", "error": null, "analysis": {"summary": "Demo summary for \u201cIs the AI Trade Over? My Honest Take\u201d. The creator walks through recent portfolio decisions, the reasoning behind each, and how they're thinking about the market over the next few months.", "key_points": ["Hold NVDA: Keeps core position despite valuation concerns.", "Watch PLTR: Likes commercial growth but won't buy at current multiple.", "Mention MSFT: Used as an example of AI monetization through cloud.", "Keeps roughly 5% in cash for opportunities."], "category": "Market Commentary", "sentiment": "mixed", "topics": ["rate cuts", "AI stocks", "earnings"], "market_view": "Cautiously optimistic; expects volatility around rate decisions.", "stock_moves": [{"ticker": "NVDA", "company": "NVIDIA", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "", "rationale": "Keeps core position despite valuation concerns.", "timestamp": "4:14"}, {"ticker": "PLTR", "company": "Palantir", "action": "WATCH", "is_own_position": false, "timeframe": "this video", "price": "", "position_note": "", "rationale": "Likes commercial growth but won't buy at current multiple.", "timestamp": "2:36"}, {"ticker": "MSFT", "company": "Microsoft", "action": "MENTION", "is_own_position": false, "timeframe": "this video", "price": "", "position_note": "", "rationale": "Used as an example of AI monetization through cloud.", "timestamp": "13:03"}], "portfolio_snapshot": []}, "method": "video"}, {"id": "demo0003", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "title": "Trimming My Biggest Winner (Here's Why)", "url": "https://www.youtube.com/watch?v=demo0003", "published_at": "2026-10-19T15:00:00Z", "duration_sec": 960, "thumbnail": "", "status": "ok", "error": null, "analysis": {"summary": "Demo summary for \u201cTrimming My Biggest Winner (Here's Why)\u201d. The creator walks through recent portfolio decisions, the reasoning behind each, and how they're thinking about the market over the next few months.", "key_points": ["Trim META: Position grew too large; taking profits to rebalance.", "Add AMZN: AWS reacceleration and retail margin improvement.", "Keeps roughly 5% in cash for opportunities."], "category": "Buy/Sell Decision", "sentiment": "neutral", "topics": ["AI stocks", "earnings", "dividends"], "market_view": "Cautiously optimistic; expects volatility around rate decisions.", "stock_moves": [{"ticker": "META", "company": "Meta Platforms", "action": "TRIM", "is_own_position": true, "timeframe": "this video", "price": "$585", "position_note": "Sold 1/3, now 7% of portfolio", "rationale": "Position grew too large; taking profits to rebalance.", "timestamp": "10:26"}, {"ticker": "AMZN", "company": "Amazon", "action": "ADD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Added 10 shares", "rationale": "AWS reacceleration and retail margin improvement.", "timestamp": "5:34"}], "portfolio_snapshot": []}, "method": "video"}, {"id": "demo0004", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "title": "October Dividend Income Report \u2014 New Record!", "url": "https://www.youtube.com/watch?v=demo0004", "published_at": "2026-10-14T15:00:00Z", "duration_sec": 720, "thumbnail": "", "status": "ok", "error": null, "analysis": {"summary": "Demo summary for \u201cOctober Dividend Income Report \u2014 New Record!\u201d. The creator walks through recent portfolio decisions, the reasoning behind each, and how they're thinking about the market over the next few months.", "key_points": ["Hold O: Monthly dividend payer anchoring income.", "Sell VZ: Dividend growth too slow; reallocating to healthcare.", "Add SCHD: Core holding for diversified dividend growth.", "Keeps roughly 5% in cash for opportunities."], "category": "Portfolio Update", "sentiment": "bullish", "topics": ["earnings", "rebalancing", "cash position"], "market_view": "Cautiously optimistic; expects volatility around rate decisions.", "stock_moves": [{"ticker": "O", "company": "Realty Income", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Largest holding", "rationale": "Monthly dividend payer anchoring income.", "timestamp": "6:06"}, {"ticker": "VZ", "company": "Verizon", "action": "SELL", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Exited position", "rationale": "Dividend growth too slow; reallocating to healthcare.", "timestamp": "7:23"}, {"ticker": "SCHD", "company": "Schwab US Dividend Equity ETF", "action": "ADD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Automatic biweekly buys", "rationale": "Core holding for diversified dividend growth.", "timestamp": "4:35"}], "portfolio_snapshot": []}, "method": "video"}, {"id": "demo0005", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "title": "Why I Bought Tesla Again", "url": "https://www.youtube.com/watch?v=demo0005", "published_at": "2026-10-05T15:00:00Z", "duration_sec": 660, "thumbnail": "", "status": "ok", "error": null, "analysis": {"summary": "Demo summary for \u201cWhy I Bought Tesla Again\u201d. The creator walks through recent portfolio decisions, the reasoning behind each, and how they're thinking about the market over the next few months.", "key_points": ["Buy TSLA: Energy storage business underappreciated.", "Watch CRWD: Waiting for a pullback before starting a position.", "Keeps roughly 5% in cash for opportunities."], "category": "Buy/Sell Decision", "sentiment": "bullish", "topics": ["earnings", "AI stocks", "cash position"], "market_view": "Cautiously optimistic; expects volatility around rate decisions.", "stock_moves": [{"ticker": "TSLA", "company": "Tesla", "action": "BUY", "is_own_position": true, "timeframe": "this video", "price": "$221", "position_note": "4% position", "rationale": "Energy storage business underappreciated.", "timestamp": "7:31"}, {"ticker": "CRWD", "company": "CrowdStrike", "action": "WATCH", "is_own_position": false, "timeframe": "this video", "price": "", "position_note": "", "rationale": "Waiting for a pullback before starting a position.", "timestamp": "18:27"}], "portfolio_snapshot": []}, "method": "video"}, {"id": "demo0006", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "title": "My Full Portfolio Revealed (Every Stock)", "url": "https://www.youtube.com/watch?v=demo0006", "published_at": "2026-09-21T15:00:00Z", "duration_sec": 1140, "thumbnail": "", "status": "ok", "error": null, "analysis": {"summary": "Demo summary for \u201cMy Full Portfolio Revealed (Every Stock)\u201d. The creator walks through recent portfolio decisions, the reasoning behind each, and how they're thinking about the market over the next few months.", "key_points": ["Hold NVDA: Largest position, long-term AI thesis.", "Hold META: Ad business strength.", "Buy AMZN: Cloud plus advertising flywheel.", "Keeps roughly 5% in cash for opportunities."], "category": "Portfolio Update", "sentiment": "bullish", "topics": ["rate cuts", "earnings", "cash position"], "market_view": "Cautiously optimistic; expects volatility around rate decisions.", "stock_moves": [{"ticker": "NVDA", "company": "NVIDIA", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "12% of portfolio", "rationale": "Largest position, long-term AI thesis.", "timestamp": "12:19"}, {"ticker": "META", "company": "Meta Platforms", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "10% of portfolio", "rationale": "Ad business strength.", "timestamp": "8:50"}, {"ticker": "AMZN", "company": "Amazon", "action": "BUY", "is_own_position": true, "timeframe": "this video", "price": "$178", "position_note": "New 5% position", "rationale": "Cloud plus advertising flywheel.", "timestamp": "6:44"}], "portfolio_snapshot": []}, "method": "video"}, {"id": "demo0007", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "title": "Stocks I'll Never Sell", "url": "https://www.youtube.com/watch?v=demo0007", "published_at": "2026-09-05T15:00:00Z", "duration_sec": 960, "thumbnail": "", "status": "ok", "error": null, "analysis": {"summary": "Demo summary for \u201cStocks I'll Never Sell\u201d. The creator walks through recent portfolio decisions, the reasoning behind each, and how they're thinking about the market over the next few months.", "key_points": ["Hold KO: 60+ years of dividend increases.", "Hold VZ: High yield, but watching debt levels.", "Keeps roughly 5% in cash for opportunities."], "category": "Education", "sentiment": "neutral", "topics": ["AI stocks", "earnings", "rebalancing"], "market_view": "Cautiously optimistic; expects volatility around rate decisions.", "stock_moves": [{"ticker": "KO", "company": "Coca-Cola", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "", "rationale": "60+ years of dividend increases.", "timestamp": "17:31"}, {"ticker": "VZ", "company": "Verizon", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "", "rationale": "High yield, but watching debt levels.", "timestamp": "11:46"}], "portfolio_snapshot": []}, "method": "video"}], "moves": [{"ticker": "CRWD", "company": "CrowdStrike", "action": "BUY", "is_own_position": true, "timeframe": "this video", "price": "$312", "position_note": "Starter position, 2%", "rationale": "Sees cybersecurity spending as recession-resistant; plans to build over 3 months.", "timestamp": "12:37", "move_id": "demo0000-2", "video_id": "demo0000", "video_title": "I SOLD Tesla and Bought This Instead | November Portfolio Update", "video_url": "https://www.youtube.com/watch?v=demo0000", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-11-02", "published_at": "2026-11-02T15:00:00Z"}, {"ticker": "NVDA", "company": "NVIDIA", "action": "ADD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Now ~14% of portfolio", "rationale": "Data-center demand still outrunning supply after the latest earnings.", "timestamp": "18:06", "move_id": "demo0000-1", "video_id": "demo0000", "video_title": "I SOLD Tesla and Bought This Instead | November Portfolio Update", "video_url": "https://www.youtube.com/watch?v=demo0000", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-11-02", "published_at": "2026-11-02T15:00:00Z"}, {"ticker": "TSLA", "company": "Tesla", "action": "SELL", "is_own_position": true, "timeframe": "this video", "price": "$248", "position_note": "Closed full position", "rationale": "Thinks the robotaxi timeline is priced in and wants less single-name volatility.", "timestamp": "3:52", "move_id": "demo0000-0", "video_id": "demo0000", "video_title": "I SOLD Tesla and Bought This Instead | November Portfolio Update", "video_url": "https://www.youtube.com/watch?v=demo0000", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-11-02", "published_at": "2026-11-02T15:00:00Z"}, {"ticker": "KO", "company": "Coca-Cola", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "", "rationale": "No change; fairly valued at current levels.", "timestamp": "8:05", "move_id": "demo0001-2", "video_id": "demo0001", "video_title": "3 Dividend Stocks I'm Buying in November", "video_url": "https://www.youtube.com/watch?v=demo0001", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "group": "Dividend Porch (demo)", "date": "2026-10-31", "published_at": "2026-10-31T15:00:00Z"}, {"ticker": "JNJ", "company": "Johnson & Johnson", "action": "BUY", "is_own_position": true, "timeframe": "this video", "price": "$151", "position_note": "New position", "rationale": "Litigation overhang reduced; wants healthcare exposure.", "timestamp": "14:04", "move_id": "demo0001-1", "video_id": "demo0001", "video_title": "3 Dividend Stocks I'm Buying in November", "video_url": "https://www.youtube.com/watch?v=demo0001", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "group": "Dividend Porch (demo)", "date": "2026-10-31", "published_at": "2026-10-31T15:00:00Z"}, {"ticker": "O", "company": "Realty Income", "action": "ADD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Reinvesting dividends + 15 shares", "rationale": "Yield above 5.5% looks attractive if rates keep easing.", "timestamp": "3:27", "move_id": "demo0001-0", "video_id": "demo0001", "video_title": "3 Dividend Stocks I'm Buying in November", "video_url": "https://www.youtube.com/watch?v=demo0001", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "group": "Dividend Porch (demo)", "date": "2026-10-31", "published_at": "2026-10-31T15:00:00Z"}, {"ticker": "MSFT", "company": "Microsoft", "action": "MENTION", "is_own_position": false, "timeframe": "this video", "price": "", "position_note": "", "rationale": "Used as an example of AI monetization through cloud.", "timestamp": "13:03", "move_id": "demo0002-2", "video_id": "demo0002", "video_title": "Is the AI Trade Over? My Honest Take", "video_url": "https://www.youtube.com/watch?v=demo0002", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-10-26", "published_at": "2026-10-26T15:00:00Z"}, {"ticker": "PLTR", "company": "Palantir", "action": "WATCH", "is_own_position": false, "timeframe": "this video", "price": "", "position_note": "", "rationale": "Likes commercial growth but won't buy at current multiple.", "timestamp": "2:36", "move_id": "demo0002-1", "video_id": "demo0002", "video_title": "Is the AI Trade Over? My Honest Take", "video_url": "https://www.youtube.com/watch?v=demo0002", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-10-26", "published_at": "2026-10-26T15:00:00Z"}, {"ticker": "NVDA", "company": "NVIDIA", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "", "rationale": "Keeps core position despite valuation concerns.", "timestamp": "4:14", "move_id": "demo0002-0", "video_id": "demo0002", "video_title": "Is the AI Trade Over? My Honest Take", "video_url": "https://www.youtube.com/watch?v=demo0002", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-10-26", "published_at": "2026-10-26T15:00:00Z"}, {"ticker": "AMZN", "company": "Amazon", "action": "ADD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Added 10 shares", "rationale": "AWS reacceleration and retail margin improvement.", "timestamp": "5:34", "move_id": "demo0003-1", "video_id": "demo0003", "video_title": "Trimming My Biggest Winner (Here's Why)", "video_url": "https://www.youtube.com/watch?v=demo0003", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-10-19", "published_at": "2026-10-19T15:00:00Z"}, {"ticker": "META", "company": "Meta Platforms", "action": "TRIM", "is_own_position": true, "timeframe": "this video", "price": "$585", "position_note": "Sold 1/3, now 7% of portfolio", "rationale": "Position grew too large; taking profits to rebalance.", "timestamp": "10:26", "move_id": "demo0003-0", "video_id": "demo0003", "video_title": "Trimming My Biggest Winner (Here's Why)", "video_url": "https://www.youtube.com/watch?v=demo0003", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-10-19", "published_at": "2026-10-19T15:00:00Z"}, {"ticker": "SCHD", "company": "Schwab US Dividend Equity ETF", "action": "ADD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Automatic biweekly buys", "rationale": "Core holding for diversified dividend growth.", "timestamp": "4:35", "move_id": "demo0004-2", "video_id": "demo0004", "video_title": "October Dividend Income Report \u2014 New Record!", "video_url": "https://www.youtube.com/watch?v=demo0004", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "group": "Dividend Porch (demo)", "date": "2026-10-14", "published_at": "2026-10-14T15:00:00Z"}, {"ticker": "VZ", "company": "Verizon", "action": "SELL", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Exited position", "rationale": "Dividend growth too slow; reallocating to healthcare.", "timestamp": "7:23", "move_id": "demo0004-1", "video_id": "demo0004", "video_title": "October Dividend Income Report \u2014 New Record!", "video_url": "https://www.youtube.com/watch?v=demo0004", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "group": "Dividend Porch (demo)", "date": "2026-10-14", "published_at": "2026-10-14T15:00:00Z"}, {"ticker": "O", "company": "Realty Income", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "Largest holding", "rationale": "Monthly dividend payer anchoring income.", "timestamp": "6:06", "move_id": "demo0004-0", "video_id": "demo0004", "video_title": "October Dividend Income Report \u2014 New Record!", "video_url": "https://www.youtube.com/watch?v=demo0004", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "group": "Dividend Porch (demo)", "date": "2026-10-14", "published_at": "2026-10-14T15:00:00Z"}, {"ticker": "CRWD", "company": "CrowdStrike", "action": "WATCH", "is_own_position": false, "timeframe": "this video", "price": "", "position_note": "", "rationale": "Waiting for a pullback before starting a position.", "timestamp": "18:27", "move_id": "demo0005-1", "video_id": "demo0005", "video_title": "Why I Bought Tesla Again", "video_url": "https://www.youtube.com/watch?v=demo0005", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-10-05", "published_at": "2026-10-05T15:00:00Z"}, {"ticker": "TSLA", "company": "Tesla", "action": "BUY", "is_own_position": true, "timeframe": "this video", "price": "$221", "position_note": "4% position", "rationale": "Energy storage business underappreciated.", "timestamp": "7:31", "move_id": "demo0005-0", "video_id": "demo0005", "video_title": "Why I Bought Tesla Again", "video_url": "https://www.youtube.com/watch?v=demo0005", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-10-05", "published_at": "2026-10-05T15:00:00Z"}, {"ticker": "AMZN", "company": "Amazon", "action": "BUY", "is_own_position": true, "timeframe": "this video", "price": "$178", "position_note": "New 5% position", "rationale": "Cloud plus advertising flywheel.", "timestamp": "6:44", "move_id": "demo0006-2", "video_id": "demo0006", "video_title": "My Full Portfolio Revealed (Every Stock)", "video_url": "https://www.youtube.com/watch?v=demo0006", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-09-21", "published_at": "2026-09-21T15:00:00Z"}, {"ticker": "META", "company": "Meta Platforms", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "10% of portfolio", "rationale": "Ad business strength.", "timestamp": "8:50", "move_id": "demo0006-1", "video_id": "demo0006", "video_title": "My Full Portfolio Revealed (Every Stock)", "video_url": "https://www.youtube.com/watch?v=demo0006", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-09-21", "published_at": "2026-09-21T15:00:00Z"}, {"ticker": "NVDA", "company": "NVIDIA", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "12% of portfolio", "rationale": "Largest position, long-term AI thesis.", "timestamp": "12:19", "move_id": "demo0006-0", "video_id": "demo0006", "video_title": "My Full Portfolio Revealed (Every Stock)", "video_url": "https://www.youtube.com/watch?v=demo0006", "channel_id": "UCdemoA", "channel_title": "Northside Growth Investing (demo)", "group": "Northside Growth Investing (demo)", "date": "2026-09-21", "published_at": "2026-09-21T15:00:00Z"}, {"ticker": "VZ", "company": "Verizon", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "", "rationale": "High yield, but watching debt levels.", "timestamp": "11:46", "move_id": "demo0007-1", "video_id": "demo0007", "video_title": "Stocks I'll Never Sell", "video_url": "https://www.youtube.com/watch?v=demo0007", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "group": "Dividend Porch (demo)", "date": "2026-09-05", "published_at": "2026-09-05T15:00:00Z"}, {"ticker": "KO", "company": "Coca-Cola", "action": "HOLD", "is_own_position": true, "timeframe": "this video", "price": "", "position_note": "", "rationale": "60+ years of dividend increases.", "timestamp": "17:31", "move_id": "demo0007-0", "video_id": "demo0007", "video_title": "Stocks I'll Never Sell", "video_url": "https://www.youtube.com/watch?v=demo0007", "channel_id": "UCdemoB", "channel_title": "Dividend Porch (demo)", "group": "Dividend Porch (demo)", "date": "2026-09-05", "published_at": "2026-09-05T15:00:00Z"}], "tickers": [{"group": "Northside Growth Investing (demo)", "channel_id": "UCdemoA", "channel_ids": ["UCdemoA"], "channel_title": "Northside Growth Investing (demo)", "ticker": "CRWD", "company": "CrowdStrike", "status": "Holding", "last_action": "BUY", "last_date": "2026-11-02", "last_ownership_action": "BUY", "last_ownership_date": "2026-11-02", "first_date": "2026-10-05", "mentions": 2, "counts": {"WATCH": 1, "BUY": 1}}, {"group": "Northside Growth Investing (demo)", "channel_id": "UCdemoA", "channel_ids": ["UCdemoA"], "channel_title": "Northside Growth Investing (demo)", "ticker": "NVDA", "company": "NVIDIA", "status": "Holding", "last_action": "ADD", "last_date": "2026-11-02", "last_ownership_action": "ADD", "last_ownership_date": "2026-11-02", "first_date": "2026-09-21", "mentions": 3, "counts": {"HOLD": 2, "ADD": 1}}, {"group": "Northside Growth Investing (demo)", "channel_id": "UCdemoA", "channel_ids": ["UCdemoA"], "channel_title": "Northside Growth Investing (demo)", "ticker": "TSLA", "company": "Tesla", "status": "Exited", "last_action": "SELL", "last_date": "2026-11-02", "last_ownership_action": "SELL", "last_ownership_date": "2026-11-02", "first_date": "2026-10-05", "mentions": 2, "counts": {"BUY": 1, "SELL": 1}}, {"group": "Dividend Porch (demo)", "channel_id": "UCdemoB", "channel_ids": ["UCdemoB"], "channel_title": "Dividend Porch (demo)", "ticker": "KO", "company": "Coca-Cola", "status": "Holding", "last_action": "HOLD", "last_date": "2026-10-31", "last_ownership_action": "HOLD", "last_ownership_date": "2026-10-31", "first_date": "2026-09-05", "mentions": 2, "counts": {"HOLD": 2}}, {"group": "Dividend Porch (demo)", "channel_id": "UCdemoB", "channel_ids": ["UCdemoB"], "channel_title": "Dividend Porch (demo)", "ticker": "JNJ", "company": "Johnson & Johnson", "status": "Holding", "last_action": "BUY", "last_date": "2026-10-31", "last_ownership_action": "BUY", "last_ownership_date": "2026-10-31", "first_date": "2026-10-31", "mentions": 1, "counts": {"BUY": 1}}, {"group": "Dividend Porch (demo)", "channel_id": "UCdemoB", "channel_ids": ["UCdemoB"], "channel_title": "Dividend Porch (demo)", "ticker": "O", "company": "Realty Income", "status": "Holding", "last_action": "ADD", "last_date": "2026-10-31", "last_ownership_action": "ADD", "last_ownership_date": "2026-10-31", "first_date": "2026-10-14", "mentions": 2, "counts": {"HOLD": 1, "ADD": 1}}, {"group": "Northside Growth Investing (demo)", "channel_id": "UCdemoA", "channel_ids": ["UCdemoA"], "channel_title": "Northside Growth Investing (demo)", "ticker": "MSFT", "company": "Microsoft", "status": "Mentioned", "last_action": "MENTION", "last_date": "2026-10-26", "last_ownership_action": "", "last_ownership_date": "", "first_date": "2026-10-26", "mentions": 1, "counts": {"MENTION": 1}}, {"group": "Northside Growth Investing (demo)", "channel_id": "UCdemoA", "channel_ids": ["UCdemoA"], "channel_title": "Northside Growth Investing (demo)", "ticker": "PLTR", "company": "Palantir", "status": "Watching", "last_action": "WATCH", "last_date": "2026-10-26", "last_ownership_action": "", "last_ownership_date": "", "first_date": "2026-10-26", "mentions": 1, "counts": {"WATCH": 1}}, {"group": "Northside Growth Investing (demo)", "channel_id": "UCdemoA", "channel_ids": ["UCdemoA"], "channel_title": "Northside Growth Investing (demo)", "ticker": "AMZN", "company": "Amazon", "status": "Holding", "last_action": "ADD", "last_date": "2026-10-19", "last_ownership_action": "ADD", "last_ownership_date": "2026-10-19", "first_date": "2026-09-21", "mentions": 2, "counts": {"BUY": 1, "ADD": 1}}, {"group": "Northside Growth Investing (demo)", "channel_id": "UCdemoA", "channel_ids": ["UCdemoA"], "channel_title": "Northside Growth Investing (demo)", "ticker": "META", "company": "Meta Platforms", "status": "Holding (trimmed)", "last_action": "TRIM", "last_date": "2026-10-19", "last_ownership_action": "TRIM", "last_ownership_date": "2026-10-19", "first_date": "2026-09-21", "mentions": 2, "counts": {"HOLD": 1, "TRIM": 1}}, {"group": "Dividend Porch (demo)", "channel_id": "UCdemoB", "channel_ids": ["UCdemoB"], "channel_title": "Dividend Porch (demo)", "ticker": "SCHD", "company": "Schwab US Dividend Equity ETF", "status": "Holding", "last_action": "ADD", "last_date": "2026-10-14", "last_ownership_action": "ADD", "last_ownership_date": "2026-10-14", "first_date": "2026-10-14", "mentions": 1, "counts": {"ADD": 1}}, {"group": "Dividend Porch (demo)", "channel_id": "UCdemoB", "channel_ids": ["UCdemoB"], "channel_title": "Dividend Porch (demo)", "ticker": "VZ", "company": "Verizon", "status": "Exited", "last_action": "SELL", "last_date": "2026-10-14", "last_ownership_action": "SELL", "last_ownership_date": "2026-10-14", "first_date": "2026-09-05", "mentions": 2, "counts": {"HOLD": 1, "SELL": 1}}], "demo": true};
+const ACTIONS = ["BUY","ADD","TRIM","SELL","HOLD","WATCH","MENTION"];
+const COLOR = a => `var(--${a.toLowerCase()})`;
+const S = { tab:"moves", q:"", ch:"", acts:new Set(["BUY","ADD","TRIM","SELL","HOLD","WATCH"]), ownOnly:false,
+            statuses:new Set(), sort:{k:"last_date",d:-1}, cat:"", openVids:new Set() };
+const stc = s => "st-"+String(s).replace(/[^A-Za-z]+/g,"");
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDate = d => d ? new Date(d.length===10 ? d+"T12:00:00Z" : d).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}) : "";
+const ago = d => { const days = Math.round((Date.now()-new Date(d))/864e5); return days<=0?"today":days===1?"yesterday":days<30?days+"d ago":days<365?Math.round(days/30)+"mo ago":Math.round(days/365)+"y ago"; };
+const tsLink = (url, ts) => { if(!ts) return url; const p = ts.split(":").map(Number); if(p.some(isNaN)) return url; const s = p.reduce((a,b)=>a*60+b,0); return url+"&t="+s+"s"; };
+const dur = s => { s=s||0; const h=Math.floor(s/3600), m=Math.round((s%3600)/60); return h? `${h}h ${m}m` : `${m} min`; };
+
+function match(...fields){ if(!S.q) return true; const q=S.q.toLowerCase(); return fields.some(f => String(f||"").toLowerCase().includes(q)); }
+function chOk(id){ return !S.ch || S.ch===id; }
+function tOk(t){ return !S.ch || (t.channel_ids||[t.channel_id]).includes(S.ch); }
+
+/* ── header ── */
+function header(){
+  $("#title").textContent = DATA.title;
+  document.title = DATA.title;
+  const ok = DATA.videos.filter(v=>v.status==="ok");
+  const pend = DATA.videos.filter(v=>v.status!=="ok").length;
+  $("#gen").textContent = `Updated ${fmtDate(DATA.generated_at)} (${ago(DATA.generated_at)})` + (pend? ` · ${pend} video(s) queued or failed` : "");
+  const own = DATA.tickers.filter(t=>t.status.startsWith("Holding")).length;
+  const last = ok[0]?.published_at;
+  $("#stats").innerHTML = [
+    [DATA.channels.length,"channels"],[ok.length,"videos summarized"],
+    [DATA.moves.filter(m=>["BUY","ADD","TRIM","SELL"].includes(m.action)).length,"buy/sell moves"],
+    [own,"tickers held"],[last?ago(last):"—","latest video"]
+  ].map(([b,s])=>`<div class="stat"><b>${esc(b)}</b><span>${s}</span></div>`).join("");
+  const sel = $("#ch");
+  DATA.channels.forEach(c => sel.insertAdjacentHTML("beforeend", `<option value="${esc(c.id)}">${esc(c.title)}</option>`));
+  if (DATA.demo) $("#demo").innerHTML = `<div class="demo"><b>Demo data.</b> The channels, videos and moves below are made up to show the layout. Your real dashboard replaces this after the first run.</div>`;
+}
+
+/* ── moves tab ── */
+function viewMoves(){
+  const ms = DATA.moves.filter(m => chOk(m.channel_id) && S.acts.has(m.action) && (!S.ownOnly || m.is_own_position)
+              && match(m.ticker, m.company, m.rationale, m.video_title, m.channel_title));
+  let h = `<div class="chips">${ACTIONS.map(a=>`<button class="chip ${S.acts.has(a)?"on":""}" data-act="${a}">${a}</button>`).join("")}
+           <label><input type="checkbox" id="own" ${S.ownOnly?"checked":""}> Their own positions only</label></div>`;
+  if(!ms.length) return h + `<div class="panel empty">No moves match these filters.</div>`;
+  // group: date → video
+  const days = new Map();
+  ms.forEach(m => { if(!days.has(m.date)) days.set(m.date,new Map()); const d=days.get(m.date); if(!d.has(m.video_id)) d.set(m.video_id,[]); d.get(m.video_id).push(m); });
+  for (const [day, vids] of days){
+    h += `<div class="day"><div class="dayhead">${fmtDate(day)}</div><div class="panel">`;
+    for (const [, list] of vids){
+      const v = list[0];
+      h += `<div class="vgroup"><div class="vt">${esc(v.channel_title)} · <a href="${esc(v.video_url)}" target="_blank" rel="noopener">${esc(v.video_title)}</a></div>`;
+      list.sort((a,b)=>ACTIONS.indexOf(a.action)-ACTIONS.indexOf(b.action)).forEach(m => {
+        const extra = [m.position_note, m.price && "@ "+m.price, m.timeframe && m.timeframe!=="this video" && m.timeframe].filter(Boolean).join(" · ");
+        h += `<div class="move"><div><span class="pill a-${m.action}">${m.action}</span></div>
+              <div class="tk" data-tk="${esc(m.ticker)}">${esc(m.ticker)}<div class="co">${esc(m.company)}</div></div>
+              <div><div class="why">${esc(m.rationale)}</div>
+              <div class="meta">${extra?esc(extra)+" · ":""}${m.is_own_position?"own position":"not owned"}${m.timestamp?` · <a href="${esc(tsLink(m.video_url,m.timestamp))}" target="_blank" rel="noopener">▶ ${esc(m.timestamp)}</a>`:""}</div></div></div>`;
+      });
+      h += `</div>`;
+    }
+    h += `</div></div>`;
+  }
+  return h;
+}
+
+/* ── stocks tab ── */
+const STATUSES = ["Holding","Holding (trimmed)","Exited","Watching","Mentioned"];
+function viewStocks(){
+  let rows = DATA.tickers.filter(t => tOk(t) && (!S.statuses.size || S.statuses.has(t.status)) && match(t.ticker,t.company,t.channel_title));
+  const {k,d} = S.sort;
+  rows.sort((a,b)=> (a[k]>b[k]?1:a[k]<b[k]?-1:0)*d);
+  const moveIdx = {}; DATA.moves.forEach(m => { const key=m.group+"|"+m.ticker; (moveIdx[key] ||= []).push(m); });
+  const th = (key,label,cls="") => `<th class="${cls}" data-sort="${key}">${label}${S.sort.k===key?(S.sort.d>0?" ▲":" ▼"):""}</th>`;
+  let h = `<div class="chips">${STATUSES.map(s=>`<button class="chip ${S.statuses.has(s)?"on":""}" data-st="${esc(s)}">${s}</button>`).join("")}</div>`;
+  if(!rows.length) return h + `<div class="panel empty">No tickers match.</div>`;
+  const multi = new Set(DATA.tickers.map(t=>t.group)).size>1 && !S.ch;
+  h += `<div class="panel"><table><thead><tr>${th("ticker","Ticker")}${th("status","Status")}${th("last_ownership_action","Last buy/sell")}${th("last_ownership_date","On")}${th("last_date","Last discussed")}${th("mentions","Mentions","hide-sm")}<th class="hide-sm">History (old → new)</th>${multi?th("channel_title","Source","hide-sm"):""}</tr></thead><tbody>`;
+  rows.forEach(t => {
+    const hist = (moveIdx[t.group+"|"+t.ticker]||[]).slice().reverse().slice(-16);
+    h += `<tr data-tk="${esc(t.ticker)}"><td><b>${esc(t.ticker)}</b><div class="co">${esc(t.company)}</div></td>
+      <td><span class="st ${stc(t.status)}">${esc(t.status)}</span></td>
+      <td>${t.last_ownership_action?`<span class="pill a-${t.last_ownership_action}">${t.last_ownership_action}</span>`:"<span class='co'>—</span>"}</td>
+      <td class="num">${fmtDate(t.last_ownership_date)}</td><td class="num">${fmtDate(t.last_date)}</td>
+      <td class="num hide-sm">${t.mentions}</td>
+      <td class="hide-sm"><div class="dots">${hist.map(m=>`<span class="dot" title="${m.date} ${m.action}" style="background:${COLOR(m.action)}"></span>`).join("")}</div></td>
+      ${multi?`<td class="hide-sm co">${esc(t.channel_title)}</td>`:""}</tr>`;
+  });
+  return h + `</tbody></table></div>`;
+}
+
+/* ── videos tab ── */
+function viewVideos(){
+  const cats = [...new Set(DATA.videos.filter(v=>v.analysis).map(v=>v.analysis.category))].sort();
+  const vs = DATA.videos.filter(v => chOk(v.channel_id) && (!S.cat || v.analysis?.category===S.cat) &&
+      match(v.title, v.channel_title, v.analysis?.summary, (v.analysis?.key_points||[]).join(" "), (v.analysis?.topics||[]).join(" "), (v.analysis?.stock_moves||[]).map(m=>m.ticker+" "+m.company).join(" ")));
+  let h = `<div class="chips"><button class="chip ${!S.cat?"on":""}" data-cat="">All categories</button>${cats.map(c=>`<button class="chip ${S.cat===c?"on":""}" data-cat="${esc(c)}">${esc(c)}</button>`).join("")}</div>`;
+  if(!vs.length) return h + `<div class="panel empty">No videos match.</div>`;
+  h += `<div class="cards">`;
+  vs.forEach(v => {
+    const a = v.analysis, open = S.openVids.has(v.id);
+    h += `<article class="panel card"><a href="${esc(v.url)}" target="_blank" rel="noopener">${v.thumbnail?`<img loading="lazy" src="${esc(v.thumbnail)}" alt="">`:`<div class="thumb"></div>`}</a><div>
+      <div class="co">${esc(v.channel_title)} · ${fmtDate(v.published_at)} · ${dur(v.duration_sec)}${a?" · "+esc(a.category):""}${a&&a.sentiment?" · "+esc(a.sentiment):""}</div>
+      <h3><a href="${esc(v.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(v.title)}</a></h3>`;
+    if (!a){ h += v.status==="error" ? `<div class="err">Couldn't analyse: ${esc((v.error||"").slice(0,180))}</div>` : `<div class="co">Queued for analysis.</div>`; }
+    else {
+      h += `<p>${esc(a.summary)}</p>`;
+      if (open){
+        h += `<ul>${(a.key_points||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul>`;
+        if (a.market_view) h += `<p><b>Market view:</b> ${esc(a.market_view)}</p>`;
+        if ((a.portfolio_snapshot||[]).length) h += `<p><b>Portfolio shown:</b> ${a.portfolio_snapshot.map(p=>esc(p.ticker)+(p.weight_pct!=null?` ${p.weight_pct}%`:"")).join(", ")}</p>`;
+      }
+      h += `<div>${(a.topics||[]).map(t=>`<span class="tag" data-q="${esc(t)}">${esc(t)}</span>`).join("")}</div>`;
+      if ((a.stock_moves||[]).length) h += `<div class="minipills">${a.stock_moves.map(m=>`<span class="mp" data-tk="${esc(m.ticker)}" style="background:${COLOR(m.action)}" title="${esc(m.action+": "+m.rationale)}">${esc(m.action)} ${esc(m.ticker)}</span>`).join("")}</div>`;
+      h += `<button class="more" data-vid="${esc(v.id)}">${open?"Show less":"Key points & details"}</button>`;
+    }
+    h += `</div></article>`;
+  });
+  return h + `</div>`;
+}
+
+/* ── channels tab ── */
+function viewChannels(){
+  if(!DATA.channels.length) return `<div class="panel empty">No channels yet. Add some to channels.yaml.</div>`;
+  return `<div class="chcards">` + DATA.channels.map(c => {
+    const vs = DATA.videos.filter(v=>v.channel_id===c.id), ok = vs.filter(v=>v.status==="ok");
+    const tk = DATA.tickers.filter(t=>(t.channel_ids||[]).includes(c.id));
+    return `<div class="panel chc"><h3>${esc(c.title)}</h3><div class="co">${esc(c.handle||"")} · ${esc(c.profile)} profile</div><div style="margin-top:10px">
+      <div class="kv"><span>Videos summarized</span><b>${ok.length}</b></div>
+      <div class="kv"><span>Queued / failed</span><b>${vs.length-ok.length}</b></div>
+      <div class="kv"><span>Latest video</span><b>${ok[0]?fmtDate(ok[0].published_at):"—"}</b></div>
+      <div class="kv"><span>Tickers held</span><b>${tk.filter(t=>t.status.startsWith("Holding")).length}</b></div>
+      <div class="kv"><span>Tickers exited</span><b>${tk.filter(t=>t.status==="Exited").length}</b></div>
+      <div class="kv"><span>Subscribers</span><b>${c.subscribers?Number(c.subscribers).toLocaleString():"—"}</b></div></div>
+      <button class="more" style="margin-top:8px" data-gochan="${esc(c.id)}">See this channel's moves →</button></div>`;
+  }).join("") + `</div>`;
+}
+
+/* ── ticker drawer ── */
+function openTicker(tk){
+  const ms = DATA.moves.filter(m => m.ticker===tk && chOk(m.channel_id));
+  const rows = DATA.tickers.filter(t => t.ticker===tk && tOk(t));
+  const co = rows[0]?.company || ms[0]?.company || "";
+  $("#drawer").innerHTML = `<div class="dh"><div><h2>${esc(tk)}</h2><div class="co">${esc(co)}</div>
+     <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap">${rows.map(r=>`<span class="st ${stc(r.status)}">${esc(r.status)}${new Set(DATA.tickers.map(t=>t.group)).size>1?" · "+esc(r.group):""}</span>`).join("")}</div></div>
+     <button class="iconbtn" id="dclose">✕</button></div>
+     <div class="db"><div class="co" style="margin-bottom:12px">${ms.length} mention(s), newest first</div><div class="tl">` +
+     ms.map(m=>`<div class="tli" style="--c:${COLOR(m.action)}"><div><span class="pill a-${m.action}">${m.action}</span> <span class="co">${fmtDate(m.date)} · ${esc(m.channel_title)}</span></div>
+        <div style="margin-top:4px">${esc(m.rationale)}</div>
+        <div class="meta">${[m.position_note, m.price&&"@ "+m.price].filter(Boolean).map(esc).join(" · ")}</div>
+        <div class="meta"><a href="${esc(tsLink(m.video_url,m.timestamp))}" target="_blank" rel="noopener">${esc(m.video_title)}${m.timestamp?" ▶ "+esc(m.timestamp):""}</a></div></div>`).join("") +
+     `</div></div>`;
+  $("#drawer").classList.add("open"); $("#dbg").classList.add("open");
+  $("#dclose").onclick = closeDrawer;
+  history.replaceState(null,"",`#${S.tab}/${encodeURIComponent(tk)}`);
+}
+function closeDrawer(){ $("#drawer").classList.remove("open"); $("#dbg").classList.remove("open"); history.replaceState(null,"",`#${S.tab}`); }
+
+/* ── render + events ── */
+function render(){
+  document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("on", b.dataset.tab===S.tab));
+  $("#view").innerHTML = ({moves:viewMoves, stocks:viewStocks, videos:viewVideos, channels:viewChannels})[S.tab]();
+}
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-tab],[data-act],[data-st],[data-sort],[data-tk],[data-cat],[data-vid],[data-q],[data-gochan]");
+  if(!t) return;
+  const d = t.dataset;
+  if (d.tab){ S.tab=d.tab; history.replaceState(null,"","#"+S.tab); }
+  else if (d.act){ S.acts.has(d.act)?S.acts.delete(d.act):S.acts.add(d.act); }
+  else if (d.st){ S.statuses.has(d.st)?S.statuses.delete(d.st):S.statuses.add(d.st); }
+  else if (d.sort){ S.sort = {k:d.sort, d: S.sort.k===d.sort ? -S.sort.d : (d.sort==="ticker"||d.sort==="channel_title"?1:-1)}; }
+  else if (d.tk){ return openTicker(d.tk); }
+  else if (d.cat!==undefined){ S.cat=d.cat; }
+  else if (d.vid){ S.openVids.has(d.vid)?S.openVids.delete(d.vid):S.openVids.add(d.vid); }
+  else if (d.q){ S.q=d.q; $("#q").value=d.q; }
+  else if (d.gochan){ S.ch=d.gochan; $("#ch").value=d.gochan; S.tab="moves"; }
+  render();
+});
+document.addEventListener("change", e => { if(e.target.id==="own"){ S.ownOnly=e.target.checked; render(); } });
+let qt; $("#q").addEventListener("input", e => { clearTimeout(qt); qt=setTimeout(()=>{ S.q=e.target.value.trim(); render(); },120); });
+$("#ch").addEventListener("change", e => { S.ch=e.target.value; render(); });
+$("#dbg").addEventListener("click", closeDrawer);
+document.addEventListener("keydown", e => { if(e.key==="Escape") closeDrawer(); if(e.key==="/" && document.activeElement!==$("#q")){ e.preventDefault(); $("#q").focus(); } });
+$("#theme").onclick = () => { const r=document.documentElement; const dark = r.dataset.theme ? r.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches; r.dataset.theme = dark?"light":"dark"; try{localStorage.setItem("ytt-theme",r.dataset.theme)}catch(_){} };
+try{ const t=localStorage.getItem("ytt-theme"); if(t) document.documentElement.dataset.theme=t; }catch(_){}
+$("#csv").onclick = () => {
+  const cols=["date","channel_title","ticker","company","action","is_own_position","price","position_note","timeframe","rationale","video_title","video_url","timestamp"];
+  const q = v => `"${String(v??"").replace(/"/g,'""')}"`;
+  const csv = [cols.join(","), ...DATA.moves.map(m=>cols.map(c=>q(m[c])).join(","))].join("\n");
+  const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"})); a.download="stock_moves.csv"; a.click();
+};
+
+header();
+const [tab, tk] = location.hash.slice(1).split("/");
+if (["moves","stocks","videos","channels"].includes(tab)) S.tab = tab;
+render();
+if (tk) openTicker(decodeURIComponent(tk));
+</script>
+</body>
+</html>
