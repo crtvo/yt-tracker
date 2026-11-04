@@ -9,7 +9,7 @@
 :root{
   --bg:#f7f7f5; --panel:#fff; --ink:#16181d; --ink2:#4a4f5a; --mute:#868b95; --line:#e6e6e2; --hover:#f1f1ee;
   --accent:#2f5bd3; --accent-soft:#e8eefc;
-  --buy:#0e7a3e; --add:#3a9a5f; --trim:#b56d00; --sell:#bf2a20; --hold:#5b6270; --watch:#2f5bd3; --mention:#9aa0a9;
+  --buy:#0e7a3e; --add:#3a9a5f; --accumulate:#6aa884; --trim:#b56d00; --sell:#bf2a20; --hold:#5b6270; --watch:#2f5bd3; --mention:#9aa0a9;
   --radius:10px; --shadow:0 1px 2px rgba(16,24,40,.05);
   font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -37,14 +37,14 @@ input[type=search]{min-width:240px;flex:1;max-width:360px}
 .chip{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink2);border-radius:999px;padding:3px 10px;cursor:pointer}
 .chip.on{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
 .chips label{font-size:12.5px;color:var(--ink2);display:flex;gap:5px;align-items:center;margin-left:6px}
-.pill{display:inline-block;min-width:58px;text-align:center;padding:2px 7px;border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.03em;color:#fff}
+.pill{display:inline-block;min-width:66px;text-align:center;padding:2px 7px;border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.03em;color:#fff}
 .a-BUY{background:var(--buy)} .a-ADD{background:var(--add)} .a-TRIM{background:var(--trim)} .a-SELL{background:var(--sell)}
-.a-HOLD{background:var(--hold)} .a-WATCH{background:var(--watch)} .a-MENTION{background:var(--mention)}
+.a-ACCUMULATE{background:var(--accumulate)} .a-HOLD{background:var(--hold)} .a-WATCH{background:var(--watch)} .a-MENTION{background:var(--mention)}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
 .day{margin-bottom:18px} .dayhead{font-size:12px;font-weight:600;color:var(--mute);text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px 2px}
 .vgroup{padding:10px 14px;border-bottom:1px solid var(--line)} .vgroup:last-child{border-bottom:0}
 .vgroup .vt{font-size:12.5px;color:var(--mute);margin-bottom:6px}
-.move{display:grid;grid-template-columns:72px 88px 1fr;gap:10px;padding:6px 0;align-items:start}
+.move{display:grid;grid-template-columns:78px 88px 1fr;gap:10px;padding:6px 0;align-items:start}
 .tk{font-weight:700;cursor:pointer} .tk:hover{color:var(--accent)} .co{font-size:11.5px;color:var(--mute);font-weight:400}
 .why{color:var(--ink2)} .meta{font-size:12px;color:var(--mute);margin-top:2px}
 table{width:100%;border-collapse:collapse}
@@ -56,6 +56,7 @@ tbody tr{cursor:pointer} tbody tr:hover{background:var(--hover)}
 .st-Holdingtrimmed{color:var(--trim);background:color-mix(in srgb,var(--trim) 12%,transparent)}
 .st-Exited{color:var(--sell);background:color-mix(in srgb,var(--sell) 12%,transparent)}
 .st-Watching{color:var(--watch);background:color-mix(in srgb,var(--watch) 12%,transparent)}
+.st-Holdingadding{color:var(--add);background:color-mix(in srgb,var(--add) 14%,transparent)}
 .st-Mentioned{color:var(--mute);background:var(--hover)}
 .dots{display:flex;gap:3px;align-items:center} .dot{width:9px;height:9px;border-radius:50%}
 .num{font-variant-numeric:tabular-nums;color:var(--ink2)}
@@ -112,9 +113,10 @@ tbody tr{cursor:pointer} tbody tr:hover{background:var(--hover)}
 
 <script>
 const DATA = /*__DATA__*/null;
-const ACTIONS = ["BUY","ADD","TRIM","SELL","HOLD","WATCH","MENTION"];
+const ACTIONS = ["BUY","ADD","ACCUMULATE","TRIM","SELL","HOLD","WATCH","MENTION"];
+const LBL = a => a==="ACCUMULATE" ? "HOLD/ADD" : a;
 const COLOR = a => `var(--${a.toLowerCase()})`;
-const S = { tab:"moves", q:"", ch:"", acts:new Set(["BUY","ADD","TRIM","SELL","HOLD","WATCH"]), ownOnly:false,
+const S = { tab:"moves", q:"", ch:"", acts:new Set(["BUY","ADD","ACCUMULATE","TRIM","SELL","HOLD","WATCH"]), ownOnly:false,
             statuses:new Set(), sort:{k:"last_date",d:-1}, cat:"", openVids:new Set() };
 const stc = s => "st-"+String(s).replace(/[^A-Za-z]+/g,"");
 const $ = s => document.querySelector(s);
@@ -151,7 +153,7 @@ function header(){
 function viewMoves(){
   const ms = DATA.moves.filter(m => chOk(m.channel_id) && S.acts.has(m.action) && (!S.ownOnly || m.is_own_position)
               && match(m.ticker, m.company, m.rationale, m.video_title, m.channel_title));
-  let h = `<div class="chips">${ACTIONS.map(a=>`<button class="chip ${S.acts.has(a)?"on":""}" data-act="${a}">${a}</button>`).join("")}
+  let h = `<div class="chips">${ACTIONS.map(a=>`<button class="chip ${S.acts.has(a)?"on":""}" data-act="${a}">${LBL(a)}</button>`).join("")}
            <label><input type="checkbox" id="own" ${S.ownOnly?"checked":""}> Their own positions only</label></div>`;
   if(!ms.length) return h + `<div class="panel empty">No moves match these filters.</div>`;
   // group: date → video
@@ -164,7 +166,7 @@ function viewMoves(){
       h += `<div class="vgroup"><div class="vt">${esc(v.channel_title)} · <a href="${esc(v.video_url)}" target="_blank" rel="noopener">${esc(v.video_title)}</a></div>`;
       list.sort((a,b)=>ACTIONS.indexOf(a.action)-ACTIONS.indexOf(b.action)).forEach(m => {
         const extra = [m.position_note, m.price && "@ "+m.price, m.timeframe && m.timeframe!=="this video" && m.timeframe].filter(Boolean).join(" · ");
-        h += `<div class="move"><div><span class="pill a-${m.action}">${m.action}</span></div>
+        h += `<div class="move"><div><span class="pill a-${m.action}">${LBL(m.action)}</span></div>
               <div class="tk" data-tk="${esc(m.ticker)}">${esc(m.ticker)}<div class="co">${esc(m.company)}</div></div>
               <div><div class="why">${esc(m.rationale)}</div>
               <div class="meta">${extra?esc(extra)+" · ":""}${m.is_own_position?"own position":"not owned"}${m.timestamp?` · <a href="${esc(tsLink(m.video_url,m.timestamp))}" target="_blank" rel="noopener">▶ ${esc(m.timestamp)}</a>`:""}</div></div></div>`;
@@ -177,7 +179,7 @@ function viewMoves(){
 }
 
 /* ── stocks tab ── */
-const STATUSES = ["Holding","Holding (trimmed)","Exited","Watching","Mentioned"];
+const STATUSES = ["Holding","Holding (adding)","Holding (trimmed)","Exited","Watching","Mentioned"];
 function viewStocks(){
   let rows = DATA.tickers.filter(t => tOk(t) && (!S.statuses.size || S.statuses.has(t.status)) && match(t.ticker,t.company,t.channel_title));
   const {k,d} = S.sort;
@@ -192,10 +194,10 @@ function viewStocks(){
     const hist = (moveIdx[t.group+"|"+t.ticker]||[]).slice().reverse().slice(-16);
     h += `<tr data-tk="${esc(t.ticker)}"><td><b>${esc(t.ticker)}</b><div class="co">${esc(t.company)}</div></td>
       <td><span class="st ${stc(t.status)}">${esc(t.status)}</span></td>
-      <td>${t.last_trade_action?`<span class="pill a-${t.last_trade_action}">${t.last_trade_action}</span>`:"<span class='co'>—</span>"}</td>
+      <td>${t.last_trade_action?`<span class="pill a-${t.last_trade_action}">${LBL(t.last_trade_action)}</span>`:"<span class='co'>—</span>"}</td>
       <td class="num">${fmtDate(t.last_trade_date)}</td><td class="num">${fmtDate(t.last_date)}</td>
       <td class="num hide-sm">${t.mentions}</td>
-      <td class="hide-sm"><div class="dots">${hist.map(m=>`<span class="dot" title="${m.date} ${m.action}" style="background:${COLOR(m.action)}"></span>`).join("")}</div></td>
+      <td class="hide-sm"><div class="dots">${hist.map(m=>`<span class="dot" title="${m.date} ${LBL(m.action)}" style="background:${COLOR(m.action)}"></span>`).join("")}</div></td>
       ${multi?`<td class="hide-sm co">${esc(t.channel_title)}</td>`:""}</tr>`;
   });
   return h + `</tbody></table></div>`;
@@ -223,7 +225,7 @@ function viewVideos(){
         if ((a.portfolio_snapshot||[]).length) h += `<p><b>Portfolio shown:</b> ${a.portfolio_snapshot.map(p=>esc(p.ticker)+(p.weight_pct!=null?` ${p.weight_pct}%`:"")).join(", ")}</p>`;
       }
       h += `<div>${(a.topics||[]).map(t=>`<span class="tag" data-q="${esc(t)}">${esc(t)}</span>`).join("")}</div>`;
-      if ((a.stock_moves||[]).length) h += `<div class="minipills">${a.stock_moves.map(m=>`<span class="mp" data-tk="${esc(m.ticker)}" style="background:${COLOR(m.action)}" title="${esc(m.action+": "+m.rationale)}">${esc(m.action)} ${esc(m.ticker)}</span>`).join("")}</div>`;
+      if ((a.stock_moves||[]).length) h += `<div class="minipills">${a.stock_moves.map(m=>`<span class="mp" data-tk="${esc(m.ticker)}" style="background:${COLOR(m.action)}" title="${esc(LBL(m.action)+": "+m.rationale)}">${esc(LBL(m.action))} ${esc(m.ticker)}</span>`).join("")}</div>`;
       h += `<button class="more" data-vid="${esc(v.id)}">${open?"Show less":"Key points & details"}</button>`;
     }
     h += `</div></article>`;
@@ -257,7 +259,7 @@ function openTicker(tk){
      <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap">${rows.map(r=>`<span class="st ${stc(r.status)}">${esc(r.status)}${new Set(DATA.tickers.map(t=>t.group)).size>1?" · "+esc(r.group):""}</span>`).join("")}</div></div>
      <button class="iconbtn" id="dclose">✕</button></div>
      <div class="db"><div class="co" style="margin-bottom:12px">${ms.length} mention(s), newest first</div><div class="tl">` +
-     ms.map(m=>`<div class="tli" style="--c:${COLOR(m.action)}"><div><span class="pill a-${m.action}">${m.action}</span> <span class="co">${fmtDate(m.date)} · ${esc(m.channel_title)}</span></div>
+     ms.map(m=>`<div class="tli" style="--c:${COLOR(m.action)}"><div><span class="pill a-${m.action}">${LBL(m.action)}</span> <span class="co">${fmtDate(m.date)} · ${esc(m.channel_title)}</span></div>
         <div style="margin-top:4px">${esc(m.rationale)}</div>
         <div class="meta">${[m.position_note, m.price&&"@ "+m.price].filter(Boolean).map(esc).join(" · ")}</div>
         <div class="meta"><a href="${esc(tsLink(m.video_url,m.timestamp))}" target="_blank" rel="noopener">${esc(m.video_title)}${m.timestamp?" ▶ "+esc(m.timestamp):""}</a></div></div>`).join("") +

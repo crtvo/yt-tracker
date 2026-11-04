@@ -136,6 +136,10 @@ def test_positions():
     assert rows["BBB"]["status"] == "Exited"
     assert rows["CCC"]["status"] == "Watching"
 
+    acc = ticker_summaries([{**base, "ticker": "DDD", "action": "ADD", "date": "2026-01-01", "published_at": "2026-01-01"},
+                            {**base, "ticker": "DDD", "action": "ACCUMULATE", "date": "2026-02-01", "published_at": "2026-02-01"}])[0]
+    assert acc["status"] == "Holding (adding)" and acc["last_trade_action"] == "ACCUMULATE"
+
 
 def test_grouped_channels():
     """Two channels from the same person → one combined position per ticker."""

@@ -22,7 +22,7 @@ CATEGORIES = [
     "Portfolio Update", "Buy/Sell Decision", "Stock Deep Dive", "Earnings Reaction",
     "Market Commentary", "Watchlist", "Education", "News", "Q&A / Livestream", "Other",
 ]
-ACTIONS = ["BUY", "ADD", "TRIM", "SELL", "HOLD", "WATCH", "MENTION"]
+ACTIONS = ["BUY", "ADD", "ACCUMULATE", "TRIM", "SELL", "HOLD", "WATCH", "MENTION"]
 
 # OpenAPI-style schema accepted by Gemini's responseSchema.
 SCHEMA = {

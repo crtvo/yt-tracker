@@ -6,9 +6,10 @@ from collections import defaultdict
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-TRADE_ACTIONS = {"BUY", "ADD", "TRIM", "SELL"}
+# ACCUMULATE counts here so "still adding" shows up in the Last trade column.
+TRADE_ACTIONS = {"BUY", "ADD", "ACCUMULATE", "TRIM", "SELL"}
 
-OWNERSHIP_ACTIONS = {"BUY", "ADD", "TRIM", "SELL", "HOLD"}
+OWNERSHIP_ACTIONS = {"BUY", "ADD", "ACCUMULATE", "TRIM", "SELL", "HOLD"}
 
 def local_date(iso: str, tz: str | None) -> str:
     """YouTube timestamps are UTC; show the date as it was where you live."""
@@ -23,6 +24,7 @@ def local_date(iso: str, tz: str | None) -> str:
 STATUS_FROM_ACTION = {
     "BUY": "Holding",
     "ADD": "Holding",
+    "ACCUMULATE": "Holding (adding)",
     "HOLD": "Holding",
     "TRIM": "Holding (trimmed)",
     "SELL": "Exited",

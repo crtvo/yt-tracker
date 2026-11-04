@@ -29,6 +29,7 @@ SCRIPT = [
         ("TSLA", "Tesla", "SELL", True, "Closed full position", "$248", "Thinks the robotaxi timeline is priced in and wants less single-name volatility."),
         ("NVDA", "NVIDIA", "ADD", True, "Now ~14% of portfolio", "", "Data-center demand still outrunning supply after the latest earnings."),
         ("CRWD", "CrowdStrike", "BUY", True, "Starter position, 2%", "$312", "Sees cybersecurity spending as recession-resistant; plans to build over 3 months."),
+        ("AMZN", "Amazon", "ACCUMULATE", True, "Says he's in 'acquisition mode' on Amazon", "", "Keeps adding on every dip while retail margins improve."),
     ]),
     (4, "UCdemoB", "3 Dividend Stocks I'm Buying in November", "Buy/Sell Decision", "neutral", [
         ("O", "Realty Income", "ADD", True, "Reinvesting dividends + 15 shares", "", "Yield above 5.5% looks attractive if rates keep easing."),

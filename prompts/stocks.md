@@ -15,6 +15,7 @@ Watch the whole video and return JSON that matches the schema. Rules:
      - BUY = opened a new position · ADD = bought more of an existing position
      - TRIM = sold part · SELL = sold the whole position
      - HOLD = owns it and is explicitly keeping it unchanged
+     - ACCUMULATE = already owns it and says they are actively adding / still buying, but without a specific new trade in this video ("I'm in acquisition mode", "I keep adding every week", "I'm buying more of this")
      - WATCH = on their watchlist / considering buying
      - MENTION = discussed but no position or intent stated
    - `is_own_position`: true only if the creator says they own (or just bought/sold) it.
@@ -31,7 +32,7 @@ Watch the whole video and return JSON that matches the schema. Rules:
 
 General rules for tricky videos:
 - **Reaction videos:** if the creator is reacting to a clip (news, CNBC, another YouTuber), only log moves and opinions that are THE CREATOR'S OWN. A stock pitched by someone in the clip is a MENTION unless the creator says they own it, bought it or sold it. Say in the summary whose content they are reacting to.
-- **Recaps aren't new trades:** only use BUY/ADD/TRIM/SELL for a trade made recently (in this video or since their last one). If they're recapping earlier buying ("I've been loading up", "I'm in acquisition mode", "I bought a lot last month"), use HOLD and put the recap in `position_note`.
+- **Confirmed trade vs. ongoing buying:** use BUY/ADD/TRIM/SELL for a specific trade made recently (in this video or since their last one), ideally with shares, dollars or price. If they own it and say they're actively adding or still buying without describing a specific new trade ("I'm in acquisition mode", "I keep adding"), use ACCUMULATE. If they only recap past buying with no sign they're still adding, use HOLD. Put the detail in `position_note`.
 - **Conditional plans** ("I'll sell if it doubles", "I'd buy under $50") are not moves. Use HOLD (if owned) or WATCH (if not), and put the condition in `position_note`.
 - **Hedges** (inverse or leveraged ETFs, puts) are logged as their own ticker. Start `position_note` with "Hedge:".
 - **Dollar amounts and account values** ("spent $100k this week", "portfolio hit $5M") go in `position_note` for the move, or in `market_view` if they describe the whole portfolio.

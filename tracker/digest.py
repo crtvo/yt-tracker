@@ -22,10 +22,11 @@ from . import DATA_DIR
 from .positions import flatten_moves, local_date
 
 ACTION_COLORS = {
-    "BUY": "#0a7d3b", "ADD": "#2e9e5b", "TRIM": "#b86e00", "SELL": "#b42318",
+    "BUY": "#0a7d3b", "ADD": "#2e9e5b", "ACCUMULATE": "#5fae7f", "TRIM": "#b86e00", "SELL": "#b42318",
     "HOLD": "#475467", "WATCH": "#3758c4", "MENTION": "#98a2b3",
 }
-ORDER = ["BUY", "ADD", "SELL", "TRIM", "HOLD", "WATCH", "MENTION"]
+ORDER = ["BUY", "ADD", "ACCUMULATE", "SELL", "TRIM", "HOLD", "WATCH", "MENTION"]
+LABEL = {"ACCUMULATE": "HOLD/ADD"}
 
 
 def _e(s) -> str:
@@ -37,7 +38,7 @@ def build_digest(store, days: int = 7, title: str = "YouTube Channel Intelligenc
     vids = [v for v in store.videos.values() if v.get("status") == "ok" and v["published_at"] >= since[:19]]
     vids.sort(key=lambda v: v["published_at"], reverse=True)
     moves = flatten_moves({v["id"]: v for v in vids}, tz=tz)
-    key_moves = [m for m in moves if m["action"] in ("BUY", "ADD", "SELL", "TRIM")]
+    key_moves = [m for m in moves if m["action"] in ("BUY", "ADD", "ACCUMULATE", "SELL", "TRIM")]
     key_moves.sort(key=lambda m: (ORDER.index(m["action"]), m["published_at"]))
 
     dash = os.environ.get("DASHBOARD_URL", "")
@@ -47,7 +48,7 @@ def build_digest(store, days: int = 7, title: str = "YouTube Channel Intelligenc
 
     def pill(a):
         return (f'<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;'
-                f'font-weight:600;color:#fff;background:{ACTION_COLORS.get(a, "#667085")}">{a}</span>')
+                f'font-weight:600;color:#fff;background:{ACTION_COLORS.get(a, "#667085")}">{LABEL.get(a, a)}</span>')
 
     rows = "".join(
         f'<tr><td style="padding:8px 6px;border-bottom:1px solid #eaecf0;white-space:nowrap">{pill(m["action"])}</td>'
