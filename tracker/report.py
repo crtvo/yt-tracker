@@ -10,10 +10,10 @@ from .positions import flatten_moves, ticker_summaries
 from .store import now_iso
 
 
-def build_payload(store, title: str) -> dict:
+def build_payload(store, title: str, tz: str | None = None) -> dict:
     videos = sorted(store.videos.values(), key=lambda v: v.get("published_at", ""), reverse=True)
     groups = {cid: c.get("group") or c.get("title") for cid, c in store.channels.items()}
-    moves = flatten_moves(store.videos, groups)
+    moves = flatten_moves(store.videos, groups, tz)
     return {
         "title": title,
         "generated_at": now_iso(),
@@ -28,8 +28,8 @@ def build_payload(store, title: str) -> dict:
     }
 
 
-def write_report(store, title: str) -> dict:
-    payload = build_payload(store, title)
+def write_report(store, title: str, tz: str | None = None) -> dict:
+    payload = build_payload(store, title, tz)
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
     data = json.dumps(payload, ensure_ascii=False)

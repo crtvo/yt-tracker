@@ -31,8 +31,8 @@ Watch the whole video and return JSON that matches the schema. Rules:
 
 General rules for tricky videos:
 - **Reaction videos:** if the creator is reacting to a clip (news, CNBC, another YouTuber), only log moves and opinions that are THE CREATOR'S OWN. A stock pitched by someone in the clip is a MENTION unless the creator says they own it, bought it or sold it. Say in the summary whose content they are reacting to.
+- **Recaps aren't new trades:** only use BUY/ADD/TRIM/SELL for a trade made recently (in this video or since their last one). If they're recapping earlier buying ("I've been loading up", "I'm in acquisition mode", "I bought a lot last month"), use HOLD and put the recap in `position_note`.
 - **Conditional plans** ("I'll sell if it doubles", "I'd buy under $50") are not moves. Use HOLD (if owned) or WATCH (if not), and put the condition in `position_note`.
 - **Hedges** (inverse or leveraged ETFs, puts) are logged as their own ticker. Start `position_note` with "Hedge:".
 - **Dollar amounts and account values** ("spent $100k this week", "portfolio hit $5M") go in `position_note` for the move, or in `market_view` if they describe the whole portfolio.
 - Ignore promotions for paid groups, courses, software or sponsors. Don't log them as key points.
-

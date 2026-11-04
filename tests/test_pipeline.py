@@ -95,6 +95,34 @@ def test_full_run():
         shutil.rmtree(tmp)
 
 
+def test_busy_model_is_retried_without_using_attempts():
+    from tracker.gemini import GeminiBusy
+    tmp = Path(tempfile.mkdtemp())
+    try:
+        (tmp / "data").mkdir()
+        cfg = tmp / "channels.yaml"
+        cfg.write_text("channels:\n  - handle: '@testinv'\n    profile: stocks\n")
+        with mock.patch.object(store_mod, "DATA_DIR", tmp / "data"), \
+             mock.patch.object(report_mod, "DOCS_DIR", tmp / "docs"), \
+             mock.patch("tracker.config.load_config.__defaults__", (cfg,)), \
+             mock.patch("tracker.youtube._get", side_effect=fake_get), \
+             mock.patch("tracker.gemini._call", side_effect=GeminiBusy("Gemini 503 (model busy)")):
+            from tracker.__main__ import main
+            assert main(["run", "--sleep", "0"]) == 0
+            vids = json.loads((tmp / "data" / "videos.json").read_text())
+            assert vids["v0"]["status"] == "pending" and vids["v0"]["attempts"] == 0
+            assert "busy" in vids["v0"]["error"]
+    finally:
+        shutil.rmtree(tmp)
+
+
+def test_local_dates():
+    from tracker.positions import local_date
+    # 9pm Central on Nov 3 is already Nov 4 in UTC
+    assert local_date("2026-11-04T03:00:00Z", "America/Chicago") == "2026-11-03"
+    assert local_date("2026-11-04T03:00:00Z", None) == "2026-11-04"
+
+
 def test_positions():
     from tracker.positions import ticker_summaries
     base = {"channel_id": "c", "channel_title": "C", "company": "X", "is_own_position": True}
@@ -125,5 +153,7 @@ def test_grouped_channels():
 if __name__ == "__main__":
     test_positions()
     test_grouped_channels()
+    test_local_dates()
+    test_busy_model_is_retried_without_using_attempts()
     test_full_run()
     print("all tests passed")

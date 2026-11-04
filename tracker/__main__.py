@@ -26,7 +26,7 @@ def log(*a):
 
 
 def cmd_run(args) -> int:
-    from .gemini import GeminiError, QuotaExhausted, analyze_video
+    from .gemini import GeminiBusy, GeminiError, QuotaExhausted, analyze_video
     from .report import write_report
     from .youtube import YouTubeError, backfill_cutoff, list_recent_videos, resolve_channel
 
@@ -71,7 +71,7 @@ def cmd_run(args) -> int:
     queue.sort(key=lambda v: v["published_at"], reverse=True)
     log(f"{len(queue)} video(s) waiting. Video minutes used today: {store.minutes_used_today():.0f}/{cfg.daily_video_minutes_budget}")
 
-    started, done = time.time(), 0
+    started, done, busy_streak = time.time(), 0, 0
     for v in queue:
         if args.limit and done >= args.limit:
             break
@@ -92,6 +92,15 @@ def cmd_run(args) -> int:
                 store.add_minutes(minutes)
             n = len(result["analysis"]["stock_moves"])
             log(f"   ok via {result['method']} — {n} stock move(s)")
+            busy_streak = 0
+        except GeminiBusy as e:
+            store.mark_deferred(v["id"], str(e))
+            busy_streak += 1
+            log(f"   Gemini busy — will retry next run. ({str(e)[:100]})")
+            if busy_streak >= 2:
+                store.save()
+                log("Gemini busy twice in a row — stopping early; next run will pick up from here.")
+                break
         except QuotaExhausted as e:
             log(f"Gemini daily quota hit — stopping. ({str(e)[:120]})")
             break
@@ -103,7 +112,7 @@ def cmd_run(args) -> int:
         time.sleep(args.sleep)
 
     store.save()
-    payload = write_report(store, cfg.report_title)
+    payload = write_report(store, cfg.report_title, cfg.timezone)
     log(f"Dashboard rebuilt: {len(payload['videos'])} videos, {len(payload['moves'])} stock moves, {len(payload['tickers'])} tickers.")
     return 0
 
@@ -112,7 +121,7 @@ def cmd_report(args) -> int:
     from .report import write_report
 
     cfg = load_config()
-    p = write_report(Store(), cfg.report_title)
+    p = write_report(Store(), cfg.report_title, cfg.timezone)
     log(f"Dashboard rebuilt: {len(p['videos'])} videos, {len(p['moves'])} moves → docs/index.html")
     return 0
 
@@ -121,7 +130,7 @@ def cmd_digest(args) -> int:
     from .digest import send_digest
 
     cfg = load_config()
-    log(send_digest(Store(), days=args.days, title=cfg.report_title, dry_run=args.dry_run))
+    log(send_digest(Store(), days=args.days, title=cfg.report_title, dry_run=args.dry_run, tz=cfg.timezone))
     return 0
 
 
@@ -164,7 +173,7 @@ def main(argv=None) -> int:
 
     r = sub.add_parser("run")
     r.add_argument("--limit", type=int, default=0, help="max videos to analyse this run")
-    r.add_argument("--max-runtime", type=float, default=50, help="minutes before stopping")
+    r.add_argument("--max-runtime", type=float, default=40, help="minutes before stopping")
     r.add_argument("--sleep", type=float, default=7, help="seconds between Gemini calls (free-tier RPM)")
     r.set_defaults(fn=cmd_run)
 
@@ -190,4 +199,3 @@ def main(argv=None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

@@ -19,7 +19,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from . import DATA_DIR
-from .positions import flatten_moves
+from .positions import flatten_moves, local_date
 
 ACTION_COLORS = {
     "BUY": "#0a7d3b", "ADD": "#2e9e5b", "TRIM": "#b86e00", "SELL": "#b42318",
@@ -32,11 +32,11 @@ def _e(s) -> str:
     return html.escape(str(s or ""))
 
 
-def build_digest(store, days: int = 7, title: str = "YouTube Channel Intelligence") -> tuple[str, str, int]:
+def build_digest(store, days: int = 7, title: str = "YouTube Channel Intelligence", tz: str | None = None) -> tuple[str, str, int]:
     since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
     vids = [v for v in store.videos.values() if v.get("status") == "ok" and v["published_at"] >= since[:19]]
     vids.sort(key=lambda v: v["published_at"], reverse=True)
-    moves = [m for m in flatten_moves({v["id"]: v for v in vids})]
+    moves = flatten_moves({v["id"]: v for v in vids}, tz=tz)
     key_moves = [m for m in moves if m["action"] in ("BUY", "ADD", "SELL", "TRIM")]
     key_moves.sort(key=lambda m: (ORDER.index(m["action"]), m["published_at"]))
 
@@ -67,7 +67,7 @@ def build_digest(store, days: int = 7, title: str = "YouTube Channel Intelligenc
         tick = ", ".join(sorted({m["ticker"] for m in a.get("stock_moves", [])}))
         cards += (
             f'<div style="border:1px solid #eaecf0;border-radius:10px;padding:14px 16px;margin:0 0 12px">'
-            f'<div style="font-size:12px;color:#667085">{_e(v["channel_title"])} · {v["published_at"][:10]} · {_e(a.get("category"))}</div>'
+            f'<div style="font-size:12px;color:#667085">{_e(v["channel_title"])} · {local_date(v["published_at"], tz)} · {_e(a.get("category"))}</div>'
             f'<a href="{_e(v["url"])}" style="font-size:16px;font-weight:600;color:#101828;text-decoration:none">{_e(v["title"])}</a>'
             f'<p style="margin:8px 0;font-size:14px;line-height:1.5;color:#344054">{_e(a.get("summary"))}</p>'
             f'<ul style="margin:0 0 6px;padding-left:18px;font-size:13px;color:#344054;line-height:1.5">{pts}</ul>'
@@ -90,8 +90,8 @@ def build_digest(store, days: int = 7, title: str = "YouTube Channel Intelligenc
 
 
 def send_digest(store, days: int = 7, title: str = "YouTube Channel Intelligence", dry_run: bool = False,
-                skip_if_empty: bool = True) -> str:
-    subject, body, n = build_digest(store, days, title)
+                skip_if_empty: bool = True, tz: str | None = None) -> str:
+    subject, body, n = build_digest(store, days, title, tz)
     (DATA_DIR / "last_digest.html").write_text(body, encoding="utf-8")
     if dry_run:
         return f"[dry run] {subject} → data/last_digest.html"

@@ -86,6 +86,11 @@ class Store:
         rec.update(status="error", error=err[:600], last_attempt_at=now_iso())
         rec["attempts"] = rec.get("attempts", 0) + 1
 
+    def mark_deferred(self, vid: str, reason: str):
+        """Temporary problem (model busy). Keep it queued; don't use up an attempt."""
+        rec = self.videos[vid]
+        rec.update(status="pending", error=reason[:300], last_attempt_at=now_iso())
+
     def mark_skipped(self, vid: str, reason: str):
         rec = self.videos[vid]
         rec.update(status="skipped", error=reason)

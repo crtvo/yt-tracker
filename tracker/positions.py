@@ -3,8 +3,22 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+TRADE_ACTIONS = {"BUY", "ADD", "TRIM", "SELL"}
 
 OWNERSHIP_ACTIONS = {"BUY", "ADD", "TRIM", "SELL", "HOLD"}
+
+def local_date(iso: str, tz: str | None) -> str:
+    """YouTube timestamps are UTC; show the date as it was where you live."""
+    if not tz:
+        return iso[:10]
+    try:
+        return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(ZoneInfo(tz)).strftime("%Y-%m-%d")
+    except Exception:  # noqa: BLE001
+        return iso[:10]
+
 
 STATUS_FROM_ACTION = {
     "BUY": "Holding",
@@ -17,7 +31,7 @@ STATUS_FROM_ACTION = {
 }
 
 
-def flatten_moves(videos: dict, groups: dict | None = None) -> list[dict]:
+def flatten_moves(videos: dict, groups: dict | None = None, tz: str | None = None) -> list[dict]:
     """Every stock move from every analysed video, newest first.
 
     groups maps channel_id → group name, so several channels run by the same
@@ -38,7 +52,7 @@ def flatten_moves(videos: dict, groups: dict | None = None) -> list[dict]:
                 "channel_id": v["channel_id"],
                 "channel_title": v["channel_title"],
                 "group": groups.get(v["channel_id"]) or v["channel_title"],
-                "date": v["published_at"][:10],
+                "date": local_date(v["published_at"], tz),
                 "published_at": v["published_at"],
             })
     out.sort(key=lambda m: (m["published_at"], m["move_id"]), reverse=True)
@@ -65,6 +79,8 @@ def ticker_summaries(moves: list[dict]) -> list[dict]:
         elif any(m["action"] == "WATCH" for m in ms):
             status = "Watching"
 
+        trades = [m for m in ms if m["action"] in TRADE_ACTIONS and m.get("is_own_position", True)]
+
         counts = defaultdict(int)
         for m in ms:
             counts[m["action"]] += 1
@@ -81,6 +97,8 @@ def ticker_summaries(moves: list[dict]) -> list[dict]:
             "last_date": latest["date"],
             "last_ownership_action": last_owned[-1]["action"] if last_owned else "",
             "last_ownership_date": last_owned[-1]["date"] if last_owned else "",
+            "last_trade_action": trades[-1]["action"] if trades else "",
+            "last_trade_date": trades[-1]["date"] if trades else "",
             "first_date": ms[0]["date"],
             "mentions": len(ms),
             "counts": dict(counts),

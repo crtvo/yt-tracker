@@ -16,6 +16,7 @@ DEFAULTS = {
     "default_backfill_days": 180,
     "max_attempts": 3,
     "report_title": "YouTube Channel Intelligence",
+    "timezone": "America/Chicago",
 }
 
 

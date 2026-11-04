@@ -187,13 +187,13 @@ function viewStocks(){
   let h = `<div class="chips">${STATUSES.map(s=>`<button class="chip ${S.statuses.has(s)?"on":""}" data-st="${esc(s)}">${s}</button>`).join("")}</div>`;
   if(!rows.length) return h + `<div class="panel empty">No tickers match.</div>`;
   const multi = new Set(DATA.tickers.map(t=>t.group)).size>1 && !S.ch;
-  h += `<div class="panel"><table><thead><tr>${th("ticker","Ticker")}${th("status","Status")}${th("last_ownership_action","Last buy/sell")}${th("last_ownership_date","On")}${th("last_date","Last discussed")}${th("mentions","Mentions","hide-sm")}<th class="hide-sm">History (old → new)</th>${multi?th("channel_title","Source","hide-sm"):""}</tr></thead><tbody>`;
+  h += `<div class="panel"><table><thead><tr>${th("ticker","Ticker")}${th("status","Status")}${th("last_trade_action","Last trade")}${th("last_trade_date","On")}${th("last_date","Last discussed")}${th("mentions","Mentions","hide-sm")}<th class="hide-sm">History (old → new)</th>${multi?th("channel_title","Source","hide-sm"):""}</tr></thead><tbody>`;
   rows.forEach(t => {
     const hist = (moveIdx[t.group+"|"+t.ticker]||[]).slice().reverse().slice(-16);
     h += `<tr data-tk="${esc(t.ticker)}"><td><b>${esc(t.ticker)}</b><div class="co">${esc(t.company)}</div></td>
       <td><span class="st ${stc(t.status)}">${esc(t.status)}</span></td>
-      <td>${t.last_ownership_action?`<span class="pill a-${t.last_ownership_action}">${t.last_ownership_action}</span>`:"<span class='co'>—</span>"}</td>
-      <td class="num">${fmtDate(t.last_ownership_date)}</td><td class="num">${fmtDate(t.last_date)}</td>
+      <td>${t.last_trade_action?`<span class="pill a-${t.last_trade_action}">${t.last_trade_action}</span>`:"<span class='co'>—</span>"}</td>
+      <td class="num">${fmtDate(t.last_trade_date)}</td><td class="num">${fmtDate(t.last_date)}</td>
       <td class="num hide-sm">${t.mentions}</td>
       <td class="hide-sm"><div class="dots">${hist.map(m=>`<span class="dot" title="${m.date} ${m.action}" style="background:${COLOR(m.action)}"></span>`).join("")}</div></td>
       ${multi?`<td class="hide-sm co">${esc(t.channel_title)}</td>`:""}</tr>`;
@@ -214,7 +214,7 @@ function viewVideos(){
     h += `<article class="panel card"><a href="${esc(v.url)}" target="_blank" rel="noopener">${v.thumbnail?`<img loading="lazy" src="${esc(v.thumbnail)}" alt="">`:`<div class="thumb"></div>`}</a><div>
       <div class="co">${esc(v.channel_title)} · ${fmtDate(v.published_at)} · ${dur(v.duration_sec)}${a?" · "+esc(a.category):""}${a&&a.sentiment?" · "+esc(a.sentiment):""}</div>
       <h3><a href="${esc(v.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(v.title)}</a></h3>`;
-    if (!a){ h += v.status==="error" ? `<div class="err">Couldn't analyse: ${esc((v.error||"").slice(0,180))}</div>` : `<div class="co">Queued for analysis.</div>`; }
+    if (!a){ h += v.status==="error" ? `<div class="err">Couldn't analyse: ${esc((v.error||"").slice(0,180))}</div>` : v.error ? `<div class="co">Queued — Gemini was busy last try, will retry automatically.</div>` : `<div class="co">Queued for analysis.</div>`; }
     else {
       h += `<p>${esc(a.summary)}</p>`;
       if (open){

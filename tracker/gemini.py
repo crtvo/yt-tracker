@@ -77,6 +77,10 @@ class QuotaExhausted(GeminiError):
     """Daily free-tier limit hit — stop this run, try again next run."""
 
 
+class GeminiBusy(GeminiError):
+    """Model overloaded (5xx). Temporary — retry on a later run without counting an attempt."""
+
+
 def _prompt(profile: str, video: dict, notes: str = "") -> str:
     tmpl = (PROMPTS_DIR / f"{profile}.md").read_text(encoding="utf-8")
     text = tmpl.format(title=video["title"], channel=video["channel_title"], published=video["published_at"][:10])
@@ -96,8 +100,11 @@ def _call(model: str, parts: list, use_schema: bool = True, low_res: bool = True
         gen["mediaResolution"] = "MEDIA_RESOLUTION_LOW"  # ~3x fewer tokens; talking-head videos don't need HD frames
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": gen}
 
-    delays = [15, 45, 120]
-    for attempt in range(len(delays) + 1):
+    # 429 (rate limit) gets a few waits; 5xx "high demand" gets one quick retry, then we
+    # move on and try that video again next run (each 5xx can take minutes to come back).
+    delays = {429: [20, 60, 120], "5xx": [30]}
+    tries = {429: 0, "5xx": 0}
+    while True:
         r = requests.post(ENDPOINT.format(model=model), json=body, timeout=600,
                           headers={"x-goog-api-key": key, "Content-Type": "application/json"})
         if r.status_code == 200:
@@ -109,11 +116,14 @@ def _call(model: str, parts: list, use_schema: bool = True, low_res: bool = True
         if r.status_code == 400 and (use_schema or low_res):
             # Some models reject a config field — retry once with the plain config.
             return _call(model, parts, use_schema=False, low_res=False)
-        if r.status_code in (429, 500, 502, 503, 504) and attempt < len(delays):
-            time.sleep(delays[attempt])
+        kind = 429 if r.status_code == 429 else "5xx" if r.status_code >= 500 else None
+        if kind is not None and tries[kind] < len(delays[kind]):
+            time.sleep(delays[kind][tries[kind]])
+            tries[kind] += 1
             continue
+        if kind == "5xx":
+            raise GeminiBusy(f"Gemini {r.status_code} (model busy): {txt[:200]}")
         raise GeminiError(f"Gemini {r.status_code}: {txt}")
-    raise GeminiError("Gemini: retries exhausted")
 
 
 def _extract_json(resp: dict) -> dict:
@@ -178,8 +188,8 @@ def analyze_video(video: dict, profile: str, model: str, max_video_minutes: int,
             resp = _call(model, [{"fileData": {"fileUri": video["url"]}}, {"text": prompt}])
             return {"analysis": _normalize(_extract_json(resp)), "method": "video",
                     "usage": resp.get("usageMetadata", {}), "version": ANALYSIS_VERSION}
-        except QuotaExhausted:
-            raise
+        except (QuotaExhausted, GeminiBusy):
+            raise  # the transcript path would hit the same busy model
         except GeminiError as e:
             errors.append(f"video: {e}")
 

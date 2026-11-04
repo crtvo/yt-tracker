@@ -26,6 +26,9 @@ settings:
   # Title of the dashboard page.
   report_title: "YouTube Channel Intelligence"
 
+  # Dates on the dashboard and in the email use this time zone (YouTube reports UTC).
+  timezone: America/Chicago
+
 channels:
   # Each entry needs ONE of: handle (@name), id (UC...), or url.
   # profile: "stocks"  → extracts buys/sells/trims, tickers, rationale, portfolio snapshot
