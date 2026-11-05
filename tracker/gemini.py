@@ -81,6 +81,74 @@ class GeminiBusy(GeminiError):
     """Model overloaded (5xx). Temporary — retry on a later run without counting an attempt."""
 
 
+class ModelUnavailable(GeminiError):
+    """Model name doesn't exist (any more) for this key."""
+
+
+# ── model fallback chain ─────────────────────────────────────────────
+# Free-tier quotas are per model, and Google sheds free-tier traffic per model when one is
+# overloaded. So when a model is busy or out of quota we move to the next one in the chain,
+# and skip that model for the rest of this run.
+_skip: dict[str, str] = {}   # model -> "busy" | "quota" | "missing"
+
+SKIP_WORDS = ("image", "tts", "audio", "live", "embedding", "thinking", "exp", "native", "computer")
+
+
+def list_models() -> list[str] | None:
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key:
+        return None
+    try:
+        r = requests.get("https://generativelanguage.googleapis.com/v1beta/models",
+                         params={"pageSize": 1000}, headers={"x-goog-api-key": key}, timeout=30)
+        r.raise_for_status()
+    except Exception:  # noqa: BLE001 — listing is best-effort
+        return None
+    return [m["name"].removeprefix("models/") for m in r.json().get("models", [])
+            if "generateContent" in m.get("supportedGenerationMethods", [])]
+
+
+def build_chain(primary: str, fallbacks: list[str], available: list[str] | None) -> list[str]:
+    """Primary first, then configured fallbacks that exist, then (if still short) the newest
+    stable Flash models this key can use."""
+    chain = [primary] + [m for m in fallbacks if m != primary]
+    if available is None:
+        return chain
+    ok = set(available)
+    chain = [m for m in chain if m in ok or m.endswith("-latest")]  # -latest aliases may not be listed
+    if len(chain) < 3:
+        import re
+
+        def ver(name):
+            m = re.search(r"gemini-(\d+(?:\.\d+)?)", name)
+            return float(m.group(1)) if m else 0.0
+        extra = sorted((m for m in available if "flash" in m and not any(w in m for w in SKIP_WORDS)
+                        and "preview" not in m and m not in chain), key=lambda n: (ver(n), "lite" not in n), reverse=True)
+        chain += extra[: 3 - len(chain)]
+    return chain or [primary]
+
+
+def _call_chain(models: list[str], parts: list, low_res: bool = True) -> tuple[dict, str]:
+    """Try each model until one answers. Raises GeminiBusy / QuotaExhausted if none can."""
+    reasons = []
+    for model in models:
+        if model in _skip:
+            reasons.append(_skip[model])
+            continue
+        try:
+            return _call(model, parts, low_res=low_res), model
+        except GeminiBusy:
+            _skip[model] = "busy"
+        except QuotaExhausted:
+            _skip[model] = "quota"
+        except ModelUnavailable:
+            _skip[model] = "missing"
+        reasons.append(_skip[model])
+    if reasons and all(r == "quota" for r in reasons if r != "missing"):
+        raise QuotaExhausted("All models in the chain are out of daily quota: " + ", ".join(models))
+    raise GeminiBusy("All models busy or out of quota (" + ", ".join(f"{m}:{_skip.get(m,'?')}" for m in models) + ")")
+
+
 def _prompt(profile: str, video: dict, notes: str = "") -> str:
     tmpl = (PROMPTS_DIR / f"{profile}.md").read_text(encoding="utf-8")
     text = tmpl.format(title=video["title"], channel=video["channel_title"], published=video["published_at"][:10])
@@ -100,9 +168,9 @@ def _call(model: str, parts: list, use_schema: bool = True, low_res: bool = True
         gen["mediaResolution"] = "MEDIA_RESOLUTION_LOW"  # ~3x fewer tokens; talking-head videos don't need HD frames
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": gen}
 
-    # 429 (rate limit) gets a few waits; 5xx "high demand" gets one quick retry, then we
-    # move on and try that video again next run (each 5xx can take minutes to come back).
-    delays = {429: [20, 60, 120], "5xx": [30]}
+    # 429 (per-minute rate limit) gets a few waits. 5xx "high demand" returns straight away so
+    # the caller can move to the next model in the chain (each 5xx can take minutes to come back).
+    delays = {429: [20, 60, 120], "5xx": []}
     tries = {429: 0, "5xx": 0}
     while True:
         r = requests.post(ENDPOINT.format(model=model), json=body, timeout=600,
@@ -113,6 +181,8 @@ def _call(model: str, parts: list, use_schema: bool = True, low_res: bool = True
         if r.status_code == 429:
             if "per day" in txt.lower() or "PerDay" in txt or "daily" in txt.lower():
                 raise QuotaExhausted(txt)
+        if r.status_code == 404:
+            raise ModelUnavailable(f"{model}: {txt[:200]}")
         if r.status_code == 400 and (use_schema or low_res):
             # Some models reject a config field — retry once with the plain config.
             return _call(model, parts, use_schema=False, low_res=False)
@@ -177,16 +247,16 @@ def get_transcript(video_id: str) -> str:
         return " ".join(r["text"] for r in rows)
 
 
-def analyze_video(video: dict, profile: str, model: str, max_video_minutes: int, notes: str = "") -> dict:
-    """Returns {'analysis': {...}, 'method': 'video'|'transcript', 'usage': {...}}."""
+def analyze_video(video: dict, profile: str, models: list[str], max_video_minutes: int, notes: str = "") -> dict:
+    """Returns {'analysis': {...}, 'method': 'video'|'transcript', 'model': ..., 'usage': {...}}."""
     prompt = _prompt(profile, video, notes)
     too_long = video["duration_sec"] > max_video_minutes * 60
     errors = []
 
     if not too_long:
         try:
-            resp = _call(model, [{"fileData": {"fileUri": video["url"]}}, {"text": prompt}])
-            return {"analysis": _normalize(_extract_json(resp)), "method": "video",
+            resp, used = _call_chain(models, [{"fileData": {"fileUri": video["url"]}}, {"text": prompt}])
+            return {"analysis": _normalize(_extract_json(resp)), "method": "video", "model": used,
                     "usage": resp.get("usageMetadata", {}), "version": ANALYSIS_VERSION}
         except (QuotaExhausted, GeminiBusy):
             raise  # the transcript path would hit the same busy model
@@ -200,6 +270,6 @@ def analyze_video(video: dict, profile: str, model: str, max_video_minutes: int,
         raise GeminiError(" | ".join(errors)) from e
 
     text = f"{prompt}\n\n(You are reading the transcript, not watching the video.)\n\nTRANSCRIPT:\n{transcript[:400_000]}"
-    resp = _call(model, [{"text": text}], low_res=False)
-    return {"analysis": _normalize(_extract_json(resp)), "method": "transcript",
+    resp, used = _call_chain(models, [{"text": text}], low_res=False)
+    return {"analysis": _normalize(_extract_json(resp)), "method": "transcript", "model": used,
             "usage": resp.get("usageMetadata", {}), "version": ANALYSIS_VERSION}

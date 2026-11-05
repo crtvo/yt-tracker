@@ -26,7 +26,7 @@ def log(*a):
 
 
 def cmd_run(args) -> int:
-    from .gemini import GeminiBusy, GeminiError, QuotaExhausted, analyze_video
+    from .gemini import GeminiBusy, GeminiError, QuotaExhausted, analyze_video, build_chain, list_models
     from .report import write_report
     from .youtube import YouTubeError, backfill_cutoff, list_recent_videos, resolve_channel
 
@@ -71,6 +71,11 @@ def cmd_run(args) -> int:
     queue.sort(key=lambda v: v["published_at"], reverse=True)
     log(f"{len(queue)} video(s) waiting. Video minutes used today: {store.minutes_used_today():.0f}/{cfg.daily_video_minutes_budget}")
 
+    from . import gemini
+    gemini._skip.clear()
+    models = build_chain(cfg.model, cfg.fallback_models or [], list_models())
+    log(f"Model order: {' → '.join(models)}")
+
     started, done, busy_streak = time.time(), 0, 0
     for v in queue:
         if args.limit and done >= args.limit:
@@ -86,21 +91,21 @@ def cmd_run(args) -> int:
         log(f"→ [{v['published_at'][:10]}] {v['channel_title']}: {v['title'][:80]} ({minutes:.0f} min)")
         try:
             ch = profiles[v["channel_id"]]
-            result = analyze_video(v, ch.profile, cfg.model, cfg.max_video_minutes, ch.notes or "")
-            store.mark_ok(v["id"], result, cfg.model)
+            result = analyze_video(v, ch.profile, models, cfg.max_video_minutes, ch.notes or "")
+            store.mark_ok(v["id"], result, result["model"])
             if result["method"] == "video":
                 store.add_minutes(minutes)
             n = len(result["analysis"]["stock_moves"])
-            log(f"   ok via {result['method']} — {n} stock move(s)")
+            log(f"   ok via {result['method']} ({result['model']}) — {n} stock move(s)")
             busy_streak = 0
         except GeminiBusy as e:
             store.mark_deferred(v["id"], str(e))
             busy_streak += 1
             log(f"   Gemini busy — will retry next run. ({str(e)[:100]})")
-            if busy_streak >= 2:
-                store.save()
-                log("Gemini busy twice in a row — stopping early; next run will pick up from here.")
-                break
+            # GeminiBusy here means every model in the chain is busy or out of quota.
+            store.save()
+            log("All models busy or out of quota — stopping early; next run will pick up from here.")
+            break
         except QuotaExhausted as e:
             log(f"Gemini daily quota hit — stopping. ({str(e)[:120]})")
             break

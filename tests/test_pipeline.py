@@ -116,6 +116,27 @@ def test_busy_model_is_retried_without_using_attempts():
         shutil.rmtree(tmp)
 
 
+def test_fallback_chain():
+    from tracker import gemini
+    from tracker.gemini import GeminiBusy, QuotaExhausted, build_chain, _call_chain
+    avail = ["gemini-2.5-flash", "gemini-3.1-flash", "gemini-3.1-flash-lite", "gemini-3.1-flash-image", "gemini-3.5-flash-preview", "gemini-3.1-pro"]
+    chain = build_chain("gemini-flash-latest", ["gemini-flash-lite-latest", "gemini-9-flash"], avail)
+    assert chain == ["gemini-flash-latest", "gemini-flash-lite-latest", "gemini-3.1-flash"], chain
+
+    calls = []
+    def fake(model, parts, use_schema=True, low_res=True):
+        calls.append(model)
+        if model == "a": raise GeminiBusy("503")
+        if model == "b": raise QuotaExhausted("per day")
+        return {"ok": model}
+    gemini._skip.clear()
+    with mock.patch("tracker.gemini._call", side_effect=fake):
+        assert _call_chain(["a", "b", "c"], [])[1] == "c"
+        assert _call_chain(["a", "b", "c"], [])[1] == "c"
+    assert calls == ["a", "b", "c", "c"]  # busy/exhausted models skipped for the rest of the run
+    gemini._skip.clear()
+
+
 def test_local_dates():
     from tracker.positions import local_date
     # 9pm Central on Nov 3 is already Nov 4 in UTC
@@ -158,6 +179,7 @@ if __name__ == "__main__":
     test_positions()
     test_grouped_channels()
     test_local_dates()
+    test_fallback_chain()
     test_busy_model_is_retried_without_using_attempts()
     test_full_run()
     print("all tests passed")

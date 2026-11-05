@@ -10,6 +10,7 @@ from . import CONFIG_PATH
 
 DEFAULTS = {
     "model": "gemini-flash-latest",
+    "fallback_models": ["gemini-flash-lite-latest"],
     "daily_video_minutes_budget": 450,
     "min_duration_seconds": 180,
     "max_video_minutes": 60,

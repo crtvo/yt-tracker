@@ -8,6 +8,11 @@ settings:
   # Pin a specific ID (e.g. "gemini-3.8-flash") if you want results to stay consistent.
   model: gemini-flash-latest
 
+  # Tried in order when the main model is busy or out of free daily quota (quotas are per model).
+  # If fewer than 3 models are usable, the tool adds the newest stable Flash models your key can use.
+  fallback_models:
+    - gemini-flash-lite-latest
+
   # Google's free YouTube-URL limit is 8 hours of video per day. Stay a bit under it.
   daily_video_minutes_budget: 450
 

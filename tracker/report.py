@@ -20,7 +20,7 @@ def build_payload(store, title: str, tz: str | None = None) -> dict:
         "channels": list(store.channels.values()),
         "videos": [
             {k: v.get(k) for k in ("id", "channel_id", "channel_title", "title", "url", "published_at",
-                                   "duration_sec", "thumbnail", "status", "error", "analysis", "method")}
+                                   "duration_sec", "thumbnail", "status", "error", "analysis", "method", "model")}
             for v in videos if v.get("status") in ("ok", "error", "pending")
         ],
         "moves": moves,

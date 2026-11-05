@@ -214,7 +214,7 @@ function viewVideos(){
   vs.forEach(v => {
     const a = v.analysis, open = S.openVids.has(v.id);
     h += `<article class="panel card"><a href="${esc(v.url)}" target="_blank" rel="noopener">${v.thumbnail?`<img loading="lazy" src="${esc(v.thumbnail)}" alt="">`:`<div class="thumb"></div>`}</a><div>
-      <div class="co">${esc(v.channel_title)} · ${fmtDate(v.published_at)} · ${dur(v.duration_sec)}${a?" · "+esc(a.category):""}${a&&a.sentiment?" · "+esc(a.sentiment):""}</div>
+      <div class="co">${esc(v.channel_title)} · ${fmtDate(v.published_at)} · ${dur(v.duration_sec)}${a?" · "+esc(a.category):""}${a&&a.sentiment?" · "+esc(a.sentiment):""}${a&&v.model&&/lite/.test(v.model)?` · <span title="Summarized by ${esc(v.model)} because the main model was busy">lite model</span>`:""}</div>
       <h3><a href="${esc(v.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(v.title)}</a></h3>`;
     if (!a){ h += v.status==="error" ? `<div class="err">Couldn't analyse: ${esc((v.error||"").slice(0,180))}</div>` : v.error ? `<div class="co">Queued — Gemini was busy last try, will retry automatically.</div>` : `<div class="co">Queued for analysis.</div>`; }
     else {
