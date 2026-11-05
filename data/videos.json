@@ -26,18 +26,133 @@
   "url": "https://www.youtube.com/watch?v=-fhON4Ll9DI"
  },
  "-pK9xC1M7wE": {
-  "attempts": 1,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Nasdaq and major tech stocks have seen corrections of 10% or more, with some semiconductor names down 30% to 55% from their highs.",
+    "Intel's weak outlook on PC demand and spending has sparked broader fears across the semiconductor sector, though Jeremy considers Intel a low-quality company compared to leaders like AMD.",
+    "Big tech companies like Amazon and Google are significantly increasing their capital expenditures (CapEx) and debt to fund AI infrastructure.",
+    "Jeremy views current market weakness as a normal correction rather than the start of a multi-year bear market, drawing parallels to past pullbacks.",
+    "He prefers high-quality tech leaders like AMD, Amazon, Google, and Microsoft over weaker alternatives like Intel and Broadcom."
+   ],
+   "market_view": "The recent 10% tech correction is a normal pullback and a healthy buying opportunity for long-term investors, rather than a sign of a looming market crash.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "MENTION",
+     "company": "Intel Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Jeremy considers Intel a weak company that has dragged down the wider semiconductor sector due to slowing PC demand and lower guidance.",
+     "ticker": "INTC",
+     "timeframe": "this video",
+     "timestamp": "00:10"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Favored top-tier semiconductor holding alongside Micron.",
+     "price": "394",
+     "rationale": "Jeremy prefers AMD over Intel as a high-quality semiconductor holding with multi-year growth ahead.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "05:32"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Amazon.com, Inc.",
+     "is_own_position": true,
+     "position_note": "Top pick among mega-cap tech stocks.",
+     "price": "226",
+     "rationale": "Jeremy considers Amazon his number one buy despite near-term free cash flow pressure from heavy AI CapEx spending.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "00:58"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Alphabet Inc.",
+     "is_own_position": true,
+     "position_note": "Strong positive view after recent quarterly earnings.",
+     "price": "",
+     "rationale": "Jeremy is very bullish on Google following strong cloud and AI growth metrics, ranking it just behind Amazon.",
+     "ticker": "GOOGL",
+     "timeframe": "this video",
+     "timestamp": "07:05"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms, Inc.",
+     "is_own_position": true,
+     "position_note": "Second favorite behind Amazon, though spending remains a concern.",
+     "price": "",
+     "rationale": "Jeremy holds Meta as a strong long-term buy despite concerns over aggressive infrastructure spending.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "27:50"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Microsoft Corporation",
+     "is_own_position": true,
+     "position_note": "Expected double-digit annual returns.",
+     "price": "",
+     "rationale": "Jeremy likes Microsoft as a solid, high-quality buy that should comfortably beat the broader market over the next few years.",
+     "ticker": "MSFT",
+     "timeframe": "this video",
+     "timestamp": "29:09"
+    },
+    {
+     "action": "HOLD",
+     "company": "NVIDIA Corporation",
+     "is_own_position": true,
+     "position_note": "Trades at a reasonable forward P/E of around 20.",
+     "price": "",
+     "rationale": "Jeremy considers Nvidia a decent holding with reasonable valuation and at least one more year of massive AI-driven growth.",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "13:03"
+    },
+    {
+     "action": "HOLD",
+     "company": "Tesla, Inc.",
+     "is_own_position": true,
+     "position_note": "Least interesting of the major tech stocks discussed.",
+     "price": "",
+     "rationale": "Jeremy ranks Tesla as his least favorite among major growth picks due to valuation and near-term headwinds.",
+     "ticker": "TSLA",
+     "timeframe": "this video",
+     "timestamp": "27:09"
+    }
+   ],
+   "summary": "Jeremy Lefebvre discusses the recent sharp tech sell-off, with major indices like the Nasdaq correcting around 10% and individual tech stocks down significantly. He reacts to reports on Intel's weak guidance and Amazon's massive capital expenditures, breaking down the broader market implications for semiconductor and mega-cap tech stocks. Despite near-term volatility and poor sentiment surrounding companies like Intel, Jeremy views the broader tech pullback as a normal correction and an opportunity for long-term investors rather than a market crash.",
+   "topics": [
+    "Tech Selloff",
+    "Semiconductors",
+    "CapEx",
+    "AI Spending",
+    "Earnings Reaction"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 2,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2197,
-  "error": "Gemini 503 (model busy): {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
   "id": "-pK9xC1M7wE",
   "last_attempt_at": "2026-11-05T13:37:33Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-05T14:31:57Z",
   "published_at": "2026-10-30T20:13:50Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/-pK9xC1M7wE/mqdefault.jpg",
   "title": "Tech Stocks Plunge, Here’s What’s Next",
+  "tokens": 189216,
   "url": "https://www.youtube.com/watch?v=-pK9xC1M7wE"
  },
  "0KlPqyW4hZY": {
@@ -1114,18 +1229,161 @@
   "url": "https://www.youtube.com/watch?v=Xe-ShzCXgtQ"
  },
  "XostOIXQ7Mw": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Public portfolio reached $4.9 million with strong performance over the past three years.",
+    "Semiconductor stocks are experiencing a rotation as hedge funds reduce leverage and risk.",
+    "e.l.f. Beauty reported strong Q3 numbers with 51% net sales growth and raised 2027 guidance.",
+    "Amazon, Meta, and Alphabet are highlighted as top Magnificent Seven stocks to buy right now.",
+    "Shopify is praised as an extraordinary growth company with 32% revenue growth and strong Q3 performance."
+   ],
+   "market_view": "The overall market is showing strong momentum with the S&P 500 near all-time highs, though semiconductor stocks are facing a period of de-risking and unwinding of leverage.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMZN",
+     "weight_pct": 8.35
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 12.72
+    },
+    {
+     "ticker": "SHOP.TO",
+     "weight_pct": 6.71
+    },
+    {
+     "ticker": "GOOG",
+     "weight_pct": 1.28
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ACCUMULATE",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Position value over $1.24M, 2,555 shares",
+     "price": "$489.78",
+     "rationale": "Strong compound annual growth potential with conservative base case targets showing attractive returns.",
+     "ticker": "AMD",
+     "timeframe": "long-term",
+     "timestamp": "02:27"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Position value over $187k, 42,222 shares",
+     "price": "$118.75",
+     "rationale": "Exceptional revenue and net income growth with strong balance sheet and raised future guidance.",
+     "ticker": "ELF",
+     "timeframe": "long-term",
+     "timestamp": "19:15"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Amazon",
+     "is_own_position": true,
+     "position_note": "Position value over $413k, 1,555 shares",
+     "price": "$266.03",
+     "rationale": "Dominant e-commerce and AWS cloud business with high ROI on capital expenditures.",
+     "ticker": "AMZN",
+     "timeframe": "long-term",
+     "timestamp": "30:02"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Position value over $630k, 1,000 shares",
+     "price": "$630.00",
+     "rationale": "Phenomenal growth rates and strong leadership, though tempered by staggering capital expenditures.",
+     "ticker": "META",
+     "timeframe": "long-term",
+     "timestamp": "32:44"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Alphabet",
+     "is_own_position": true,
+     "position_note": "Position value over $63k, 222 shares",
+     "price": "$287.30",
+     "rationale": "Search business remains strong, YouTube is performing amazingly, and Google Cloud growth is staggering.",
+     "ticker": "GOOG",
+     "timeframe": "long-term",
+     "timestamp": "33:59"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Shopify",
+     "is_own_position": true,
+     "position_note": "Position value over $75k, 6,711 shares",
+     "price": "$115.98",
+     "rationale": "Exceptional revenue growth of 32% and strong operating income growth making it a top tier execution company.",
+     "ticker": "SHOP.TO",
+     "timeframe": "long-term",
+     "timestamp": "36:35"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "The Honest Company",
+     "is_own_position": true,
+     "position_note": "Position value over $187k, 42,222 shares",
+     "price": "$4.44",
+     "rationale": "Successfully turned the company to profitability with a strong balance sheet for a sub-$1B market cap stock.",
+     "ticker": "HNST",
+     "timeframe": "long-term",
+     "timestamp": "24:26"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Revolve Group",
+     "is_own_position": true,
+     "position_note": "Position value over $75k, 3,795 shares",
+     "price": "$19.98",
+     "rationale": "Strong net sales growth of 20% despite short-term expense pressures.",
+     "ticker": "RVLV",
+     "timeframe": "long-term",
+     "timestamp": "25:38"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Cheesecake Factory",
+     "is_own_position": true,
+     "position_note": "Position value over $375k, 3,250 shares",
+     "price": "$115.39",
+     "rationale": "Consistent dividend payments, strong portfolio of restaurant concepts, and solid financial growth.",
+     "ticker": "CAKE",
+     "timeframe": "long-term",
+     "timestamp": "27:27"
+    }
+   ],
+   "summary": "Jeremy Lefebvre reviews his public portfolio performance, noting it has grown to $4.9M. He discusses the semiconductor sector, why past semiconductor winners may not repeat, and shares his top stock picks and analysis for AMD, e.l.f. Beauty, Shopify, Amazon, Meta, and Alphabet.",
+   "topics": [
+    "Semiconductor Stocks",
+    "Earnings Reports",
+    "Top Stock Picks",
+    "Portfolio Growth",
+    "Tech Stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2346,
-  "error": "Gemini 503 (model busy): {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
   "id": "XostOIXQ7Mw",
   "last_attempt_at": "2026-11-05T13:34:44Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-05T14:29:35Z",
   "published_at": "2026-11-05T01:27:57Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/XostOIXQ7Mw/mqdefault.jpg",
   "title": "My Stock just BLUE UP‼️",
+  "tokens": 202218,
   "url": "https://www.youtube.com/watch?v=XostOIXQ7Mw"
  },
  "Yk_psjvfzDI": {
@@ -1303,12 +1561,12 @@
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2216,
-  "error": "video: Gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n | transcript: RequestBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=hZHvYGnaxGQ! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the",
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "hZHvYGnaxGQ",
-  "last_attempt_at": "2026-11-04T21:23:20Z",
+  "last_attempt_at": "2026-11-05T14:33:55Z",
   "live_status": "none",
   "published_at": "2026-10-29T00:47:33Z",
-  "status": "error",
+  "status": "pending",
   "thumbnail": "https://i.ytimg.com/vi/hZHvYGnaxGQ/mqdefault.jpg",
   "title": "I F’d up‼️",
   "url": "https://www.youtube.com/watch?v=hZHvYGnaxGQ"
