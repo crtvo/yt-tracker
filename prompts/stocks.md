@@ -15,7 +15,7 @@ Watch the whole video and return JSON that matches the schema. Rules:
      - BUY = opened a new position · ADD = bought more of an existing position
      - TRIM = sold part · SELL = sold the whole position
      - HOLD = owns it and is explicitly keeping it unchanged
-     - ACCUMULATE = already owns it and says they are actively adding / still buying, but without a specific new trade in this video ("I'm in acquisition mode", "I keep adding every week", "I'm buying more of this")
+     - ACCUMULATE = already owns it and EXPLICITLY says they are actively adding / still buying right now, but without a specific new trade in this video ("I'm in acquisition mode", "I keep adding every week", "I'm buying more of this"). Calling it a favorite, a top pick, "a buy" or bullish is NOT accumulating: use HOLD if they own it, otherwise WATCH or MENTION.
      - WATCH = on their watchlist / considering buying
      - MENTION = discussed but no position or intent stated
    - `is_own_position`: true only if the creator says they own (or just bought/sold) it.
@@ -31,6 +31,7 @@ Watch the whole video and return JSON that matches the schema. Rules:
 8. **topics**: 2–6 short topic tags (e.g. "AI stocks", "dividends", "rate cuts").
 
 General rules for tricky videos:
+- **Numbers must belong to the right stock:** only fill `price` / `position_note` with figures the creator states for THAT ticker. Never copy a share count or dollar value from one stock to another. If unsure, leave it empty.
 - **Reaction videos:** if the creator is reacting to a clip (news, CNBC, another YouTuber), only log moves and opinions that are THE CREATOR'S OWN. A stock pitched by someone in the clip is a MENTION unless the creator says they own it, bought it or sold it. Say in the summary whose content they are reacting to.
 - **Confirmed trade vs. ongoing buying:** use BUY/ADD/TRIM/SELL for a specific trade made recently (in this video or since their last one), ideally with shares, dollars or price. If they own it and say they're actively adding or still buying without describing a specific new trade ("I'm in acquisition mode", "I keep adding"), use ACCUMULATE. If they only recap past buying with no sign they're still adding, use HOLD. Put the detail in `position_note`.
 - **Conditional plans** ("I'll sell if it doubles", "I'd buy under $50") are not moves. Use HOLD (if owned) or WATCH (if not), and put the condition in `position_note`.

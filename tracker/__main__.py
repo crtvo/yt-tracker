@@ -76,7 +76,18 @@ def cmd_run(args) -> int:
     models = build_chain(cfg.model, cfg.fallback_models or [], list_models())
     log(f"Model order: {' → '.join(models)}")
 
-    started, done, busy_streak = time.time(), 0, 0
+    # Summaries written by a "lite" fallback model are provisional: once the backlog is clear,
+    # redo them with a full model (lite models are never used for these upgrades).
+    full_models = [m for m in models if "lite" not in m]
+    upgrades = sorted((v for v in store.videos.values()
+                       if v.get("status") == "ok" and "lite" in (v.get("model") or "") and v["channel_id"] in profiles),
+                      key=lambda v: v["published_at"], reverse=True) if full_models else []
+    if upgrades:
+        log(f"{len(upgrades)} lite-model summary(ies) will be redone with a full model after the backlog.")
+    upgrade_ids = {v["id"] for v in upgrades}
+    queue += upgrades
+
+    started, done = time.time(), 0
     for v in queue:
         if args.limit and done >= args.limit:
             break
@@ -88,30 +99,34 @@ def cmd_run(args) -> int:
         if uses_video and store.minutes_used_today() + minutes > cfg.daily_video_minutes_budget:
             log(f"Daily video budget reached — {len(queue) - done} left for tomorrow.")
             break
-        log(f"→ [{v['published_at'][:10]}] {v['channel_title']}: {v['title'][:80]} ({minutes:.0f} min)")
+        is_upgrade = v["id"] in upgrade_ids
+        log(f"→ [{v['published_at'][:10]}] {v['channel_title']}: {v['title'][:80]} ({minutes:.0f} min){' — upgrading lite summary' if is_upgrade else ''}")
         try:
             ch = profiles[v["channel_id"]]
-            result = analyze_video(v, ch.profile, models, cfg.max_video_minutes, ch.notes or "")
+            result = analyze_video(v, ch.profile, full_models if is_upgrade else models,
+                                   cfg.max_video_minutes, ch.notes or "")
             store.mark_ok(v["id"], result, result["model"])
             if result["method"] == "video":
                 store.add_minutes(minutes)
             n = len(result["analysis"]["stock_moves"])
             log(f"   ok via {result['method']} ({result['model']}) — {n} stock move(s)")
-            busy_streak = 0
-        except GeminiBusy as e:
-            store.mark_deferred(v["id"], str(e))
-            busy_streak += 1
-            log(f"   Gemini busy — will retry next run. ({str(e)[:100]})")
-            # GeminiBusy here means every model in the chain is busy or out of quota.
-            store.save()
-            log("All models busy or out of quota — stopping early; next run will pick up from here.")
-            break
-        except QuotaExhausted as e:
-            log(f"Gemini daily quota hit — stopping. ({str(e)[:120]})")
-            break
-        except GeminiError as e:
-            store.mark_error(v["id"], str(e))
-            log(f"   failed: {str(e)[:200]}")
+        except GeminiError as e:  # base class of GeminiBusy and QuotaExhausted
+            stop = isinstance(e, (GeminiBusy, QuotaExhausted))
+            if is_upgrade:
+                # Keep the existing lite summary; try the upgrade again on a later run.
+                log(f"   upgrade skipped, keeping lite summary ({str(e)[:100]})")
+            elif isinstance(e, QuotaExhausted):
+                log(f"Gemini daily quota hit on every model — stopping. ({str(e)[:120]})")
+            elif isinstance(e, GeminiBusy):
+                # Every model in the chain is busy or out of quota.
+                store.mark_deferred(v["id"], str(e))
+                log(f"   Gemini busy — will retry next run. ({str(e)[:120]})")
+                log("All models busy or out of quota — stopping early; next run will pick up from here.")
+            else:
+                store.mark_error(v["id"], str(e))
+                log(f"   failed: {str(e)[:200]}")
+            if stop:
+                break
         done += 1
         store.save()  # save after every video so a crash never loses work
         time.sleep(args.sleep)

@@ -137,6 +137,42 @@ def test_fallback_chain():
     gemini._skip.clear()
 
 
+def test_lite_summaries_get_upgraded():
+    tmp = Path(tempfile.mkdtemp())
+    try:
+        (tmp / "data").mkdir()
+        cfg = tmp / "channels.yaml"
+        cfg.write_text("settings:\n  fallback_models: [gemini-flash-lite-latest]\nchannels:\n  - handle: '@testinv'\n    profile: stocks\n")
+        used = []
+        def lite_only(model, parts, use_schema=True, low_res=True):
+            used.append(model)
+            if "lite" not in model:
+                from tracker.gemini import GeminiBusy
+                raise GeminiBusy("503")
+            return fake_call(model, parts)
+        with mock.patch.object(store_mod, "DATA_DIR", tmp / "data"), \
+             mock.patch.object(report_mod, "DOCS_DIR", tmp / "docs"), \
+             mock.patch("tracker.config.load_config.__defaults__", (cfg,)), \
+             mock.patch("tracker.youtube._get", side_effect=fake_get), \
+             mock.patch("tracker.gemini.get_transcript", return_value="t"), \
+             mock.patch("tracker.gemini._call", side_effect=lite_only):
+            from tracker.__main__ import main
+            main(["run", "--sleep", "0"])
+            vids = json.loads((tmp / "data" / "videos.json").read_text())
+            assert vids["v0"]["model"] == "gemini-flash-lite-latest"
+        # next run: main model is back → lite summary is redone with it
+        with mock.patch.object(store_mod, "DATA_DIR", tmp / "data"), \
+             mock.patch.object(report_mod, "DOCS_DIR", tmp / "docs"), \
+             mock.patch("tracker.config.load_config.__defaults__", (cfg,)), \
+             mock.patch("tracker.youtube._get", side_effect=fake_get), \
+             mock.patch("tracker.gemini._call", side_effect=fake_call):
+            main(["run", "--sleep", "0"])
+            vids = json.loads((tmp / "data" / "videos.json").read_text())
+            assert vids["v0"]["model"] == "gemini-flash-latest", vids["v0"]["model"]
+    finally:
+        shutil.rmtree(tmp)
+
+
 def test_local_dates():
     from tracker.positions import local_date
     # 9pm Central on Nov 3 is already Nov 4 in UTC
@@ -180,6 +216,7 @@ if __name__ == "__main__":
     test_grouped_channels()
     test_local_dates()
     test_fallback_chain()
+    test_lite_summaries_get_upgraded()
     test_busy_model_is_retried_without_using_attempts()
     test_full_run()
     print("all tests passed")
