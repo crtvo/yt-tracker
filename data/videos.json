@@ -1113,6 +1113,21 @@
   "title": "This Stock will make us RICH🤑AF",
   "url": "https://www.youtube.com/watch?v=Xe-ShzCXgtQ"
  },
+ "XostOIXQ7Mw": {
+  "attempts": 0,
+  "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
+  "channel_title": "Financial Education",
+  "duration_sec": 2346,
+  "error": "Gemini 503 (model busy): {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+  "id": "XostOIXQ7Mw",
+  "last_attempt_at": "2026-11-05T07:03:59Z",
+  "live_status": "none",
+  "published_at": "2026-11-05T01:27:57Z",
+  "status": "pending",
+  "thumbnail": "https://i.ytimg.com/vi/XostOIXQ7Mw/mqdefault.jpg",
+  "title": "My Stock just BLUE UP‼️",
+  "url": "https://www.youtube.com/watch?v=XostOIXQ7Mw"
+ },
  "Yk_psjvfzDI": {
   "attempts": 0,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
