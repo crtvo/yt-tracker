@@ -1563,7 +1563,7 @@
   "duration_sec": 2216,
   "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "hZHvYGnaxGQ",
-  "last_attempt_at": "2026-11-05T14:33:55Z",
+  "last_attempt_at": "2026-11-06T07:08:14Z",
   "live_status": "none",
   "published_at": "2026-10-29T00:47:33Z",
   "status": "pending",
@@ -1918,6 +1918,101 @@
   "thumbnail": "https://i.ytimg.com/vi/sg7OczfYRZU/mqdefault.jpg",
   "title": "A Shocking Market Move is coming & Everyone is Asleep‼️",
   "url": "https://www.youtube.com/watch?v=sg7OczfYRZU"
+ },
+ "sgawBWvCG2Y": {
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Retail investors have been dumping single stocks at the fastest pace since the 2020 COVID crash, largely driven by margin calls and fear.",
+    "The CBOE VIX index spiked nearly 70% in a single day, reflecting extreme market volatility.",
+    "Short-term stock fluctuations are heavily driven by election outcomes and sentiment rather than business fundamentals.",
+    "Long-term investors should maintain discipline, avoid margin, and focus on the multi-year growth of quality companies."
+   ],
+   "market_view": "The market is experiencing severe short-term volatility and fear driven by margin liquidations and election uncertainty, but long-term fundamentals for quality tech and semiconductor companies remain intact.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as part of the broader AI semiconductor sell-off, noting it is an attractive long-term buy despite short-term pressure.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a cyclical memory stock experiencing heavy selling pressure.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Highlighted as a major player in the AI trade that faces significant downside risk during broad tech contractions due to its high exposure.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "Palantir Technologies",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as one of the growth stocks that got hit hard during the risk-off market sell-off.",
+     "ticker": "PLTR",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "Shopify Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as part of the high-growth tech group experiencing severe drawdown.",
+     "ticker": "SHOP",
+     "timeframe": "",
+     "timestamp": ""
+    }
+   ],
+   "summary": "In this video, Jeremy Lefebvre discusses the massive market sell-off, comparing retail investors' recent panic-selling to the March 2020 COVID crash. He analyzes the heavy drawdown in tech and AI-related stocks, emphasizing that short-term fear and margin calls dictate immediate price action rather than long-term fundamentals. He advises investors to focus on long-term time horizons and avoid leveraging up during volatile market downturns.",
+   "topics": [
+    "Market Sell-off",
+    "Retail Investors",
+    "Margin Calls",
+    "AI Stocks",
+    "Volatility"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
+  "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
+  "channel_title": "Jeremy Lefebvre Makes Money",
+  "duration_sec": 2843,
+  "id": "sgawBWvCG2Y",
+  "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-06T07:05:25Z",
+  "published_at": "2026-11-05T23:12:51Z",
+  "status": "ok",
+  "thumbnail": "https://i.ytimg.com/vi/sgawBWvCG2Y/mqdefault.jpg",
+  "title": "The Largest Move in your lifetime‼️",
+  "tokens": 243545,
+  "url": "https://www.youtube.com/watch?v=sgawBWvCG2Y"
  },
  "skiruCmsaSQ": {
   "attempts": 0,
