@@ -3587,16 +3587,87 @@
   "url": "https://www.youtube.com/watch?v=NnHk7xjejmA"
  },
  "O9f6uUIIL5M": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Buy/Sell Decision",
+   "key_points": [
+    "Invested $71,000 to buy 3,000 shares of Celsius Holdings in a private portfolio.",
+    "Celsius earnings report was graded a B-minus, but long-term fundamentals and growth remain strong.",
+    "Discussed e.l.f. Beauty stock momentum and reaffirmed a long-term hold.",
+    "Analyzed recent tech earnings and market commentary from CNBC about AI compute demand and S&P 500 targets."
+   ],
+   "market_view": "The market remains driven by strong earnings growth across sectors, with AI compute demand continuing to act as a major secular tailwind.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "BUY",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Bought 3,000 shares for $71,000.",
+     "price": "$23.67",
+     "rationale": "Strong organic growth, zero debt, substantial cash, and excellent product margins make it an attractive long-term investment and potential buyout target.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "09:20"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Long-term holding, no intention to sell.",
+     "price": "",
+     "rationale": "Exceptional long-term fundamentals and consistent brand acquisition success make it a stock to hold for many years.",
+     "ticker": "ELF",
+     "timeframe": "long-term",
+     "timestamp": "05:07"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Maintaining existing position.",
+     "price": "",
+     "rationale": "Solid earnings and growing data center momentum validate a bullish long-term thesis despite minor guidance debates.",
+     "ticker": "AMD",
+     "timeframe": "long-term",
+     "timestamp": "30:21"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Long-term shareholder.",
+     "price": "",
+     "rationale": "Strong secular tailwinds in AI and massive ecosystem dominance outweigh analyst concerns over capital expenditures.",
+     "ticker": "META",
+     "timeframe": "long-term",
+     "timestamp": "26:36"
+    }
+   ],
+   "summary": "Jeremy Lefebvre explains why he just invested $71,000 into Celsius Holdings, highlights its strong fundamental growth and potential as a buyout candidate, and reviews recent earnings and market commentary from CNBC.",
+   "topics": [
+    "Celsius Holdings",
+    "e.l.f. Beauty",
+    "AMD",
+    "Earnings",
+    "Market Outlook"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2395,
   "id": "O9f6uUIIL5M",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-10T19:59:50Z",
   "published_at": "2026-08-06T22:20:49Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/O9f6uUIIL5M/mqdefault.jpg",
   "title": "I spent $71,000 on this stock today‼️",
+  "tokens": 205536,
   "url": "https://www.youtube.com/watch?v=O9f6uUIIL5M"
  },
  "OJEnkUwLYIk": {
@@ -3840,6 +3911,190 @@
   "thumbnail": "https://i.ytimg.com/vi/PMPXANHKQRY/mqdefault.jpg",
   "title": "These 2 Stocks are about to BALLOON‼️",
   "url": "https://www.youtube.com/watch?v=PMPXANHKQRY"
+ },
+ "Q-WF5RdHpgw": {
+  "analysis": {
+   "category": "Stock Deep Dive",
+   "key_points": [
+    "Public portfolio account value reaches nearly $4.94M with a strong daily gain.",
+    "Nvidia's high net margins and deceleration cycles are analyzed in comparison to AMD and Micron.",
+    "Growth vs. value investor psychology dictates how P/E multiples and revenue growth are perceived.",
+    "El. F. (ELF) is favored over Estee Lauder (EL) due to superior long-term growth and brand alignment.",
+    "Nike and Bath & Body Works are highlighted as top dividend stock picks in a diverse portfolio strategy."
+   ],
+   "market_view": "Public account value hits $4,938,885.99, showing strong progress over the past year despite broader market chop and divergences.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ACCUMULATE",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Public account holding",
+     "price": "",
+     "rationale": "AMD is in a growth acceleration cycle with strong revenue and earnings expansion.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "00:36"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Public account holding",
+     "price": "",
+     "rationale": "Solid gains in public portfolio over time.",
+     "ticker": "META",
+     "timeframe": "",
+     "timestamp": "01:02"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Honest Company",
+     "is_own_position": true,
+     "position_note": "Public account holding",
+     "price": "",
+     "rationale": "Strong performance heading towards year-end price targets.",
+     "ticker": "HNST",
+     "timeframe": "",
+     "timestamp": "01:10"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Public account holding",
+     "price": "",
+     "rationale": "Celsius is catching strong momentum with high revenue growth potential.",
+     "ticker": "CELH",
+     "timeframe": "",
+     "timestamp": "01:30"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies",
+     "is_own_position": true,
+     "position_note": "Public account holding",
+     "price": "",
+     "rationale": "Delivering massive multi-thousand percent gains.",
+     "ticker": "PLTR",
+     "timeframe": "",
+     "timestamp": "01:42"
+    },
+    {
+     "action": "HOLD",
+     "company": "Revolve Group",
+     "is_own_position": true,
+     "position_note": "Public account holding",
+     "price": "",
+     "rationale": "Solid double-digit percentage mover in the portfolio.",
+     "ticker": "RVLV",
+     "timeframe": "",
+     "timestamp": "01:53"
+    },
+    {
+     "action": "HOLD",
+     "company": "Nvidia Corporation",
+     "is_own_position": true,
+     "position_note": "Discussed as a high-margin chip leader facing deceleration discussions",
+     "price": "",
+     "rationale": "Despite recent media scandals and growth deceleration, Nvidia remains a solid core holding with exceptional net profit margins.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": "02:00"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Used as an example of extreme cyclic net profit margins.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "09:51"
+    },
+    {
+     "action": "MENTION",
+     "company": "Salesforce",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Compared against hardware companies on gross and net margins.",
+     "ticker": "CRM",
+     "timeframe": "",
+     "timestamp": "12:08"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "$190,000+ position in public account; larger position in private accounts",
+     "price": "",
+     "rationale": "Superior long-term revenue growth and modern social media marketing alignment compared to peers.",
+     "ticker": "ELF",
+     "timeframe": "",
+     "timestamp": "31:52"
+    },
+    {
+     "action": "HOLD",
+     "company": "Estee Lauder Companies",
+     "is_own_position": true,
+     "position_note": "$203,000+ position in public account",
+     "price": "",
+     "rationale": "A strong money-maker, though e.l.f. Beauty is preferred for higher growth.",
+     "ticker": "EL",
+     "timeframe": "",
+     "timestamp": "32:51"
+    },
+    {
+     "action": "WATCH",
+     "company": "NIKE",
+     "is_own_position": false,
+     "position_note": "Top dividend stock pick to buy",
+     "price": "",
+     "rationale": "Trading in an earnings trough with an over 4% dividend yield and international market recovery potential.",
+     "ticker": "NKE",
+     "timeframe": "",
+     "timestamp": "36:13"
+    },
+    {
+     "action": "WATCH",
+     "company": "Bath & Body Works",
+     "is_own_position": false,
+     "position_note": "Top dividend stock pick to buy",
+     "price": "",
+     "rationale": "Reliable profit generator with a low payout ratio and steady dividend growth regardless of economic conditions.",
+     "ticker": "BBWI",
+     "timeframe": "",
+     "timestamp": "37:39"
+    }
+   ],
+   "summary": "Jeremy updates his public and private portfolios, celebrating strong gains in companies like AMD, Meta, and Palantir while analyzing Nvidia and Micron's net margins and revenue deceleration. He explains the psychological differences between growth and value investors, especially regarding forward P/E ratios and growth cycles. Finally, he shares his top two dividend stock picks—Nike and Bath & Body Works—and compares Elf Beauty and Estee Lauder.",
+   "topics": [
+    "Portfolio Update",
+    "Nvidia",
+    "Growth vs Value Investing",
+    "Net Margins",
+    "Dividend Stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
+  "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
+  "channel_title": "Financial Education",
+  "duration_sec": 2312,
+  "id": "Q-WF5RdHpgw",
+  "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-10T19:58:56Z",
+  "published_at": "2026-11-10T00:38:18Z",
+  "status": "ok",
+  "thumbnail": "https://i.ytimg.com/vi/Q-WF5RdHpgw/mqdefault.jpg",
+  "title": "The #1 Stock to Buy Right Now‼️",
+  "tokens": 199247,
+  "url": "https://www.youtube.com/watch?v=Q-WF5RdHpgw"
  },
  "Q6G8pXFkKLk": {
   "analysis": {
@@ -7720,7 +7975,9 @@
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 1999,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "wgVqeTIWXmk",
+  "last_attempt_at": "2026-11-10T20:00:53Z",
   "live_status": "none",
   "published_at": "2026-08-06T00:45:46Z",
   "status": "pending",
