@@ -1811,16 +1811,133 @@
   "url": "https://www.youtube.com/watch?v=EHbqQ8VANC8"
  },
  "EiRAMR8ixEA": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "The Nasdaq entered correction territory down over 10%, with semiconductor and memory stocks getting crushed.",
+    "The Cheesecake Factory (CAKE) delivered strong earnings with 25% net income growth, driven by expansion in North Italia and Flower Child.",
+    "SoFi Technologies (SOFI) posted an 'A+' earnings report with 43% net revenue growth and over 4 million new members added in the past 12 months, making it a top stock Jeremy wants to load up on.",
+    "Meta Platforms (META) faces massive CapEx spending and expense growth that compressed operating income, creating short-term headwinds despite long-term potential.",
+    "Robinhood (HOOD) reported strong 32% revenue growth but rising expenses; Jeremy considers it cyclical and will watch for an entry if the S&P 500 drops 10%+.",
+    "Top stocks Jeremy is ready to buy or accumulate include SoFi, Netflix (NFLX), Celsius Holdings (CELH), and potentially Robinhood on further weakness."
+   ],
+   "market_view": "With the Nasdaq down over 10% from all-time highs and semiconductors crashing, market conditions are volatile, but Jeremy's diversified public account sits around $4.26 million as value and dividend holdings offset tech weakness.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$328k with over $196k in gains in public account",
+     "price": "",
+     "rationale": "Reported outstanding Q2 earnings with 8% revenue growth and 25% net income growth. Significant long-term domestic runway exists for North Italia and the Flower Child concept.",
+     "ticker": "CAKE",
+     "timeframe": "long-term",
+     "timestamp": "02:03"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Ready to load the boat and buy as many shares as possible",
+     "price": "$15.25",
+     "rationale": "Delivered an A+ earnings report with net revenue up 43% and net income up 61%. Long-term disruption of legacy banks continues as member count rapidly expands toward 20 million.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "14:26"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Holds long-term shares from 2022; warns stock could fall to $350-$450",
+     "price": "$535.55",
+     "rationale": "Costs and CapEx are surging much faster than revenue growth, dragging down operating income. Jeremy views the short term as messy and cautions against believing forward P/E multiples until spending is reined in.",
+     "ticker": "META",
+     "timeframe": "long-term",
+     "timestamp": "21:18"
+    },
+    {
+     "action": "WATCH",
+     "company": "Robinhood Markets",
+     "is_own_position": false,
+     "position_note": "Will consider buying if S&P 500 falls 10%+ and stock drops to $60s-$70s",
+     "price": "",
+     "rationale": "Robinhood is highly cyclical and best bought during bear markets when crypto and equities are deeply depressed.",
+     "ticker": "HOOD",
+     "timeframe": "future",
+     "timestamp": "33:32"
+    },
+    {
+     "action": "WATCH",
+     "company": "Netflix",
+     "is_own_position": false,
+     "position_note": "On watchlist to load up on",
+     "price": "",
+     "rationale": "Features a very clean story, controlled spending, multiple revenue growth levers, and an attractive valuation.",
+     "ticker": "NFLX",
+     "timeframe": "ongoing",
+     "timestamp": "37:13"
+    },
+    {
+     "action": "WATCH",
+     "company": "Celsius Holdings",
+     "is_own_position": false,
+     "position_note": "Likes the stock heavily in the $20s",
+     "price": "",
+     "rationale": "Underlying Nielsen scanner data remains strong, making the stock attractive at current lower valuations.",
+     "ticker": "CELH",
+     "timeframe": "ongoing",
+     "timestamp": "37:32"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Already holds a massive position",
+     "price": "$429.56",
+     "rationale": "Stock has crashed over 26% from recent highs and is tempting, but Jeremy already owns an extensive amount.",
+     "ticker": "AMD",
+     "timeframe": "ongoing",
+     "timestamp": "38:39"
+    },
+    {
+     "action": "WATCH",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "On watchlist as it pulls back 40% from highs",
+     "price": "$739.00",
+     "rationale": "The severe pullback in memory and semiconductor stocks is starting to make Micron look tempting.",
+     "ticker": "MU",
+     "timeframe": "ongoing",
+     "timestamp": "38:33"
+    }
+   ],
+   "summary": "Jeremy reviews market conditions as the Nasdaq enters a correction, while his public portfolio sits at approximately $4.26 million. He breaks down recent earnings reports from The Cheesecake Factory, SoFi Technologies, Meta Platforms, and Robinhood Markets. He remains extremely bullish on Cheesecake Factory's growth concepts and SoFi's rapid customer acquisition against legacy banks, while warning that Meta faces severe expense and CapEx pressures that could drag the stock down further. Finally, he outlines the stocks he is looking to accumulate, highlighting SoFi, Netflix, Celsius, and potentially Robinhood if the broader market sells off further.",
+   "topics": [
+    "Earnings Reaction",
+    "Market Correction",
+    "Tech Stocks",
+    "Fintech",
+    "Restaurant Stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2377,
   "id": "EiRAMR8ixEA",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-11T07:28:35Z",
   "published_at": "2026-07-30T00:03:26Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/EiRAMR8ixEA/mqdefault.jpg",
   "title": "Im Going to LOAD THE BOAT on this Stock Now‼️",
+  "tokens": 205547,
   "url": "https://www.youtube.com/watch?v=EiRAMR8ixEA"
  },
  "FLfRxSDaKUw": {
@@ -1902,16 +2019,153 @@
   "url": "https://www.youtube.com/watch?v=IKAbT988Gko"
  },
  "J7qgSR8vzzA": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Jeremy's public portfolio hit an all-time high of $4,699,425, driven primarily by AMD and Palantir.",
+    "Palantir surged 30% on earnings, though Jeremy views the stock as fundamentally range-bound between $125 and $200.",
+    "AMD delivered an A++ earnings report with 50% revenue growth, but dropped after hours due to Q3 guidance of $13B falling short of whisper numbers.",
+    "Jeremy projects AMD can reach $1,000+ in his base case and $1,500–$2,000 in his bull case by 2030, viewing post-earnings weakness as a buying opportunity.",
+    "Jeremy challenges Tom Lee's 2027 bull market thesis, warning hyperscalers (META, AMZN, GOOGL, MSFT) face EPS hits and negative free cash flow from relentless CapEx.",
+    "He strongly dismisses Ross Gerber's hype around SpaceX orbital data centers as marketing branding rather than near-term reality."
+   ],
+   "market_view": "Jeremy anticipates a major market rotation away from mega-cap tech stocks by 2027 as heavy AI CapEx severely impairs free cash flow and EPS, benefiting mid-caps, small-caps, and physical goods businesses.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "PLTR"
+    },
+    {
+     "ticker": "AMD"
+    },
+    {
+     "ticker": "ELF"
+    },
+    {
+     "ticker": "HNST"
+    },
+    {
+     "ticker": "SHOP"
+    },
+    {
+     "ticker": "CELH"
+    },
+    {
+     "ticker": "SOFI"
+    },
+    {
+     "ticker": "CRM"
+    },
+    {
+     "ticker": "EL"
+    },
+    {
+     "ticker": "CAKE"
+    }
+   ],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Core holding; helped push portfolio to $4.7M ATH",
+     "price": "",
+     "rationale": "Reported outstanding Q2 numbers with 50% revenue growth and doubling gross profit, but guidance of $13B disappointed overly aggressive whisper targets.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "09:07"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies",
+     "is_own_position": true,
+     "position_note": "Core holding",
+     "price": "",
+     "rationale": "Experienced a massive 30% post-earnings rally, though Jeremy views the valuation as pricing in significant growth and expects it to remain range-bound between $125 and $200.",
+     "ticker": "PLTR",
+     "timeframe": "this video",
+     "timestamp": "02:11"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Core holding",
+     "price": "",
+     "rationale": "Stock has surged over 80% off recent lows of $49 to around $87 heading into upcoming earnings, demonstrating relentless momentum.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "04:15"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Honest Company",
+     "is_own_position": true,
+     "position_note": "Core holding",
+     "price": "",
+     "rationale": "Stock rose 6% on the day, and Jeremy anticipates it will surpass $5 per share later this year.",
+     "ticker": "HNST",
+     "timeframe": "this video",
+     "timestamp": "05:34"
+    },
+    {
+     "action": "HOLD",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Core holding",
+     "price": "",
+     "rationale": "After an unjustified drop to $15 following strong earnings, the stock has rebounded over 20% as fundamentals reassert themselves.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "06:05"
+    },
+    {
+     "action": "WATCH",
+     "company": "Whirlpool Corporation",
+     "is_own_position": false,
+     "position_note": "On watchlist to buy",
+     "price": "",
+     "rationale": "Jeremy expects housing-related consumer durable stocks to double or triple over the next several years as the housing market bottoms and recovers.",
+     "ticker": "WHR",
+     "timeframe": "this video",
+     "timestamp": "07:07"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Benefiting in the short term from AMD's solid datacenter numbers and SpaceX hype, but faces long-term risks if Big Tech scales back AI capital expenditure.",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "08:35"
+    }
+   ],
+   "summary": "Jeremy celebrates his public portfolio reaching a new all-time high of approximately $4.7 million, propelled by strong gains in Palantir and AMD. He breaks down AMD's latest earnings report and future valuation projections, explaining why the post-earnings pullback is an overreaction to conservative guidance. Jeremy also reacts to CNBC commentary from Tom Lee, Ed Yardeni, Amy Wu Silverman, and Ross Gerber, pushing back on bullish mega-cap tech outlooks for 2027 by warning that massive AI CapEx will severely compress Big Tech earnings and free cash flow.",
+   "topics": [
+    "Portfolio Update",
+    "Earnings Reaction",
+    "Semiconductors",
+    "AI CapEx",
+    "Big Tech"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2704,
   "id": "J7qgSR8vzzA",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-11T07:05:34Z",
   "published_at": "2026-08-05T00:58:31Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/J7qgSR8vzzA/mqdefault.jpg",
   "title": "LLLLLLLLLLLLLLLL",
+  "tokens": 233389,
   "url": "https://www.youtube.com/watch?v=J7qgSR8vzzA"
  },
  "JMaLx81fnGs": {
@@ -3159,6 +3413,112 @@
   "title": "Your Portfolio is about to GO INSANE‼️",
   "tokens": 230431,
   "url": "https://www.youtube.com/watch?v=M5jPiJhJoEM"
+ },
+ "MCBLOo4uT8s": {
+  "analysis": {
+   "category": "Watchlist",
+   "key_points": [
+    "Historically, significant VIX spikes (60-70%+) and pullbacks on bad news often signal great long-term buying opportunities.",
+    "Investors should avoid leverage and focus on a long-term horizon (5-20 years) to build real wealth.",
+    "Jeremy's top 5 AI-related stocks for the next 5 years are AMD, Amazon, Alphabet, Caterpillar, and Nvidia.",
+    "He remains bullish on AMD as a long-term hold, particularly for its physical AI positioning heading into the 2030s.",
+    "Regarding Nvidia, Jeremy warns that low valuations (12-14 forward P/E) do not protect against short-term downside if negative sentiment accelerates."
+   ],
+   "market_view": "Jeremy believes extreme market sell-offs and spikes in the VIX represent strong long-term buying opportunities, noting that markets bottom on bad news.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Jeremy's #1 AI stock pick; plans to hold a large portion super long-term into the 2030s",
+     "price": "",
+     "rationale": "Lisa Su has positioned AMD excellently in CPU and GPU, and Jeremy views them as a primary winner in physical AI.",
+     "ticker": "AMD",
+     "timeframe": "long term",
+     "timestamp": "16:44"
+    },
+    {
+     "action": "WATCH",
+     "company": "Amazon.com Inc.",
+     "is_own_position": false,
+     "position_note": "Jeremy's #2 AI stock pick",
+     "price": "",
+     "rationale": "AWS is expected to show strong numbers over the next several years and be a primary beneficiary of AI spending.",
+     "ticker": "AMZN",
+     "timeframe": "5 years",
+     "timestamp": "19:39"
+    },
+    {
+     "action": "WATCH",
+     "company": "Alphabet Inc.",
+     "is_own_position": false,
+     "position_note": "Jeremy's #3 AI stock pick",
+     "price": "",
+     "rationale": "Current negative sentiment is temporary, and Alphabet remains a fundamentally powerful AI play.",
+     "ticker": "GOOGL",
+     "timeframe": "5 years",
+     "timestamp": "19:58"
+    },
+    {
+     "action": "WATCH",
+     "company": "Caterpillar Inc.",
+     "is_own_position": false,
+     "position_note": "Jeremy's #4 AI stock pick",
+     "price": "",
+     "rationale": "Every time CAT has dropped 40%+ historically it has been a buy; benefits from both AI infrastructure buildouts and industrial construction.",
+     "ticker": "CAT",
+     "timeframe": "5 years",
+     "timestamp": "20:22"
+    },
+    {
+     "action": "WATCH",
+     "company": "Nvidia Corporation",
+     "is_own_position": false,
+     "position_note": "Jeremy's #5 AI stock pick; not buying immediately due to near-term headline risk",
+     "price": "",
+     "rationale": "Despite attractive forward P/E valuations and industry leadership, Jeremy warns negative sentiment regarding CEO investigation rumors could drive the stock lower in the short term.",
+     "ticker": "NVDA",
+     "timeframe": "5 years",
+     "timestamp": "22:15"
+    },
+    {
+     "action": "WATCH",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Trades at an extremely cheap forward P/E of around 4, but short-term valuation does not prevent it from selling off further during market turbulence.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "23:51"
+    }
+   ],
+   "summary": "Jeremy reviews CNBC commentary regarding whether the market reached a bottom and discusses several AI-related stocks that have experienced substantial pullbacks. He provides his top 5 AI stock picks to buy for a 5-year timeframe following recent drawdowns. Additionally, he analyzes rumors regarding Nvidia CEO Jensen Huang potentially departing, Dan Niles opening a position in Nvidia, and Mike Wilson's perspective on the market correction.",
+   "topics": [
+    "AI stocks",
+    "Market Bottom",
+    "VIX",
+    "Semiconductors"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
+  "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
+  "channel_title": "Jeremy Lefebvre Makes Money",
+  "duration_sec": 2386,
+  "id": "MCBLOo4uT8s",
+  "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-11T06:54:27Z",
+  "published_at": "2026-11-11T01:07:11Z",
+  "status": "ok",
+  "thumbnail": "https://i.ytimg.com/vi/MCBLOo4uT8s/mqdefault.jpg",
+  "title": "Top 5 AI stocks to BUY NOW since they have Collapsed -60%+",
+  "tokens": 205018,
+  "url": "https://www.youtube.com/watch?v=MCBLOo4uT8s"
  },
  "NDNR40EKUAE": {
   "analysis": {
@@ -4623,16 +4983,133 @@
   "url": "https://www.youtube.com/watch?v=UuNTz0_IDPA"
  },
  "VBCzoxrBJIM": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Earnings Reaction",
+   "key_points": [
+    "Amazon delivered outstanding AWS growth of 37% YoY, reinforcing Jeremy's thesis that Amazon will eventually reach a $10 trillion market cap.",
+    "Jeremy gave Meta a 'D' grade for its latest quarter, criticizing runaway expenses and revenue deceleration, expecting the stock to be dead money short term.",
+    "Jeremy expects AMD to hit all-time highs before earnings next week and surpass $700 within 30 days of earnings, though he plans to trim if it reaches $1,000–$1,500.",
+    "Apple earned an 'A+' for strong gross margins and revenue growth, though the stock fell due to sky-high valuation expectations.",
+    "Jeremy bought more SoFi shares, arguing the company's fundamentals are firing on all cylinders despite CEO Anthony Noto's cautious rate commentary.",
+    "Jeremy believes Michael Burry is dangerously early shorting semiconductor giants Micron and Nvidia."
+   ],
+   "market_view": "Jeremy remains highly bullish on AI leaders with real revenue acceleration (Amazon and AMD) while cautioning that tech companies spending massively without near-term ROI clarity (like Meta) will face continued market skepticism.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 2,555 shares valued over $1.24M; plans to trim/exit if shares rally to $1,000–$1,500 over the next 6-9 months",
+     "price": "",
+     "rationale": "Anticipates 'shock and awe' guidance from AMD that could send the stock over $700 within 30 days post-earnings.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "00:05"
+    },
+    {
+     "action": "HOLD",
+     "company": "Amazon.com, Inc.",
+     "is_own_position": true,
+     "position_note": "Owns shares in public account; up over $14k on the day",
+     "price": "",
+     "rationale": "Delivered an 'A++' quarter with AWS revenue re-accelerating to 37% YoY growth, demonstrating clear AI monetization that justifies its CapEx spend.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "00:33"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds a large position, though trimmed significantly late last year and earlier this year",
+     "price": "",
+     "rationale": "Reported a 'doggy doo-doo' quarter with expenses up 55% and revenue decelerating to 22%, leading to declining net income and lack of ROI clarity.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "11:51"
+    },
+    {
+     "action": "MENTION",
+     "company": "Apple Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Reported an 'A+' quarter with strong gross margin expansion of 25%, but the stock pulled back due to lofty valuation entering the report.",
+     "ticker": "AAPL",
+     "timeframe": "",
+     "timestamp": "14:48"
+    },
+    {
+     "action": "ADD",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 5,555 shares valued around $91.5K; bought more today in his Patreon portfolio",
+     "price": "",
+     "rationale": "Considers the recent post-earnings sell-off completely irrational given strong membership growth, EBITDA margin expansion, and a massive fundamental trajectory.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "24:20"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Thinks Michael Burry is way too early shorting Micron, noting the stock has strong potential to run to $1,200–$1,500 before this cycle ends.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "17:34"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned regarding Michael Burry's short position, warning that shorting AI dragons without perfect timing is extremely dangerous.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": "17:26"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet Inc.",
+     "is_own_position": true,
+     "position_note": "Owns in public account",
+     "price": "",
+     "rationale": "Beneficiary of massive Anthropic partnership compute demand alongside Amazon.",
+     "ticker": "GOOGL",
+     "timeframe": "this video",
+     "timestamp": "28:15"
+    }
+   ],
+   "summary": "Jeremy reviews earnings results and market momentum across mega-cap tech and growth stocks following major earnings reports. He celebrates massive gains in AMD and Amazon while criticizing Meta's ballooning CapEx and decelerating revenue growth. He also breaks down Apple's solid report, addresses Michael Burry's short positions in Micron and Nvidia, and reacts to interviews with Wall Street analysts and SoFi CEO Anthony Noto. Jeremy confirms he added to his SoFi position, calling it ready to run back above $20.",
+   "topics": [
+    "Tech Earnings",
+    "AI Capex",
+    "Cloud Computing",
+    "Semiconductors",
+    "Fintech"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2371,
   "id": "VBCzoxrBJIM",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-11T07:24:12Z",
   "published_at": "2026-07-31T00:32:39Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/VBCzoxrBJIM/mqdefault.jpg",
   "title": "This is my last Warning‼️Insane Move coming",
+  "tokens": 205127,
   "url": "https://www.youtube.com/watch?v=VBCzoxrBJIM"
  },
  "XGMoP5jVZz4": {
@@ -6815,16 +7292,121 @@
   "url": "https://www.youtube.com/watch?v=k5cuMgr2bf4"
  },
  "kk5_a94VOS0": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Tech and semiconductor stocks are undergoing sharp pullbacks due to leverage and margin debt unwinding.",
+    "Micron is down 35-40% from highs, SanDisk is down roughly 57%, while AMD trades around $440.",
+    "The Cheesecake Factory (CAKE) approached nearly $100 per share, delivering massive gains from his original buys in the $30s.",
+    "ServiceNow (NOW) has surged over 5% on the day, reaching $116.",
+    "Upcoming earnings reports to watch include SoFi, The Cheesecake Factory, and Meta Platforms."
+   ],
+   "market_view": "Short-term market turbulence is driven by margin calls and leverage unwinding in semiconductor and tech trades, creating long-term buying opportunities for disciplined investors.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory",
+     "is_own_position": true,
+     "position_note": "Now trading near $100/share",
+     "price": "$30s",
+     "rationale": "One of his best money-making investments over the past few years, demonstrating strong performance from value and dividend stocks.",
+     "ticker": "CAKE",
+     "timeframe": "past few years",
+     "timestamp": "00:44"
+    },
+    {
+     "action": "MENTION",
+     "company": "SoFi Technologies",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "$15",
+     "rationale": "Trading around $15 with upcoming earnings report after market close.",
+     "ticker": "SOFI",
+     "timeframe": "",
+     "timestamp": "00:13"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "Down 35-40% from ATH",
+     "price": "$777",
+     "rationale": "Experiencing a heavy pullback from its peak in the $1,200 range due to margin unwinds.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "00:17"
+    },
+    {
+     "action": "MENTION",
+     "company": "SanDisk",
+     "is_own_position": false,
+     "position_note": "Down ~57% from ATH",
+     "price": "",
+     "rationale": "Suffering a severe drawdown from all-time highs amid semiconductor weakness.",
+     "ticker": "SNDK",
+     "timeframe": "",
+     "timestamp": "00:29"
+    },
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "$440",
+     "rationale": "Pulling back to $440 as semiconductor leverage is unwound in the market.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "00:34"
+    },
+    {
+     "action": "MENTION",
+     "company": "ServiceNow",
+     "is_own_position": false,
+     "position_note": "Up 5%+ on the day",
+     "price": "$116",
+     "rationale": "Rebounding strongly after being dead money for several months.",
+     "ticker": "NOW",
+     "timeframe": "",
+     "timestamp": "01:12"
+    },
+    {
+     "action": "MENTION",
+     "company": "Meta Platforms",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Reporting earnings after the bell.",
+     "ticker": "META",
+     "timeframe": "",
+     "timestamp": "02:37"
+    }
+   ],
+   "summary": "Jeremy discusses recent sharp pullbacks across major semiconductor and tech stocks like AMD, Micron, and SanDisk, contrasting them with strong gains in holdings like The Cheesecake Factory and ServiceNow. He explains that market volatility is driven by the unwinding of leverage and margin debt rather than broken long-term fundamentals. He advises investors to ignore short-term noise, focus on multi-year horizons, and buy quality businesses trading at attractive valuations.",
+   "topics": [
+    "market pullback",
+    "semiconductors",
+    "margin unwinding",
+    "earnings",
+    "value investing"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 180,
   "id": "kk5_a94VOS0",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-11T07:30:44Z",
   "published_at": "2026-07-29T18:48:31Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/kk5_a94VOS0/mqdefault.jpg",
   "title": "Stocks crashing‼️(AMD, MU, SNDK, SOFI) Do this now",
+  "tokens": 19530,
   "url": "https://www.youtube.com/watch?v=kk5_a94VOS0"
  },
  "lZ57UuJOYYY": {
@@ -6937,16 +7519,242 @@
   "url": "https://www.youtube.com/watch?v=mJrp04S7cB8"
  },
  "n6P-r98bpm0": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Public portfolio reached $4,533,001, up $121,000 on the day and near an all-time high.",
+    "Palantir posted outstanding Q2 numbers (93% revenue growth, 55% net margin), but guidance points to a multi-year growth deceleration phase.",
+    "Jeremy plans to hold his remaining 1,000 shares of PLTR, expecting it to remain range-bound between $125 and $200.",
+    "Reveals his 'Ultimate 10-Stock Portfolio': AMZN, META/GOOGL, SOFI, NOW, NFLX, CELH, EL, CAKE, AMD, and HNST.",
+    "Predicts AMD could surpass $600 this week and reach $1,000 to $2,000 in the coming years due to massive Wall Street revenue underestimations.",
+    "Expects Celsius (CELH) to hit $50+ next summer and $100+ long term as international expansion and multi-brand execution play out.",
+    "Projects e.l.f. Beauty (ELF) will rally to $100-$140 by year-end, pointing out cyclical summer rallies and severe Wall Street revenue underestimations."
+   ],
+   "market_view": "Jeremy is extremely bullish on his portfolio, noting his public account is near all-time highs at over $4.53 million, driven by huge momentum across tech and consumer growth names.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 27.3
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 9.7
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 7.5
+    },
+    {
+     "ticker": "CELH",
+     "weight_pct": 4.0
+    },
+    {
+     "ticker": "EL",
+     "weight_pct": 3.4
+    },
+    {
+     "ticker": "NFLX",
+     "weight_pct": 3.3
+    },
+    {
+     "ticker": "HNST",
+     "weight_pct": 3.2
+    },
+    {
+     "ticker": "NOW",
+     "weight_pct": 3.1
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 2.8
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 2.2
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies",
+     "is_own_position": true,
+     "position_note": "1,000 shares in public account valued at ~$125,650",
+     "price": "",
+     "rationale": "Reported incredible 93% revenue growth and 55% net margin, but forward guidance signals a deceleration phase that will likely trap the stock between $125 and $200 for years.",
+     "ticker": "PLTR",
+     "timeframe": "this video",
+     "timestamp": "03:34"
+    },
+    {
+     "action": "HOLD",
+     "company": "Amazon",
+     "is_own_position": true,
+     "position_note": "Public account value ~$441,651 (~9.7% of portfolio)",
+     "price": "",
+     "rationale": "Named his #1 core position due to AWS re-accelerating revenue growth over the next 1-2 years and high-margin ad business expansion.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "13:42"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Over $492k in unrealized gains; core position",
+     "price": "",
+     "rationale": "Named as one of the two essential #2 core portfolio positions alongside Alphabet due to immense cash generation and advertising dominance.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "15:21"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet",
+     "is_own_position": true,
+     "position_note": "Holds a smaller position alongside Meta",
+     "price": "",
+     "rationale": "Considers it a must-have core holding option alongside Meta for any 10-stock portfolio.",
+     "ticker": "GOOGL",
+     "timeframe": "this video",
+     "timestamp": "15:30"
+    },
+    {
+     "action": "HOLD",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Public account value ~$100,156 (~2.2% of portfolio)",
+     "price": "",
+     "rationale": "Chosen as the high-growth banking candidate tracking toward becoming a financial giant alongside JPMorgan and Bank of America.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "16:15"
+    },
+    {
+     "action": "HOLD",
+     "company": "ServiceNow",
+     "is_own_position": true,
+     "position_note": "Public account value ~$139,540 (~3.1% of portfolio)",
+     "price": "",
+     "rationale": "High-conviction hybrid growth and value stock with exceptional enterprise SaaS fundamentals.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "17:40"
+    },
+    {
+     "action": "HOLD",
+     "company": "Netflix",
+     "is_own_position": true,
+     "position_note": "Public account value ~$149,959 (~3.3% of portfolio)",
+     "price": "",
+     "rationale": "Trading at an attractive forward PE around 20 with powerful catalysts in international subscriber growth, ad-tier expansion, and live sports.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "18:07"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Public account value ~$180,690 (~4.0% of portfolio)",
+     "price": "",
+     "rationale": "Believes Wall Street estimates of single-digit revenue growth are absurdly low; expects CELH to reach $50+ by next summer and $100+ long term.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "20:45"
+    },
+    {
+     "action": "HOLD",
+     "company": "Estée Lauder",
+     "is_own_position": true,
+     "position_note": "Public account value ~$152,424 (~3.4% of portfolio)",
+     "price": "",
+     "rationale": "A classic high-margin beauty brand representing the value and dividend component of the portfolio.",
+     "ticker": "EL",
+     "timeframe": "this video",
+     "timestamp": "22:25"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory",
+     "is_own_position": true,
+     "position_note": "Public account value ~$340,492 (~7.5% of portfolio)",
+     "price": "",
+     "rationale": "Exceptional value/dividend stock with over a decade of expansion runway from high-growth restaurant concepts Flower Child and North Italia.",
+     "ticker": "CAKE",
+     "timeframe": "this video",
+     "timestamp": "23:07"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Public account value ~$1,238,255 (~27.3% of portfolio)",
+     "price": "",
+     "rationale": "Forecasts $600+ this week and $1,000 to $2,000 long term, arguing consensus estimates of $12.5B to $18.5B quarterly revenue will be crushed.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "25:18"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Honest Company",
+     "is_own_position": true,
+     "position_note": "Public account value ~$146,600 (~3.2% of portfolio)",
+     "price": "",
+     "rationale": "Selected as the top speculative pick under $5 with a clean balance sheet, rising margins, and potential to reach $5+ this year and $10-$20 long term.",
+     "ticker": "HNST",
+     "timeframe": "this video",
+     "timestamp": "26:28"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Owns shares; up over $83k total gain",
+     "price": "",
+     "rationale": "Analyst projections of 5-8% growth are far too conservative; expects shelf space expansion, international growth, and Rhodes brand to propel shares to $100-$140 by year end.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "34:08"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned looking tempting below $750 in a recent post on X, but did not announce a position.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "02:02"
+    }
+   ],
+   "summary": "Jeremy returns from a family cruise to celebrate his public account nearing an all-time high of over $4.53 million. He breaks down Palantir's latest earnings, highlighting stellar margins but warning of an upcoming revenue growth deceleration cycle that could keep the stock range-bound between $125 and $200. He also presents his ultimate 10-stock portfolio across core, growth, value/dividend, and speculative categories, explaining why he owns every stock on the list. Finally, he outlines massive upside expectations for AMD, Celsius Holdings, and e.l.f. Beauty heading into upcoming earnings and 2025/2026.",
+   "topics": [
+    "Portfolio Update",
+    "Palantir Earnings",
+    "AMD",
+    "Celsius",
+    "e.l.f. Beauty",
+    "Growth Stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2240,
   "id": "n6P-r98bpm0",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-11T07:12:37Z",
   "published_at": "2026-08-04T00:33:23Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/n6P-r98bpm0/mqdefault.jpg",
   "title": "Investors life will be changed by this stock‼️",
+  "tokens": 195789,
   "url": "https://www.youtube.com/watch?v=n6P-r98bpm0"
  },
  "pLl1Y9bbU44": {
@@ -7971,18 +8779,112 @@
   "url": "https://www.youtube.com/watch?v=wdLT163J364"
  },
  "wgVqeTIWXmk": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Earnings Reaction",
+   "key_points": [
+    "Jeremy's public account closed at $4,583,160.87, down roughly $101k on the day, but buoyed by strong earnings beats across core holdings.",
+    "Shopify (SHOP) delivered an A- quarter with 34% revenue growth and 66% net income growth, reaffirming why it deserves a premium valuation.",
+    "Wynn Resorts (WYNN) turned in a B+ quarter driven by Las Vegas table strength; Jeremy views the stock as an attractive buy under $120 ahead of its 2027 UAE opening.",
+    "The Honest Company (HNST) raised full-year guidance and boasts over $106 million in cash with zero debt, prompting Jeremy to raise his year-end price expectation toward $10+.",
+    "e.l.f. Beauty (ELF) reported an A+ quarter with 36% sales growth and 110% operating income growth, with Jeremy projecting a $100-$140 year-end exit price.",
+    "Dutch Bros (BROS) dropped 10% after hours despite acquiring Salad and Go locations; Jeremy favors holding The Cheesecake Factory (CAKE) due to its lower forward P/E."
+   ],
+   "market_view": "Jeremy emphasizes ignoring short-term earnings volatility and remaining focused on the multi-year trajectory and management execution of high-conviction holdings.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Shopify Inc.",
+     "is_own_position": true,
+     "position_note": "5th largest position in his Patreon portfolio, up ~118% total",
+     "price": "",
+     "rationale": "Shopify posted an A- earnings quarter with 34% revenue growth and 66% net income expansion, continuing to justify its historically premium multiple.",
+     "ticker": "SHOP",
+     "timeframe": "this video",
+     "timestamp": "02:12"
+    },
+    {
+     "action": "WATCH",
+     "company": "Wynn Resorts, Limited",
+     "is_own_position": false,
+     "position_note": "Considers the stock a strong buy under $120 (especially under $100)",
+     "price": "",
+     "rationale": "Wynn reported solid B+ earnings powered by Las Vegas table win outperformance, with massive long-term upside potential tied to its 40%-owned UAE casino opening in September 2027.",
+     "ticker": "WYNN",
+     "timeframe": "this video",
+     "timestamp": "06:18"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Honest Company, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 40,000 shares across accounts with a ~$2.88 cost basis",
+     "price": "",
+     "rationale": "Honest raised revenue and adjusted EBITDA guidance across the board, operates debt-free with $106 million in cash, and is expanding operating profitability rapidly.",
+     "ticker": "HNST",
+     "timeframe": "this video",
+     "timestamp": "12:44"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Expects stock to exit 2024 between $100 and $140, with long-term target over $200",
+     "price": "",
+     "rationale": "Delivered an A+ quarter with net sales up 36% and operating income up 110%, while holding $344M in cash and retaining huge international expansion runway.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "17:53"
+    },
+    {
+     "action": "WATCH",
+     "company": "Dutch Bros Inc.",
+     "is_own_position": false,
+     "position_note": "Trading around a 70x forward P/E",
+     "price": "",
+     "rationale": "Although operational growth is solid and the Salad and Go location acquisition supports rapid store footprint expansion, the valuation remains too rich.",
+     "ticker": "BROS",
+     "timeframe": "this video",
+     "timestamp": "24:43"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory Incorporated",
+     "is_own_position": true,
+     "position_note": "Holds 3,250 shares valued at ~$342,257.50, up over $209,000",
+     "price": "",
+     "rationale": "Jeremy views CAKE as a 'strong Donkey Kong hold' with low-20s forward P/E and multiple rollout concepts (North Italia, Flower Child), offering superior risk/reward to Dutch Bros.",
+     "ticker": "CAKE",
+     "timeframe": "this video",
+     "timestamp": "28:28"
+    }
+   ],
+   "summary": "Jeremy reviews his portfolio and dissects several major quarterly earnings reports following a volatile market day where his public portfolio closed around $4.58 million. He highlights outstanding quarterly performances and strong operational execution from Shopify, The Honest Company, and e.l.f. Beauty, reiterating bullish long-term outlooks for each. He also analyzes Wynn Resorts' earnings and Middle East expansion prospects, while contrasting Dutch Bros' high valuation against The Cheesecake Factory as a superior value-and-growth play.",
+   "topics": [
+    "Earnings Reaction",
+    "Growth Stocks",
+    "Valuation",
+    "Small Caps",
+    "Portfolio Update"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 1999,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "wgVqeTIWXmk",
   "last_attempt_at": "2026-11-10T20:00:53Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-11T07:00:35Z",
   "published_at": "2026-08-06T00:45:46Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/wgVqeTIWXmk/mqdefault.jpg",
   "title": "These 2 STOCKS will Boost Now‼️",
+  "tokens": 174298,
   "url": "https://www.youtube.com/watch?v=wgVqeTIWXmk"
  },
  "xHH5Jc5VH2s": {
