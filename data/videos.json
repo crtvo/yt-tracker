@@ -281,16 +281,110 @@
   "url": "https://www.youtube.com/watch?v=0jxA2XGNCZk"
  },
  "0opZHDPrYwg": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Semiconductor stocks like AMD, Micron, and Sandisk have experienced significant pullbacks after a massive run.",
+    "Jeremey Lefebvre argues that underlying fundamentals for AI chips remain strong despite concerns over durability and cap-ex spending.",
+    "Commentary from CNBC guests reveals ongoing debate about inflation, Fed rate cuts, and the sustainability of the AI boom.",
+    "The creator emphasizes that market pullbacks and corrections are historically normal buying opportunities.",
+    "Diversification across different sectors, including value and dividend stocks, is highlighted as a prudent long-term strategy."
+   ],
+   "market_view": "The creator remains bullish on the broader market and tech stocks, viewing recent pullbacks as a healthy correction within a longer-term bull market.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a high-performing semiconductor stock experiencing a significant pullback from recent highs.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as part of the memory chip sector experiencing a steep monthly decline.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a leader in AI chip demand facing potential pricing and margin pressures from competition.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "Alphabet",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Referenced during discussions of Big Tech cap-ex spending and market valuation.",
+     "ticker": "GOOGL",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "Amazon",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned in the context of Big Tech spending on AI infrastructure.",
+     "ticker": "AMZN",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "Microsoft",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed regarding its major role in AI investments and cloud growth.",
+     "ticker": "MSFT",
+     "timeframe": "",
+     "timestamp": ""
+    }
+   ],
+   "summary": "Jeremy Lefebvre analyzes the recent sharp pullback in semiconductor stocks like AMD and Micron, arguing that the long-term trend remains intact despite short-term market panic. He reacts to CNBC clips featuring Tom Lee, Steve Eisman, Mike Wilson, and Jeremy Siegel discussing the AI trade, crude oil, and Federal Reserve policy. The main takeaway is that short-term corrections in high-flying tech stocks are normal and present opportunities for long-term investors.",
+   "topics": [
+    "Semiconductors",
+    "AI Stocks",
+    "Macroeconomics",
+    "Federal Reserve",
+    "Market Correction"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 3214,
   "id": "0opZHDPrYwg",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-11T19:46:36Z",
   "published_at": "2026-07-28T21:40:10Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/0opZHDPrYwg/mqdefault.jpg",
   "title": "AMD & Micron Investors Get Ready‼️",
+  "tokens": 275128,
   "url": "https://www.youtube.com/watch?v=0opZHDPrYwg"
  },
  "11ku7bIXA28": {
