@@ -84,16 +84,164 @@
   "url": "https://www.youtube.com/watch?v=-G7N_-cvEyo"
  },
  "-fhON4Ll9DI": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Stock Deep Dive",
+   "key_points": [
+    "Predicts AMD will break all-time highs before earnings and reach $700+ within 60 days driven by strong guidance.",
+    "Expects Micron (MU) to follow AMD's rebound, estimating an 80% probability it revisits its previous highs around $1,200.",
+    "Views ServiceNow (NOW) as having established a definitive bottom with consistent higher lows since April.",
+    "Argues Palantir (PLTR) faces a major test as revenue growth deceleration approaches over the next one to two quarters.",
+    "Highlights Salesforce (CRM) as poised for a 10-20% move back over $200+ if revenue growth accelerates to 14-16% with strong guidance.",
+    "Selects American Express (AXP) as an 'easy money' compounding stock projected to return 10-16% CAGR even in a bear case.",
+    "Public portfolio sits at approximately $4.38 million, built brick-by-brick via buy-and-hold investing rather than margin or short-term options."
+   ],
+   "market_view": "Semiconductors remain in a multi-year cyclical boom that could last another 18 to 36 months before peaking and flatlining. Total public portfolio value is approximately $4,376,898.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 28.9
+    },
+    {
+     "ticker": "ELF",
+     "weight_pct": 22.37
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 6.46
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 4.25
+    },
+    {
+     "ticker": "CRM",
+     "weight_pct": 4.23
+    },
+    {
+     "ticker": "NOW",
+     "weight_pct": 3.01
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 3.0
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 2.15
+    },
+    {
+     "ticker": "GOOGL",
+     "weight_pct": 1.66
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 1.66
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "2,555 shares worth ~$1.26M (~28.9% of portfolio)",
+     "price": "",
+     "rationale": "Jeremy anticipates AMD will reach new all-time highs ahead of its second-quarter earnings and move past $700 within 60 days, driven by massive TAM expansion and anticipated blockbuster guidance.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "09:20"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "555 shares worth ~$186K",
+     "price": "",
+     "rationale": "Presented as the ultimate low-risk 'easy single or double' compounder with steady double-digit growth and normalizing operating expense comps that should boost future EPS.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "31:18"
+    },
+    {
+     "action": "HOLD",
+     "company": "Salesforce, Inc.",
+     "is_own_position": true,
+     "position_note": "Position worth ~$184.8K (down ~11.6%)",
+     "price": "",
+     "rationale": "Wall Street favors CEO Marc Benioff; if revenue growth re-accelerates to 14-16% alongside strong guidance, the stock could rally 10-20% back over $200.",
+     "ticker": "CRM",
+     "timeframe": "this video",
+     "timestamp": "22:15"
+    },
+    {
+     "action": "HOLD",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": true,
+     "position_note": "Position worth ~$131.5K (up 1,691%)",
+     "price": "",
+     "rationale": "The technical chart demonstrates a confirmed bottom via four successive higher lows since April peak negative SaaS sentiment.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "18:08"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": true,
+     "position_note": "Position worth ~$128.9K",
+     "price": "",
+     "rationale": "Jeremy views the bottom as questionable due to impending revenue growth deceleration over the next one to two quarters.",
+     "ticker": "PLTR",
+     "timeframe": "this video",
+     "timestamp": "20:41"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Down ~28% from its highs, Jeremy assigns an 80% probability it returns to $1,200 as semiconductor sentiment rebounds alongside AMD.",
+     "ticker": "MU",
+     "timeframe": "this video",
+     "timestamp": "14:17"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory Incorporated",
+     "is_own_position": true,
+     "position_note": "Position worth ~$282.8K (up 113.58%)",
+     "price": "",
+     "rationale": "Highlighted as the number five best-performing stock in his public account, generating strong dividend cash flows and capital appreciation.",
+     "ticker": "CAKE",
+     "timeframe": "this video",
+     "timestamp": "01:35"
+    }
+   ],
+   "summary": "Jeremy reviews recent volatility in semiconductor and SaaS stocks, focusing on AMD ahead of its upcoming earnings report and projecting it will reach new all-time highs and surpass $700 within 60 days. He analyzes the bottoming patterns in major enterprise software holdings, arguing ServiceNow has clearly bottomed while Salesforce and Palantir face upcoming tests around revenue acceleration or deceleration. Finally, he presents American Express as a low-risk, high-probability compounder capable of delivering double-digit annualized returns even under conservative bear-case assumptions. Throughout the video, he reiterates the importance of disciplined multi-year portfolio building over short-term options gambling.",
+   "topics": [
+    "Semiconductors",
+    "SaaS Stocks",
+    "Earnings Preview",
+    "Valuation Models",
+    "Long-term Investing"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2025,
   "id": "-fhON4Ll9DI",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-12T20:12:53Z",
   "published_at": "2026-07-27T23:02:34Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/-fhON4Ll9DI/mqdefault.jpg",
   "title": "Don’t miss this LIFE Changing Stock‼️",
+  "tokens": 176560,
   "url": "https://www.youtube.com/watch?v=-fhON4Ll9DI"
  },
  "-pK9xC1M7wE": {
@@ -7851,6 +7999,20 @@
   "tokens": 195789,
   "url": "https://www.youtube.com/watch?v=n6P-r98bpm0"
  },
+ "ou1JECedovg": {
+  "attempts": 0,
+  "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
+  "channel_title": "Financial Education",
+  "duration_sec": 178,
+  "error": "shorter than 180s (Short)",
+  "id": "ou1JECedovg",
+  "live_status": "none",
+  "published_at": "2026-11-12T01:39:36Z",
+  "status": "skipped",
+  "thumbnail": "https://i.ytimg.com/vi/ou1JECedovg/mqdefault.jpg",
+  "title": "AMD Investors‼️Shocking Development",
+  "url": "https://www.youtube.com/watch?v=ou1JECedovg"
+ },
  "pLl1Y9bbU44": {
   "attempts": 0,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
@@ -9097,7 +9259,9 @@
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 180,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "xyoCK3CkABw",
+  "last_attempt_at": "2026-11-12T20:17:06Z",
   "live_status": "none",
   "published_at": "2026-07-27T18:19:20Z",
   "status": "pending",
