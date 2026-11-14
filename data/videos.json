@@ -2196,31 +2196,274 @@
   "url": "https://www.youtube.com/watch?v=FLfRxSDaKUw"
  },
  "FcN3VBT_86I": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Jensen Huang's departure from Nvidia introduces massive 'key man risk' and ongoing overhang from potential investigations and lost strategic leadership.",
+    "Jeremy believes Nvidia is not uninvestable but will remain range-bound between roughly $125 and $200 for the next several years.",
+    "Jeremy's conviction in AMD is stronger than ever, anticipating its revenue growth rate and margin acceleration will surpass Nvidia by 2027 under Lisa Su's stable leadership.",
+    "Steve Wynn's exit from Wynn Resorts is cited as an example of how stocks get derated when an irreplaceable founder departs, even if the underlying business survives.",
+    "Jeremy highlights top long-term opportunities in his portfolio and watchlist, including CELH, NFLX, ELF, EL, HNST, and WYNN, while remaining cautious on HOOD until a true bear market occurs."
+   ],
+   "market_view": "The market is experiencing a 'shock and awe' event with leadership turmoil at Nvidia; Jeremy prefers selective individual stock opportunities with clean growth stories over chasing high-multiple momentum.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Owns 2,555 shares worth ~$1.5M with an average cost of $111.61",
+     "price": "",
+     "rationale": "Conviction is higher than ever due to Lisa Su's proven leadership, accelerating revenue and margins, and a cleaner narrative compared to Nvidia.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "00:32"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Lacks Jensen Huang's unmatched dealmaking and vision; Jeremy views the stock as likely range-bound between $125 and $200 with heavy overhang rather than uninvestable.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": "17:51"
+    },
+    {
+     "action": "HOLD",
+     "company": "Wynn Resorts, Limited",
+     "is_own_position": true,
+     "position_note": "Owned in Patreon and private portfolios for 12-14 years",
+     "price": "",
+     "rationale": "Maintains position as an attractive long-term investment, noting the business actually improved operationally after Steve Wynn departed despite initial stock derating.",
+     "ticker": "WYNN",
+     "timeframe": "this video",
+     "timestamp": "11:21"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Remains a phenomenal long-term buying opportunity around current price levels.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "34:31"
+    },
+    {
+     "action": "HOLD",
+     "company": "Netflix, Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Views Netflix as a phenomenal and highly attractive buy right now.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "34:40"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Continues to be a great opportunity and expects the stock to finish the year between $120 and $140.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "33:36"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Estée Lauder Companies Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Sees immense long-term upside and projects the shares will finish between $120 and $140 this year.",
+     "ticker": "EL",
+     "timeframe": "this video",
+     "timestamp": "34:50"
+    },
+    {
+     "action": "HOLD",
+     "company": "NIKE, Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Reiterates commitment to stay the course with the position long term.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "35:08"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Considers it a great long-term buy in the high $200s to low $300s due to its durable brand and business model.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "35:00"
+    },
+    {
+     "action": "WATCH",
+     "company": "The Honest Company, Inc.",
+     "is_own_position": false,
+     "position_note": "Listed on his 'Stocks to Buy' watchlist",
+     "price": "",
+     "rationale": "Believes it is the most undervalued sub-$1 billion market cap company in the world.",
+     "ticker": "HNST",
+     "timeframe": "this video",
+     "timestamp": "25:51"
+    },
+    {
+     "action": "WATCH",
+     "company": "Hims & Hers Health, Inc.",
+     "is_own_position": false,
+     "position_note": "Listed on his 'Stocks to Buy' watchlist under $20",
+     "price": "",
+     "rationale": "Finds the valuation under $20 compelling but is watching closely due to concerning subscriber and member metrics.",
+     "ticker": "HIMS",
+     "timeframe": "this video",
+     "timestamp": "26:03"
+    },
+    {
+     "action": "WATCH",
+     "company": "Robinhood Markets, Inc.",
+     "is_own_position": false,
+     "position_note": "Condition: will only buy during a major market drawdown",
+     "price": "",
+     "rationale": "Interested in the stock but requires a broader index bear market (S&P 500 down double digits, Nasdaq down 20%+) before entering.",
+     "ticker": "HOOD",
+     "timeframe": "this video",
+     "timestamp": "34:44"
+    }
+   ],
+   "summary": "Jeremy reacts to breaking news coverage of Jensen Huang's unexpected departure as CEO of Nvidia and analyzes the broader ramifications for the semiconductor sector. He explains the critical concept of 'key person risk,' drawing parallels to Steve Wynn leaving Wynn Resorts and Steve Jobs' departure from Apple. Jeremy argues that this development substantially improves the investment case for AMD, which he believes will significantly outperform Nvidia through 2027. He concludes by reviewing his top stock opportunities, highlighting favorites like Celsius, Netflix, e.l.f. Beauty, and Estée Lauder.",
+   "topics": [
+    "Semiconductors",
+    "Key Man Risk",
+    "AI Stocks",
+    "AMD vs NVDA",
+    "Watchlist"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2144,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "FcN3VBT_86I",
   "last_attempt_at": "2026-11-13T20:03:20Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-14T07:01:59Z",
   "published_at": "2026-11-12T22:43:55Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/FcN3VBT_86I/mqdefault.jpg",
   "title": "New Millionaires will be made now‼️",
+  "tokens": 187087,
   "url": "https://www.youtube.com/watch?v=FcN3VBT_86I"
  },
  "FmLqqOOH8iA": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Big Tech hyperscalers (Alphabet, Meta, Amazon) are in an AI CapEx arms race that will hurt near-term free cash flow and keep stock prices volatile or range-bound.",
+    "AMD is viewed as the cleanest and most exciting tech stock over the next 24 months, with massive projected margin expansion and potential upside to $600-$700+.",
+    "Tesla continues to struggle with auto margins and sales; full autonomous robotaxi deployment remains years away and offers no near-term catalyst.",
+    "Jeremy would consider buying Tesla back only if the stock crashes down to the $125–$150 range.",
+    "Long-term investors in Big Tech need to look past current heavy CapEx headwinds, as normalized spending in future years will drive strong cash flow rebounds.",
+    "Jeremy defends his personal design choices and lifestyle in Las Vegas following a critical video by Arvin Haddad."
+   ],
+   "market_view": "Hyperscaler Big Tech stocks face near-term pressure and multiple compression due to astronomical AI CapEx spending, but the investments will eventually yield substantial long-term gains once CapEx spending normalizes in future years.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Long-term core position; generated multi-millions in gains",
+     "price": "",
+     "rationale": "Considered the cleanest play in tech for the next two years. Set to experience rapid margin expansion, accelerating CPU/GPU revenue from Helios and Anthropic partnerships, and potential to reach $600 to $700+.",
+     "ticker": "AMD",
+     "timeframe": "long term",
+     "timestamp": "00:46"
+    },
+    {
+     "action": "WATCH",
+     "company": "Tesla",
+     "is_own_position": false,
+     "position_note": "Interested in buying only if it drops to $125–$150",
+     "price": "",
+     "rationale": "Automotive margins and unit sales remain under heavy pressure with no near-term catalysts from robotics or robotaxis. Jeremy sold out his past position and is waiting for a significant drop before considering re-entry.",
+     "ticker": "TSLA",
+     "timeframe": "next 6 to 12 months",
+     "timestamp": "01:05"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Owns shares",
+     "price": "",
+     "rationale": "CapEx spending remains elevated and will keep the stock range-bound between $550 and $750, but revenue growth remains solid and long-term payoff will be substantial.",
+     "ticker": "META",
+     "timeframe": "long term",
+     "timestamp": "10:19"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "High operating margins are expected to compress over the next 24 months as AMD introduces competitive AI rack and chip solutions at better price-to-performance ratios.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": "14:40"
+    },
+    {
+     "action": "MENTION",
+     "company": "Alphabet",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Cloud growth is strong at 82%, but CapEx spending is exceeding $40 billion quarterly and depressing free cash flow in the near term.",
+     "ticker": "GOOGL",
+     "timeframe": "",
+     "timestamp": "03:25"
+    }
+   ],
+   "summary": "Jeremy Lefebvre examines widespread market pullbacks across Big Tech, explaining that aggressive AI CapEx spending is depressing free cash flows and creating messy near-term stock setups for companies like Alphabet, Meta, and Amazon. In contrast, he highlights AMD as the cleanest story in the tech sector over the next two years, driven by massive upcoming margin expansion, CPU/GPU share gains, and strong AI partnerships. He also discusses Tesla's ongoing vehicle demand and margin struggles, noting he has no interest in buying back TSLA until the $125–$150 price range. Finally, Jeremy reacts to real estate YouTuber Arvin Haddad's critique of his former Las Vegas home, advising investors to buy what brings them personal joy rather than trying to impress others.",
+   "topics": [
+    "AI CapEx",
+    "Semiconductors",
+    "Big Tech",
+    "Electric Vehicles",
+    "Real Estate"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 3012,
   "id": "FmLqqOOH8iA",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-14T07:13:08Z",
   "published_at": "2026-07-24T00:10:23Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/FmLqqOOH8iA/mqdefault.jpg",
   "title": "You MUST OWN these 2 stocks‼️",
+  "tokens": 259612,
   "url": "https://www.youtube.com/watch?v=FmLqqOOH8iA"
  },
  "G2u_yXppyfI": {
@@ -7125,6 +7368,105 @@
   "tokens": 18631,
   "url": "https://www.youtube.com/watch?v=hGruKBJfqIM"
  },
+ "hJ4jacgJdYU": {
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "AMD experienced severe short-term volatility due to heavy institutional and trader activity, but Jeremy projects the stock reaching $1,000–$2,000 by 2030.",
+    "Jeremy holds a firm long-term stance on AMD with over $1M in unrealized gains, stating he has zero percent interest in selling.",
+    "AAII investor sentiment shows 51.4% bearishness, which historically signals an exceptional buying opportunity for long-term investors.",
+    "S&P 500 forward P/E sits at 18.29, which Jeremy characterizes as fairly valued rather than expensive.",
+    "A QQQ chart overlay comparing the current market to late 2018 suggests caution, though standard seasonality favors a Santa Claus rally.",
+    "Jeremy has $1.8M in cash ready to aggressively deploy if the market suffers a major year-end decline.",
+    "Between CELH and ELF, Jeremy believes CELH offers higher upside into 2027 due to an anticipated 30–50% relief rally as brand volumes stabilize."
+   ],
+   "market_view": "Jeremy views the market as fairly valued at an 18.29 forward P/E, with extreme bearish sentiment creating attractive buying opportunities. While seasonality typically favors a year-end Santa Claus rally, he maintains $1.8M in dry powder in case markets repeat the steep late-2018 correction.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at over $1.33M with over $1.05M in total gains",
+     "price": "",
+     "rationale": "High volatility is driven by institutional traders rather than worsening fundamentals, and multi-year models point to $1,000–$2,000 per share by 2030.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "02:45"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at $275,570, up 21%",
+     "price": "",
+     "rationale": "Anticipates a 30% to 50% relief rally heading into 2027 as Celsius brand sales stabilize and Alani Nu continues rapid growth.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "34:10"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at $188,768, up 286%",
+     "price": "",
+     "rationale": "Jeremy regrets selling shares in past years and has resumed accumulating in 2026 for long-term compound growth.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "32:20"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "The Honest Company, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at $221,743, up $59,714",
+     "price": "",
+     "rationale": "Views the company as a smaller, slower-growing baby version of ELF and expects it to exit the year above $5 to $7 per share.",
+     "ticker": "HNST",
+     "timeframe": "this video",
+     "timestamp": "33:37"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Noted the stock is down 28% over the past month amid capex concerns and Jensen's departure; its stabilization is critical for the broader semiconductor ETF (SMH).",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "10:00"
+    }
+   ],
+   "summary": "Jeremy reviews recent extreme market volatility, highlighting massive daily swings in AMD alongside broad market moves. He breaks down his long-term financial model for AMD, projecting the stock could reach $1,000 to $2,000 by 2030, and confirms he has zero intention of selling his shares. He analyzes overall stock market health, noting historic bearishness in AAII investor sentiment (51.4% bearish) and fear levels that typically indicate prime long-term buying opportunities, while noting a 2018 fractal risk. Finally, he compares Celsius Holdings and e.l.f. Beauty for 2027 upside, projecting that Celsius may see a sharper near-term relief rally.",
+   "topics": [
+    "AMD",
+    "Celsius",
+    "ELF Beauty",
+    "Market Sentiment",
+    "Valuation",
+    "Semiconductors"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
+  "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
+  "channel_title": "Financial Education",
+  "duration_sec": 2334,
+  "id": "hJ4jacgJdYU",
+  "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-14T06:55:23Z",
+  "published_at": "2026-11-14T01:03:17Z",
+  "status": "ok",
+  "thumbnail": "https://i.ytimg.com/vi/hJ4jacgJdYU/mqdefault.jpg",
+  "title": "We gotta Move NOW‼️",
+  "tokens": 202222,
+  "url": "https://www.youtube.com/watch?v=hJ4jacgJdYU"
+ },
  "hZHvYGnaxGQ": {
   "analysis": {
    "category": "Earnings Reaction",
@@ -9261,7 +9603,9 @@
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2197,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "xpMrS1V6-Rw",
+  "last_attempt_at": "2026-11-14T07:14:49Z",
   "live_status": "none",
   "published_at": "2026-07-23T01:30:02Z",
   "status": "pending",
@@ -9270,18 +9614,132 @@
   "url": "https://www.youtube.com/watch?v=xpMrS1V6-Rw"
  },
  "xyoCK3CkABw": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "AMD fell roughly 8% alongside dips in Nvidia and Micron as semiconductor profits rotate elsewhere.",
+    "Money is flowing into beaten-down enterprise software and SaaS names like ServiceNow, Salesforce, and Palantir.",
+    "Jeremy expects AMD's upcoming earnings report to be exceptionally strong.",
+    "Capex announcements from Meta, Amazon, and Microsoft should reassure investors about sustained semiconductor demand.",
+    "Jeremy continues holding his large AMD position and declines to place short-term speculative options bets."
+   ],
+   "market_view": "Capital is rotating out of top-performing semiconductor stocks into battered software and SaaS stocks, but heavy mega-cap AI capex spending will continue to support chipmakers over time.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds a large position; refusing to place short-term speculative options bets",
+     "price": "",
+     "rationale": "Believes the upcoming earnings report will be a banger and that ongoing high capex from Meta, Amazon, and Microsoft will support long-term upside.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "02:16"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Noted as falling over 4% amid the broader semiconductor pullback.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "00:16"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as falling 5% as profits rotate out of semiconductors.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": "00:25"
+    },
+    {
+     "action": "MENTION",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as gaining 9% on rotational inflows into SaaS.",
+     "ticker": "NOW",
+     "timeframe": "",
+     "timestamp": "00:33"
+    },
+    {
+     "action": "MENTION",
+     "company": "Salesforce, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Highlighted as up 8% as money moves back into software names.",
+     "ticker": "CRM",
+     "timeframe": "",
+     "timestamp": "00:36"
+    },
+    {
+     "action": "MENTION",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Observed trading up 7.5% during the session.",
+     "ticker": "PLTR",
+     "timeframe": "",
+     "timestamp": "00:38"
+    },
+    {
+     "action": "MENTION",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Noted rising 6%+ on the day and up over 70% from its June lows.",
+     "ticker": "ELF",
+     "timeframe": "",
+     "timestamp": "00:41"
+    },
+    {
+     "action": "MENTION",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Briefly mentioned trading up very nicely on the day.",
+     "ticker": "CELH",
+     "timeframe": "",
+     "timestamp": "00:54"
+    }
+   ],
+   "summary": "Jeremy explains the sharp sell-off in AMD and other semiconductor stocks, attributing it to capital rotation into beaten-down SaaS and enterprise software stocks like ServiceNow, Salesforce, and Palantir. He remains very bullish on AMD ahead of its upcoming earnings report and expects major tech hyperscalers to raise capital expenditure guidance. He confirms he holds a massive position in AMD and plans to ride it out rather than playing short-term options.",
+   "topics": [
+    "Semiconductors",
+    "SaaS",
+    "Sector Rotation",
+    "Earnings Preview"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 180,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "xyoCK3CkABw",
   "last_attempt_at": "2026-11-12T20:17:06Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-14T07:08:31Z",
   "published_at": "2026-07-27T18:19:20Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/xyoCK3CkABw/mqdefault.jpg",
   "title": "AMD stock is crashing‼️ Here is why",
+  "tokens": 19317,
   "url": "https://www.youtube.com/watch?v=xyoCK3CkABw"
  },
  "yMH1BAJv0Ds": {
