@@ -9599,18 +9599,133 @@
   "url": "https://www.youtube.com/watch?v=xjVfKyMrx5E"
  },
  "xpMrS1V6-Rw": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Earnings Reaction",
+   "key_points": [
+    "Railroad operator CSX reported 6% volume growth, signaling underlying economic strength likely driven by data center and semiconductor plant construction.",
+    "Alphabet reported outstanding 82% Google Cloud revenue growth, but raising Capex outlook to $200B has turned free cash flow negative.",
+    "Jeremy plans to do nothing with his Alphabet shares, viewing the massive Capex requirements and negative free cash flow as a messy setup.",
+    "ServiceNow posted 24% revenue growth but suffered a 55% drop in operating income due to skyrocketing costs of revenue and operating expenses.",
+    "Across enterprise SaaS and hyperscalers, massive spending is eroding margins, making non-tech stocks comparatively more attractive for clean setups."
+   ],
+   "market_view": "Tech stocks currently have 'dirty' setups with skyrocketing Capex and operating expenses eroding cash flows, making non-tech companies more appealing for clean risk-reward setups.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Alphabet Inc.",
+     "is_own_position": true,
+     "position_note": "222 shares shown ($75,904 value)",
+     "price": "",
+     "rationale": "While Google Cloud revenue growth accelerated to 82%, massive Capex guidance of $200B is pushing free cash flow negative, prompting Jeremy to hold without buying or selling.",
+     "ticker": "GOOGL",
+     "timeframe": "this video",
+     "timestamp": "16:57"
+    },
+    {
+     "action": "HOLD",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": true,
+     "position_note": "1,166 shares shown (~$111k value)",
+     "price": "",
+     "rationale": "Operating income collapsed 55% year-over-year due to a 61% surge in cost of revenue and elevated operating costs, creating margin uncertainty despite 24% revenue growth.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "31:01"
+    },
+    {
+     "action": "HOLD",
+     "company": "Salesforce, Inc.",
+     "is_own_position": true,
+     "position_note": "Heavily accumulated in recent months",
+     "price": "",
+     "rationale": "He expects Salesforce to easily beat revenue estimates, but questions whether forward earnings per share projections can be trusted given SaaS cost inflation.",
+     "ticker": "CRM",
+     "timeframe": "past few months",
+     "timestamp": "28:44"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": true,
+     "position_note": "1,241 shares shown (~$124k value)",
+     "price": "",
+     "rationale": "Palantir trades on its own individual dynamics and faces investor scrutiny over potential growth deceleration over the next 1–2 years.",
+     "ticker": "PLTR",
+     "timeframe": "this video",
+     "timestamp": "31:54"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "Up about $8,000 on the position",
+     "price": "",
+     "rationale": "He holds American Express heading into earnings and hopes the stock dips so he can buy more shares.",
+     "ticker": "AXP",
+     "timeframe": "upcoming earnings",
+     "timestamp": "35:36"
+    },
+    {
+     "action": "MENTION",
+     "company": "CSX Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as an economic bellwether; CSX reported strong 10% revenue growth and 6% volume growth driven by data center and industrial demand.",
+     "ticker": "CSX",
+     "timeframe": "this video",
+     "timestamp": "03:17"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "1,411 shares shown (~$1.4M value)",
+     "price": "",
+     "rationale": "Position continues to run higher on strong market demand and benefit from hyperscaler Capex spending.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "00:00"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "6,290 shares shown (~$179k value)",
+     "price": "",
+     "rationale": "Notes the stock has formed a bottom and expects upside from current levels.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "00:20"
+    }
+   ],
+   "summary": "Jeremy reviews earnings results and market trends across railroads and major tech companies, focusing on Alphabet (GOOGL) and ServiceNow (NOW). While top-line and cloud growth remains exceptionally strong, surging capital expenditures and operating expenses are severely pressuring free cash flows across big tech and SaaS. He labels current tech stock setups as 'dirty' and messy, choosing to hold existing positions without aggressively adding. Consequently, he sees cleaner risk-reward opportunities in select non-tech stocks.",
+   "topics": [
+    "Big Tech",
+    "AI Capex",
+    "Cloud Computing",
+    "Earnings Reaction",
+    "Enterprise Software"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2197,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "xpMrS1V6-Rw",
   "last_attempt_at": "2026-11-14T07:14:49Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-14T22:47:02Z",
   "published_at": "2026-07-23T01:30:02Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/xpMrS1V6-Rw/mqdefault.jpg",
   "title": "This 1 Stock SOARS starting tomorrow‼️",
+  "tokens": 190311,
   "url": "https://www.youtube.com/watch?v=xpMrS1V6-Rw"
  },
  "xyoCK3CkABw": {
