@@ -375,16 +375,193 @@
   "url": "https://www.youtube.com/watch?v=-pK9xC1M7wE"
  },
  "0KlPqyW4hZY": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Jeremy's public portfolio hit a new all-time high of over $4.608 million.",
+    "IBM's drop was driven by infrastructure weakness rather than software, so it should not be viewed as a negative read-across for pure-play SaaS companies.",
+    "Jeremy rejects the argument that memory chipmakers like Micron have escaped cyclicality by signing multi-year contracts, asserting that locking in long-term deals proves pricing risk.",
+    "In a hypothetical scenario where he must eliminate one stock, Jeremy would choose PayPal due to cheap valuation traps and a lack of catalysts, with Alphabet as runner-up due to overlapping Big Tech exposure.",
+    "If forced to hold only one stock for the next five years, Jeremy chooses Meta Platforms for upside potential, with Amazon as the safest alternative.",
+    "Jeremy identifies AMD's upcoming earnings guidance as the potential next major catalyst to reignite the broader semiconductor rally into year-end."
+   ],
+   "market_view": "If the broader market experiences a 10% to 15% drawdown, Big Tech will inevitably drop because it dominates market weighting. Memory semiconductors remain deeply cyclical regardless of long-term customer agreements.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 32.74
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 15.34
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 14.16
+    },
+    {
+     "ticker": "TSLA",
+     "weight_pct": 8.84
+    },
+    {
+     "ticker": "NKE",
+     "weight_pct": 5.76
+    },
+    {
+     "ticker": "EL",
+     "weight_pct": 4.88
+    },
+    {
+     "ticker": "PYPL",
+     "weight_pct": 4.09
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 3.23
+    },
+    {
+     "ticker": "NOW",
+     "weight_pct": 3.14
+    },
+    {
+     "ticker": "SE",
+     "weight_pct": 2.22
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 1.83
+    },
+    {
+     "ticker": "FUBO",
+     "weight_pct": 0.81
+    }
+   ],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "MENTION",
+     "company": "International Business Machines",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Notes that IBM is reasonably valued at around 18x forward earnings and its preliminary earnings slump was driven by infrastructure rather than software.",
+     "ticker": "IBM",
+     "timeframe": "",
+     "timestamp": "03:10"
+    },
+    {
+     "action": "MENTION",
+     "company": "Lucid Group",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Believes the company will likely go private, get bought out, or enter bankruptcy due to weak marketing despite having an impressive product.",
+     "ticker": "LCID",
+     "timeframe": "",
+     "timestamp": "03:30"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Criticizes the thesis that memory chipmakers are no longer cyclical, arguing that locking in multi-year contracts proves management fears downside pricing pressure.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "27:10"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Largest portfolio position at ~32.7%",
+     "price": "",
+     "rationale": "Views AMD as the cleanest setup to provide the next major catalyst for semiconductor stocks if upcoming earnings guidance beats Wall Street expectations.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "31:10"
+    },
+    {
+     "action": "HOLD",
+     "company": "PayPal Holdings",
+     "is_own_position": true,
+     "position_note": "~4.1% portfolio weight; hypothetical choice to eliminate completely",
+     "price": "",
+     "rationale": "Identifies PayPal as the stock he would liquidate if forced to sell one position, citing its lack of catalysts and inability to escape a single-digit P/E multiple.",
+     "ticker": "PYPL",
+     "timeframe": "",
+     "timestamp": "30:45"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Names Alphabet as a secondary candidate for disposal only because his heavy allocations in Meta and Amazon already provide redundant mega-cap tech exposure.",
+     "ticker": "GOOGL",
+     "timeframe": "",
+     "timestamp": "29:22"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Considers e.l.f. a close second to AMD for strongest momentum through year-end following its typical seasonal pattern of conservative guidance followed by beat-and-raises.",
+     "ticker": "ELF",
+     "timeframe": "",
+     "timestamp": "31:50"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "~14.2% portfolio weight",
+     "price": "",
+     "rationale": "Selected as his top choice if forced to concentrate his entire net worth into a single stock for the next five years due to its upside potential.",
+     "ticker": "META",
+     "timeframe": "",
+     "timestamp": "33:10"
+    },
+    {
+     "action": "HOLD",
+     "company": "Amazon.com",
+     "is_own_position": true,
+     "position_note": "~15.3% portfolio weight",
+     "price": "",
+     "rationale": "Views Amazon as the safest mega-cap investment over a five-year horizon, finishing just behind Meta in a hypothetical all-in scenario.",
+     "ticker": "AMZN",
+     "timeframe": "",
+     "timestamp": "32:55"
+    }
+   ],
+   "summary": "Jeremy Lefebvre analyzes the sharp drop in IBM and troubles at Lucid Group before reacting to commentary from CNBC's Tom Lee and Bloomberg's Gil Luria on the AI semiconductor trade. Jeremy strongly refutes the notion that memory chipmakers like Micron are no longer cyclical, comparing the current enthusiasm to historical boom-bust cycles in oil and gas. Celebrating a new all-time high of over $4.6 million in his public portfolio, he explores hypothetical forced-choice scenarios, naming PayPal as the stock he would liquidate, AMD as his top pick through year-end, and Meta as his favorite five-year hold.",
+   "topics": [
+    "semiconductors",
+    "AI stocks",
+    "portfolio update",
+    "cyclical stocks",
+    "Big Tech"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2031,
   "id": "0KlPqyW4hZY",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-15T19:21:02Z",
   "published_at": "2026-07-14T21:40:24Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/0KlPqyW4hZY/mqdefault.jpg",
   "title": "My $4,600,000 Next MOVE‼️",
+  "tokens": 176679,
   "url": "https://www.youtube.com/watch?v=0KlPqyW4hZY"
  },
  "0SkqIE7FOIc": {
@@ -1465,16 +1642,184 @@
   "url": "https://www.youtube.com/watch?v=9cG_DXwC3ig"
  },
  "B47EnyWN18E": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Jeremy made a massive buy into Netflix (NFLX), accumulating up to 2,000 shares in his public account based on valuation and multiple long-term growth levers.",
+    "Purchased more shares of Celsius Holdings (CELH), bringing his public account total to 6,290 shares with a long-term target of $100+.",
+    "Refuses to sell Cheesecake Factory (CAKE) despite a 62% gain year-to-date, citing extensive growth runway with North Italia and Flower Child.",
+    "Reiterates confidence in Nike (NKE) as a classic turnaround play with an enduring global moat, contrasting it with transient athleisure brands.",
+    "Dismisses fears of 10-year Treasury yields around 4.5% to 5% derailing equities, arguing risk-free rates must approach 7-8% to compete with broad market equities.",
+    "Expects AI foundation models to become commoditized, with outsized value accruing to infrastructure, proprietary data, and platform ecosystems."
+   ],
+   "market_view": "Jeremy remains strongly bullish on equities despite recent market volatility and margin debt concerns. He argues that Treasury yields below 5% do not pose a serious competitive threat to equity returns, and tech pullbacks present multi-year buying opportunities.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 27.63
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 14.86
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 8.04
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 4.96
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 4.43
+    },
+    {
+     "ticker": "CELH",
+     "weight_pct": 4.12
+    },
+    {
+     "ticker": "NKE",
+     "weight_pct": 3.93
+    },
+    {
+     "ticker": "CRM",
+     "weight_pct": 3.73
+    },
+    {
+     "ticker": "NOW",
+     "weight_pct": 3.65
+    },
+    {
+     "ticker": "NFLX",
+     "weight_pct": 3.1
+    },
+    {
+     "ticker": "HNST",
+     "weight_pct": 2.87
+    },
+    {
+     "ticker": "EL",
+     "weight_pct": 3.33
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 2.86
+    },
+    {
+     "ticker": "ELF",
+     "weight_pct": 2.64
+    },
+    {
+     "ticker": "RVLV",
+     "weight_pct": 2.06
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 1.77
+    },
+    {
+     "ticker": "GOOG",
+     "weight_pct": 1.77
+    },
+    {
+     "ticker": "FUBO",
+     "weight_pct": 0.44
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ADD",
+     "company": "Netflix",
+     "is_own_position": true,
+     "position_note": "Added tens of thousands of dollars today; position now at 2,000 shares in the public portfolio",
+     "price": "",
+     "rationale": "Trading at an attractive forward P/E around 18 with three strong long-term growth levers: subscription price hikes, international subscriber growth, and rapid expansion of the ad-supported tier, alongside share buybacks.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "06:45"
+    },
+    {
+     "action": "ADD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Now holds 6,290 shares in the public account",
+     "price": "",
+     "rationale": "Taking advantage of depressed prices on a stock he believes will return to $100+ per share over the long run.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "07:05"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory",
+     "is_own_position": true,
+     "position_note": "Up ~62% YTD; holds 3,600 shares",
+     "price": "",
+     "rationale": "Believes institutional money is steadily buying up shares and the company has 10 to 20 years of unit growth ahead through Flower Child and North Italia concepts.",
+     "ticker": "CAKE",
+     "timeframe": "",
+     "timestamp": "00:25"
+    },
+    {
+     "action": "HOLD",
+     "company": "Nike",
+     "is_own_position": true,
+     "position_note": "Large position in public account; down significantly",
+     "price": "",
+     "rationale": "Views Nike as a true brand turnaround play with an immense global moat that can weather competition far better than fad brands.",
+     "ticker": "NKE",
+     "timeframe": "",
+     "timestamp": "13:08"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express",
+     "is_own_position": true,
+     "position_note": "Hoping for a post-earnings drop next week to buy more shares",
+     "price": "",
+     "rationale": "Considers American Express to have one of the strongest moats in the market, as evidenced by Warren Buffett holding it as his second largest position.",
+     "ticker": "AXP",
+     "timeframe": "",
+     "timestamp": "11:10"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies",
+     "is_own_position": true,
+     "position_note": "Would consider buying more if a hard sell-off occurs",
+     "price": "",
+     "rationale": "Expects potential revenue deceleration over the next 6-9 months, which could trigger a sharp market reaction and create a buying opportunity.",
+     "ticker": "PLTR",
+     "timeframe": "",
+     "timestamp": "17:05"
+    }
+   ],
+   "summary": "Jeremy discusses market volatility and announces a massive purchase in Netflix (NFLX), adding tens of thousands of dollars to bring his public account position to 2,000 shares. He also adds to his position in Celsius Holdings (CELH) and provides portfolio commentary on Cheesecake Factory (CAKE) and Nike (NKE). Later in the video, Jeremy reacts to CNBC commentary from Tom Lee on market leverage and rising Treasury yields, as well as Dan Ives on Bloomberg discussing the AI revolution. Jeremy compares the AI wave to the mobile and search revolutions, arguing that while many models will become commoditized, a select few dominant players will capture disproportionate upside.",
+   "topics": [
+    "Stock Purchases",
+    "Portfolio Update",
+    "AI Revolution",
+    "Treasury Yields",
+    "Turnaround Stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2276,
   "id": "B47EnyWN18E",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-15T19:14:44Z",
   "published_at": "2026-07-17T23:29:00Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/B47EnyWN18E/mqdefault.jpg",
   "title": "I just Bet HUGE on this 1 Stock‼️",
+  "tokens": 197765,
   "url": "https://www.youtube.com/watch?v=B47EnyWN18E"
  },
  "BV_sNGqveGI": {
@@ -1586,16 +1931,155 @@
   "url": "https://www.youtube.com/watch?v=BV_sNGqveGI"
  },
  "C-NCMpaGAaM": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Retail investor net single-stock buying is at post-COVID lows, which Jeremy views as a strong contrarian signal to accumulate individual stocks.",
+    "Jeremy liquidated 100% of his PayPal (PYPL) position, freeing up approximately $165,000 in cash.",
+    "Purchased 375 shares of Netflix (NFLX) at $74.03 ahead of earnings, keeping $50,000 in reserve to buy more if it dips.",
+    "Added 555 shares of SoFi (SOFI) at $17.52, reaffirming his long-term thesis that it could become a major financial giant.",
+    "Bought 475 shares of e.l.f. Beauty (ELF) at $74.575 and 1,456 shares of Celsius Holdings (CELH) at $29.77.",
+    "Public portfolio balance reached approximately $4.51M."
+   ],
+   "market_view": "Jeremy believes retail apathy and distraction with prediction markets and crypto creates prime opportunities to find gems in individual equities, noting his public account sits around $4.51 million.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "PLTR",
+     "weight_pct": 2.98
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 28.34
+    },
+    {
+     "ticker": "ELF",
+     "weight_pct": 2.64
+    },
+    {
+     "ticker": "CARD",
+     "weight_pct": 4.62
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 6.22
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 2.13
+    },
+    {
+     "ticker": "SQBG",
+     "weight_pct": 8.61
+    },
+    {
+     "ticker": "RVLV",
+     "weight_pct": 2.26
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "SELL",
+     "company": "PayPal Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Sold 100% of position for ~$165,000 cash",
+     "price": "",
+     "rationale": "Disappointed by single-digit sleepy revenue growth and lingering disruption fears, which caused both growth and value investors to avoid the stock.",
+     "ticker": "PYPL",
+     "timeframe": "this video",
+     "timestamp": "18:50"
+    },
+    {
+     "action": "ADD",
+     "company": "Netflix, Inc.",
+     "is_own_position": true,
+     "position_note": "Bought 375 shares (~$27.7k), holds $50k cash to buy more post-earnings",
+     "price": "$74.03",
+     "rationale": "Built the position up to ~$100,000 ahead of earnings with plans to aggressively add another $50,000 if the stock sells off after reporting.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "27:18"
+    },
+    {
+     "action": "ADD",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": true,
+     "position_note": "Bought 555 shares (~$9.7k)",
+     "price": "$17.52",
+     "rationale": "Strong conviction that SoFi is capturing the younger demographic and will eventually become a $100B to $200B+ financial powerhouse as generational wealth transfers.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "30:04"
+    },
+    {
+     "action": "ADD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Bought 475 shares (~$35.4k)",
+     "price": "$74.575",
+     "rationale": "Believes the brand continues to have enormous runway for expansion and ranked it as one of the best long-term stock opportunities.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "35:10"
+    },
+    {
+     "action": "ADD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Bought 1,456 shares (~$43.3k)",
+     "price": "$29.77",
+     "rationale": "Views Celsius as a premier non-tech growth opportunity backed by expanding Pepsi distribution and portfolio brand growth.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "36:20"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "Position up over $15,000 in public account",
+     "price": "",
+     "rationale": "High-quality financial institution with a strong moat that appeals to long-term institutional value investors.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "30:03"
+    },
+    {
+     "action": "MENTION",
+     "company": "Tesla, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Pointed out that Tesla shares remain lower than in Q4 2021, dampening retail enthusiasm.",
+     "ticker": "TSLA",
+     "timeframe": "this video",
+     "timestamp": "07:30"
+    }
+   ],
+   "summary": "Jeremy discusses why retail investors' net single-stock buying has plummeted to post-COVID lows, interpreting this broad lack of interest as a classic contrarian opportunity to buy undervalued stocks. He reveals he completely sold out of his PayPal (PYPL) position for roughly $165,000 after determining it has become a sleepy growth value trap. With the proceeds and available cash, he bought shares of Netflix (NFLX), SoFi Technologies (SOFI), e.l.f. Beauty (ELF), and Celsius Holdings (CELH). He also outlines plans to deploy another $50,000 into Netflix post-earnings if shares drop.",
+   "topics": [
+    "Retail Sentiment",
+    "Stock Sales",
+    "Growth Stocks",
+    "Fintech",
+    "Earnings"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2237,
   "id": "C-NCMpaGAaM",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-15T19:18:31Z",
   "published_at": "2026-07-16T23:12:19Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/C-NCMpaGAaM/mqdefault.jpg",
   "title": "I Sold it all. I’m 100% out‼️",
+  "tokens": 194275,
   "url": "https://www.youtube.com/watch?v=C-NCMpaGAaM"
  },
  "C2MEi_JFCG4": {
@@ -1738,16 +2222,151 @@
   "url": "https://www.youtube.com/watch?v=C2MEi_JFCG4"
  },
  "C4ypPDa-xsQ": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Jeremy's public account sits at approximately $4.5M, with expectations it could reach $5M over the next 30 days of earnings season.",
+    "Jeremy is actively adding fresh capital to Netflix over Tesla, citing Netflix's subscriber growth and expanding margins versus Tesla's missed automotive and solar milestones.",
+    "Upcoming earnings expectations: Jeremy expects triple beats for American Express and Alphabet (with Capex being the key risk for Google), and a double beat with uncertain guidance for ServiceNow.",
+    "Jeremy is eyeing Occidental Petroleum (OXY) around $55 as a potential 5-year dividend and cyclical turnaround play, supported by Berkshire Hathaway's stake and carbon capture potential.",
+    "SpaceX stock is projected to face severe selling pressure through late 2026 due to multiple staggered insider lockup expirations, with Jeremy predicting a potential bottom under $75."
+   ],
+   "market_view": "Jeremy remains bullish on high-executing profitable companies heading into earnings season, with his public portfolio valued at $4,506,432.37.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 28.62
+    },
+    {
+     "ticker": "PYPL",
+     "weight_pct": 8.65
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 6.23
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 4.16
+    },
+    {
+     "ticker": "CELH",
+     "weight_pct": 4.12
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 3.01
+    },
+    {
+     "ticker": "NOW",
+     "weight_pct": 2.85
+    },
+    {
+     "ticker": "GOOG",
+     "weight_pct": 1.74
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 1.05
+    },
+    {
+     "ticker": "SMCI",
+     "weight_pct": 0.33
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ACCUMULATE",
+     "company": "Netflix",
+     "is_own_position": true,
+     "position_note": "Putting fresh money into Netflix",
+     "price": "",
+     "rationale": "Jeremy prefers Netflix over Tesla because Netflix consistently executes on subscriber growth, pricing power, and expanding profit margins.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "09:21"
+    },
+    {
+     "action": "MENTION",
+     "company": "Tesla",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Jeremy views Tesla as a questionable, hope-driven investment due to declining operating margins and failure to achieve projected mass-market vehicle adoption.",
+     "ticker": "TSLA",
+     "timeframe": "",
+     "timestamp": "06:17"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express",
+     "is_own_position": true,
+     "position_note": "3.01% of account",
+     "price": "",
+     "rationale": "Jeremy expects a triple beat on earnings, revenue, and guidance given their affluent customer base and highly recurring membership revenue model.",
+     "ticker": "AXP",
+     "timeframe": "",
+     "timestamp": "11:24"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet Inc.",
+     "is_own_position": true,
+     "position_note": "1.74% of account",
+     "price": "",
+     "rationale": "Jeremy expects a triple beat on operational results, but warns that escalating Capex spending driven by memory pricing could trigger a post-earnings pullback.",
+     "ticker": "GOOG",
+     "timeframe": "",
+     "timestamp": "13:32"
+    },
+    {
+     "action": "HOLD",
+     "company": "ServiceNow",
+     "is_own_position": true,
+     "position_note": "2.85% of account",
+     "price": "",
+     "rationale": "Jeremy expects a double beat on top and bottom lines, but expresses caution about forward guidance amid shifting enterprise AI software spend.",
+     "ticker": "NOW",
+     "timeframe": "",
+     "timestamp": "14:30"
+    },
+    {
+     "action": "WATCH",
+     "company": "Occidental Petroleum",
+     "is_own_position": false,
+     "position_note": "Considering buying around $55 and holding for 5 years",
+     "price": "",
+     "rationale": "OXY is emerging from a cyclical multi-year downcycle, paying down debt toward $10 billion, and offers asymmetric upside via oil price leverage and carbon capture tech.",
+     "ticker": "OXY",
+     "timeframe": "",
+     "timestamp": "29:08"
+    }
+   ],
+   "summary": "Jeremy updates viewers on his public portfolio as earnings season kicks off, with the account sitting around $4.5 million. He compares Netflix against Tesla, explaining why he is allocating fresh capital to Netflix due to consistent execution while viewing Tesla as an unreliable hope-based play. He details his expectations for upcoming earnings from American Express, Alphabet, and ServiceNow, noting potential guidance and Capex risks. Finally, he presents a deep dive on why he is watching Occidental Petroleum as a potential new value dividend position and explains why SpaceX stock faces heavy downward pressure from upcoming share lockup expirations.",
+   "topics": [
+    "Earnings Season",
+    "Oil & Gas",
+    "Valuation",
+    "Big Tech",
+    "IPO Lockup"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2706,
   "id": "C4ypPDa-xsQ",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-15T19:11:25Z",
   "published_at": "2026-07-21T01:43:47Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/C4ypPDa-xsQ/mqdefault.jpg",
   "title": "I might buy a NEW STOCK‼️",
+  "tokens": 233734,
   "url": "https://www.youtube.com/watch?v=C4ypPDa-xsQ"
  },
  "CEoHPhtpZts": {
@@ -4760,18 +5379,113 @@
   "url": "https://www.youtube.com/watch?v=OhOwkO34Ryw"
  },
  "PMPXANHKQRY": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Jeremy believes AMD is on track to cross $600 quickly due to heavy momentum and anticipated blockbuster earnings guidance.",
+    "Selling high-quality stocks purely because they are up 100%+ (as done with Marvell) is criticized as a flawed investing strategy that leaves massive upside on the table.",
+    "Semiconductor stocks like Micron and AMD are projected to dramatically over-earn through 2025/2026 before hitting a cyclical peak; trying to top-call them now is premature.",
+    "The optimal exit window for taking profits on AI semiconductor winners will likely be Q4 this year through Q1/Q2 next year.",
+    "ServiceNow (NOW) and Salesforce (CRM) are identified as SaaS stocks positioned for major upside surges if upcoming guidance assuages AI disruption fears.",
+    "Oil market reactions to Middle East geopolitics are muted because the market has reached geopolitical exhaustion following peak fear earlier in the year."
+   ],
+   "market_view": "The broader AI infrastructure and semiconductor trade has strong fundamental legs to run higher through early next year before capex constraints from mega-cap tech trigger a cyclical slowdown.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 2,555 shares valued at ~$1.38M (average cost $111.61)",
+     "price": "",
+     "rationale": "Strong momentum and high expectations for stellar forward earnings guidance could push the stock to $600+ in the near term; Jeremy has no intention of selling.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "01:43"
+    },
+    {
+     "action": "WATCH",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Positioned to explode higher if upcoming earnings deliver strong guidance and confidence that AI is not displacing SaaS business models.",
+     "ticker": "NOW",
+     "timeframe": "",
+     "timestamp": "05:36"
+    },
+    {
+     "action": "WATCH",
+     "company": "Salesforce, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Ready to rally significantly if management issues solid guidance and strong conference call remarks disproving AI threat narratives.",
+     "ticker": "CRM",
+     "timeframe": "",
+     "timestamp": "05:38"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Shown in Jeremy's portfolio watchlist",
+     "price": "",
+     "rationale": "Nicknamed 'Celsius the Wealthiest'; Jeremy believes it is primed for a dramatic upside move that could see the stock double in months.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "07:06"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Reacting to Stephanie Link and Joe Terranova; Jeremy warns that top-calling or shorting Micron right now is dangerous given that memory pricing and earnings power will remain robust into 2025.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "03:40"
+    },
+    {
+     "action": "MENTION",
+     "company": "Marvell Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Criticized Stephanie Link's decision to sell Marvell simply for being up over 100%, arguing great compounders should be held through their runs.",
+     "ticker": "MRVL",
+     "timeframe": "",
+     "timestamp": "08:02"
+    }
+   ],
+   "summary": "Jeremy discusses why he believes AMD could reach $600 or higher soon ahead of expected strong earnings guidance. He reacts to a CNBC Halftime Report clip featuring Stephanie Link, Joe Terranova, and Josh Brown debating trades in Micron (MU), Nvidia (NVDA), and Marvell (MRVL), criticizing the strategy of selling winners simply because they are up 100%. Jeremy also highlights enterprise software names ServiceNow (NOW) and Salesforce (CRM) as candidates ready to balloon higher if earnings guidance delivers, while analyzing cyclical peak risks in AI semiconductor capex and reacting to a Bloomberg segment on oil markets.",
+   "topics": [
+    "AI stocks",
+    "Semiconductors",
+    "AMD",
+    "Micron",
+    "Enterprise SaaS",
+    "Oil Market"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2089,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "PMPXANHKQRY",
   "last_attempt_at": "2026-11-15T06:51:45Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-15T19:04:14Z",
   "published_at": "2026-07-22T00:27:50Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/PMPXANHKQRY/mqdefault.jpg",
   "title": "These 2 Stocks are about to BALLOON‼️",
+  "tokens": 181245,
   "url": "https://www.youtube.com/watch?v=PMPXANHKQRY"
  },
  "Q-WF5RdHpgw": {
@@ -9371,7 +10085,9 @@
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2163,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "wWYVt59SYLY",
+  "last_attempt_at": "2026-11-15T19:22:15Z",
   "live_status": "none",
   "published_at": "2026-07-13T21:22:11Z",
   "status": "pending",
