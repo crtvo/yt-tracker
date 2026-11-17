@@ -593,16 +593,64 @@
   "url": "https://www.youtube.com/watch?v=0XIZhWXYOMY"
  },
  "0jxA2XGNCZk": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Buy/Sell Decision",
+   "key_points": [
+    "Jeremy's public portfolio hit an all-time high of over $4.6 million.",
+    "Actively accumulating Celsius Holdings (CELH), citing massive runway for U.S. and international expansion.",
+    "Considers Celsius between $25 and $35 per share to be an excellent long-term buying range.",
+    "Holding Netflix (NFLX) into upcoming earnings with plans to aggressively add if the stock dips post-earnings."
+   ],
+   "market_view": "Bullish overall as markets and his public portfolio reach new all-time highs above $4.6 million.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ACCUMULATE",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Views $25-$35 as a strong long-term buying range and continues to actively buy shares.",
+     "price": "$30",
+     "rationale": "Believes Celsius has years of massive growth ahead through brand additions like Alani and Rockstar, alongside significant international expansion opportunities modeled after Monster.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "00:35"
+    },
+    {
+     "action": "HOLD",
+     "company": "Netflix",
+     "is_own_position": true,
+     "position_note": "Conditional plan: hopes to aggressively buy more shares across his portfolios if earnings trigger a dip.",
+     "price": "",
+     "rationale": "Wants to acquire a substantial amount of shares over the next 3-6 months and is hoping for a post-earnings overreaction dip to start buying heavily.",
+     "ticker": "NFLX",
+     "timeframe": "next 3 to 6 months",
+     "timestamp": "01:43"
+    }
+   ],
+   "summary": "Jeremy highlights that his public investment portfolio has reached a new all-time high of over $4.6 million and shares two growth stocks he is actively targeting. He remains bullish on Celsius Holdings (CELH), viewing current price levels around $30 as an attractive long-term accumulation zone driven by brand acquisitions and global expansion. He also discusses Netflix (NFLX) ahead of earnings, noting that he owns shares and hopes for a post-earnings pullback to aggressively add to his position over the next three to six months.",
+   "topics": [
+    "Growth Stocks",
+    "Beverage Stocks",
+    "Earnings",
+    "Streaming"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 180,
   "id": "0jxA2XGNCZk",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-17T08:13:11Z",
   "published_at": "2026-07-10T18:10:12Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/0jxA2XGNCZk/mqdefault.jpg",
   "title": "2 Growth Stocks Im Buying Heavy Right Now‼️",
+  "tokens": 19161,
   "url": "https://www.youtube.com/watch?v=0jxA2XGNCZk"
  },
  "0opZHDPrYwg": {
@@ -815,16 +863,176 @@
   "url": "https://www.youtube.com/watch?v=1BBlwjC6QNY"
  },
  "2Te0UcehJMk": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Watchlist",
+   "key_points": [
+    "Anticipates AMD will have strong momentum heading into earnings and report massive guidance due to surging GPU and CPU demand.",
+    "Plans to exit the majority of his multi-million dollar AMD position over the next 6 to 12 months as hyperscaler capex growth potentially slows in 2027-2028.",
+    "Ranks Celsius (CELH) in the $30s, ELF Beauty (ELF) in the $70s, and Estée Lauder (EL) in the $80s as the top 3 best buys right now.",
+    "Considers Whirlpool (WHR) and PayPal (PYPL) as deep value plays with big multi-year upside, though lower on his conviction list due to turnaround uncertainties.",
+    "Reacts to Tom Lee's bullish year-end targets and Mike Wilson's warning of a semiconductor correction, expressing openness to placing portfolio hedges like SQQQ if tech rallies hard into Q4."
+   ],
+   "market_view": "He expects earnings season to provide a strong tailwind to the market in the near term, but sees potential for tech and semiconductor stocks to top out late this year or early next year as capex growth decelerates.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Multi-million dollar position; plans to exit majority of shares over next 6-12 months",
+     "price": "",
+     "rationale": "Expects strong Q2 results and guidance, but intends to sell down his position in 6-12 months due to a looming slowdown in hyperscaler capex.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "01:34"
+    },
+    {
+     "action": "WATCH",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": false,
+     "position_note": "Target price in the $30s",
+     "price": "",
+     "rationale": "Ranked as his number one best buy currently based on valuation and growth profile.",
+     "ticker": "CELH",
+     "timeframe": "",
+     "timestamp": "07:03"
+    },
+    {
+     "action": "WATCH",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": false,
+     "position_note": "Target price in the $70s",
+     "price": "",
+     "rationale": "Ranked as his second best buy right now among the watchlist.",
+     "ticker": "ELF",
+     "timeframe": "",
+     "timestamp": "07:11"
+    },
+    {
+     "action": "WATCH",
+     "company": "The Estée Lauder Companies Inc.",
+     "is_own_position": false,
+     "position_note": "Target price in the $80s",
+     "price": "",
+     "rationale": "Ranked as his third best buy given its attractive valuation.",
+     "ticker": "EL",
+     "timeframe": "",
+     "timestamp": "07:18"
+    },
+    {
+     "action": "WATCH",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": false,
+     "position_note": "Target price in the teens",
+     "price": "",
+     "rationale": "Considered an attractive buy in the mid-teens for long-term investors.",
+     "ticker": "SOFI",
+     "timeframe": "",
+     "timestamp": "07:23"
+    },
+    {
+     "action": "WATCH",
+     "company": "NIKE, Inc.",
+     "is_own_position": false,
+     "position_note": "Target price in the $40s",
+     "price": "",
+     "rationale": "Viewed as a solid long-term value play at current discounted levels.",
+     "ticker": "NKE",
+     "timeframe": "",
+     "timestamp": "07:49"
+    },
+    {
+     "action": "WATCH",
+     "company": "Netflix, Inc.",
+     "is_own_position": false,
+     "position_note": "Target price in the $70s",
+     "price": "",
+     "rationale": "Described as insanely attractive and a gift at current prices.",
+     "ticker": "NFLX",
+     "timeframe": "",
+     "timestamp": "07:51"
+    },
+    {
+     "action": "WATCH",
+     "company": "The Honest Company, Inc.",
+     "is_own_position": false,
+     "position_note": "Target price in the $3s",
+     "price": "",
+     "rationale": "Sees the stock exiting the year in the $5+ range, making current levels in the $3s very compelling.",
+     "ticker": "HNST",
+     "timeframe": "",
+     "timestamp": "08:10"
+    },
+    {
+     "action": "WATCH",
+     "company": "Whirlpool Corporation",
+     "is_own_position": false,
+     "position_note": "Target price in the $30s",
+     "price": "",
+     "rationale": "High upside potential if the housing market recovers, though ranked lower due to macro risk.",
+     "ticker": "WHR",
+     "timeframe": "",
+     "timestamp": "08:38"
+    },
+    {
+     "action": "WATCH",
+     "company": "PayPal Holdings, Inc.",
+     "is_own_position": false,
+     "position_note": "Target price in the $40s",
+     "price": "",
+     "rationale": "Described as dirt cheap, though controversial and lower in his ranking.",
+     "ticker": "PYPL",
+     "timeframe": "",
+     "timestamp": "09:00"
+    },
+    {
+     "action": "MENTION",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as an example of a high-valuation growth stock that grew into its forward P/E multiple.",
+     "ticker": "PLTR",
+     "timeframe": "",
+     "timestamp": "11:42"
+    },
+    {
+     "action": "WATCH",
+     "company": "ProShares UltraPro Short QQQ",
+     "is_own_position": false,
+     "position_note": "Hedge: Potential hedge position via call options later in the year",
+     "price": "",
+     "rationale": "Considering buying call options as a market hedge if tech stocks surge significantly into Q4.",
+     "ticker": "SQQQ",
+     "timeframe": "",
+     "timestamp": "18:25"
+    }
+   ],
+   "summary": "Jeremy Lefebvre shares his expectations for AMD ahead of its upcoming earnings report, anticipating a strong guidance beat driven by GPU and CPU demand, while detailing plans to potentially exit most of his AMD position over the next 6-12 months. He reviews and ranks his top buy candidates from a 16-stock watchlist, naming Celsius (CELH), ELF Beauty (ELF), and Estée Lauder (EL) as his highest conviction picks. Additionally, he reacts to market commentary from Tom Lee and Mike Wilson regarding potential market pullbacks, semiconductor corrections, and hyperscaler capex sustainability.",
+   "topics": [
+    "Semiconductors",
+    "Earnings Preview",
+    "Stock Rankings",
+    "Market Commentary",
+    "Capex Cycles"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2100,
   "id": "2Te0UcehJMk",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-17T08:17:47Z",
   "published_at": "2026-07-08T22:46:18Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/2Te0UcehJMk/mqdefault.jpg",
   "title": "16 Stocks to Buy Now‼️",
+  "tokens": 181466,
   "url": "https://www.youtube.com/watch?v=2Te0UcehJMk"
  },
  "2s6hZre4TJo": {
@@ -1620,7 +1828,9 @@
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2227,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "9EZzyjAZ-Zc",
+  "last_attempt_at": "2026-11-17T08:18:06Z",
   "live_status": "none",
   "published_at": "2026-07-07T22:01:39Z",
   "status": "pending",
@@ -6186,16 +6396,99 @@
   "url": "https://www.youtube.com/watch?v=TwRRJa-qVCE"
  },
  "UuNTz0_IDPA": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Jeremy's public portfolio closed at an all-time high of $4,519,419, gaining $127,406 in a single day.",
+    "Five rules to scale a portfolio fast: widen the gap between income and expenses, diversify across 7–20 growth/value/dividend stocks, reinvest all profits/dividends, avoid leverage/margin/options, and base trades strictly on numbers.",
+    "Detailed AMD exit plan: hold 1,000 shares for the super long term and trim the remaining 1,555 shares in 200-share tranches starting at $625.",
+    "ELF long-term price target of $500+ based on CEO Tarang Amin acquiring and scaling high-growth brands to reach a multi-billion-dollar valuation.",
+    "Short-term expectations for ELF are $100–$140 by year-end 2026, reaching $200+ around 2030."
+   ],
+   "market_view": "Total public account value reached $4,519,419.65. Jeremy emphasizes that investors cannot force market returns and must stay disciplined through inevitable corrections, recessions, and crashes.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Owns 2,555 shares in public account; plans to hold 1,000 core shares super long term and trim 1,555 shares starting at $625",
+     "price": "",
+     "rationale": "Jeremy anticipates potential over-ordering and a semiconductor industry slowdown around 2029–2030, making it prudent to trim gains at extreme valuation multiples above $625.",
+     "ticker": "AMD",
+     "timeframe": "next 6-9 months",
+     "timestamp": "18:05"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 1,125 shares in public account (~$85k) and significantly larger positions in private accounts",
+     "price": "",
+     "rationale": "Believes the company will become a top 5 global cosmetics company over the next decade through organic brand expansion and strategic acquisitions, potentially reaching $500+ per share.",
+     "ticker": "ELF",
+     "timeframe": "long term",
+     "timestamp": "28:36"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "Owns position in public account; considers current price of ~$346 a buy",
+     "price": "",
+     "rationale": "Uses AXP as a valuation case study, modeling 8% revenue growth and 12% net income growth through 2030, showing double-digit annualized returns at current prices.",
+     "ticker": "AXP",
+     "timeframe": "long term",
+     "timestamp": "16:06"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": true,
+     "position_note": "Trimmed down from peak of 5,555 shares to 1,000 core shares held long-term",
+     "price": "",
+     "rationale": "Locked in massive gains after a 1,600%+ run while maintaining a 1,000-share runner position in case the stock continues to exceed expectations.",
+     "ticker": "PLTR",
+     "timeframe": "past year",
+     "timestamp": "25:24"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Honest Company, Inc.",
+     "is_own_position": true,
+     "position_note": "Held in public account",
+     "price": "",
+     "rationale": "Jeremy expects Honest Co. shares to reach $5.00+ before the end of the year.",
+     "ticker": "HNST",
+     "timeframe": "by year-end",
+     "timestamp": "00:49"
+    }
+   ],
+   "summary": "Jeremy shares that his public portfolio reached an all-time high of approximately $4.52 million, up $127,000 on the day led by gains in AMD and Meta. He lays out a five-step framework for scaling a portfolio safely without forcing returns through excessive risk or leverage. Additionally, he outlines his detailed exit plan for AMD, aiming to begin trimming above $625 while holding 1,000 core shares long-term. Finally, he presents a deep-dive bull case on e.l.f. Beauty (ELF), explaining why he believes the stock can reach $100–$140 short term and eventually cross $500 over the long term as it builds a global multi-brand beauty empire.",
+   "topics": [
+    "Portfolio Update",
+    "AMD Exit Strategy",
+    "e.l.f. Beauty",
+    "Wealth Building",
+    "Valuation Modeling"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2028,
   "id": "UuNTz0_IDPA",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-17T08:16:37Z",
   "published_at": "2026-07-09T23:11:05Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/UuNTz0_IDPA/mqdefault.jpg",
   "title": "This Stock will go to $500‼️",
+  "tokens": 175730,
   "url": "https://www.youtube.com/watch?v=UuNTz0_IDPA"
  },
  "VBCzoxrBJIM": {
@@ -8833,6 +9126,146 @@
   "title": "This Stock will hit $500‼️",
   "url": "https://www.youtube.com/watch?v=mJrp04S7cB8"
  },
+ "n1dXGMGkorY": {
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Tech and semiconductor stocks have experienced severe pullbacks, with leveraged ETFs dropping 70% to 94% from June peaks.",
+    "Three key catalysts impacting the market this week: Nvidia's earnings report, leadership controversy around Jensen Huang, and the capital-draining Anthropic IPO.",
+    "Jeremy sees strong fractal similarities between current market action and the fourth-quarter 2018 crash, suggesting indices could slide into year-end.",
+    "He holds $1.8 million in cash earning ~4% interest, intending to deploy up to $800,000 once investor sentiment hits multi-week extreme bearish levels (50%+ on AAII).",
+    "Top stocks targeted for aggressive cash deployment include Netflix (NFLX), Celsius (CELH), American Express (AXP), SoFi (SOFI), Amazon (AMZN), and RH."
+   ],
+   "market_view": "Jeremy anticipates the market could experience another month and a half to two months of downward pressure similar to late 2018, potentially driving major indices negative for the year before bottoming. His public account value stands at $4,819,628.86 (up 26.1% YTD).",
+   "portfolio_snapshot": [],
+   "sentiment": "bearish",
+   "stock_moves": [
+    {
+     "action": "WATCH",
+     "company": "Netflix, Inc.",
+     "is_own_position": false,
+     "position_note": "Plans six-figure buys if shares drop into the $50s",
+     "price": "",
+     "rationale": "Trading near $60.75, his base-case financial model projects a 31% compound annual growth rate through 2030, and even his conservative bear case indicates a 20%+ CAGR.",
+     "ticker": "NFLX",
+     "timeframe": "upcoming weeks/months",
+     "timestamp": "35:08"
+    },
+    {
+     "action": "WATCH",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": false,
+     "position_note": "Targeting for cash deployment",
+     "price": "",
+     "rationale": "At around $31.57, Jeremy models 10% average revenue growth in his conservative base case through 2030, yielding a potential 26% to 27% CAGR.",
+     "ticker": "CELH",
+     "timeframe": "upcoming weeks/months",
+     "timestamp": "37:20"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "Will keep buying on market weakness",
+     "price": "",
+     "rationale": "Jeremy considers American Express one of the safest business models, projecting ~30% CAGR in his base case and double-digit market-beating returns even in a bear case.",
+     "ticker": "AXP",
+     "timeframe": "upcoming weeks/months",
+     "timestamp": "38:31"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Not adding because position is already extremely large",
+     "price": "",
+     "rationale": "Although he considers AMD an attractive long-term buy with potential to reach $1,000 to $2,000 in future years, he already owns extensive shares and will not add more.",
+     "ticker": "AMD",
+     "timeframe": "current",
+     "timestamp": "40:20"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Up significantly from summer purchases",
+     "price": "",
+     "rationale": "Despite considering the stock still fundamentally attractive with strong projected CAGR in the 20s, he is not currently planning to add to his existing position.",
+     "ticker": "ELF",
+     "timeframe": "current",
+     "timestamp": "40:50"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "Expected range: $125 to $200",
+     "price": "",
+     "rationale": "He expects Nvidia to remain range-bound between roughly $125 and $200 for another year due to ongoing executive scandals, potential investigations, and CapEx slowdown worries in 2028.",
+     "ticker": "NVDA",
+     "timeframe": "current",
+     "timestamp": "41:38"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": true,
+     "position_note": "Public account cost basis is $9.23; willing to average up under $15",
+     "price": "",
+     "rationale": "Jeremy considers SoFi under $15 an exceptional long-term opportunity and is prepared to add shares even if it raises his cost basis.",
+     "ticker": "SOFI",
+     "timeframe": "upcoming weeks/months",
+     "timestamp": "32:26"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Amazon.com, Inc.",
+     "is_own_position": true,
+     "position_note": "Targeting aggressive adds if stock pulls back 20%+",
+     "price": "",
+     "rationale": "Amazon remains a perpetual buy in his view due to its durable business model, becoming even more attractive if market turbulence drives it lower.",
+     "ticker": "AMZN",
+     "timeframe": "upcoming weeks/months",
+     "timestamp": "43:31"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "RH",
+     "is_own_position": true,
+     "position_note": "Cost basis $124.10; plans to gobble up shares under $125",
+     "price": "",
+     "rationale": "He views RH as deeply undervalued and plans to actively buy more shares whenever the stock trades below $125.",
+     "ticker": "RH",
+     "timeframe": "upcoming weeks/months",
+     "timestamp": "44:54"
+    }
+   ],
+   "summary": "Jeremy discusses recent sharp drops across major tech and semiconductor stocks, warning that market sentiment has deteriorated rapidly and could mirror late 2018 with further downside into year-end. He outlines three major market catalysts for the week: Nvidia earnings, corporate governance fallout surrounding Jensen Huang, and liquidity absorption from the Anthropic IPO. With his public account sitting at approximately $4.82 million, he reveals he has $1.8 million in cash earning 4% interest and plans to deploy up to $800,000 as market sentiment worsens. He shares the specific stocks on his radar for deployment, including Netflix, Celsius, American Express, SoFi, Amazon, and RH.",
+   "topics": [
+    "Market Correction",
+    "Semiconductors",
+    "Cash Deployment",
+    "Big Tech",
+    "Valuation Projections"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
+  "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
+  "channel_title": "Financial Education",
+  "duration_sec": 2738,
+  "id": "n1dXGMGkorY",
+  "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-17T08:11:06Z",
+  "published_at": "2026-11-17T01:32:04Z",
+  "status": "ok",
+  "thumbnail": "https://i.ytimg.com/vi/n1dXGMGkorY/mqdefault.jpg",
+  "title": "The Unthinkable will happen to your stocks‼️",
+  "tokens": 236757,
+  "url": "https://www.youtube.com/watch?v=n1dXGMGkorY"
+ },
  "n6P-r98bpm0": {
   "analysis": {
    "category": "Portfolio Update",
@@ -10081,18 +10514,266 @@
   "url": "https://www.youtube.com/watch?v=wFy5J-ObxtA"
  },
  "wWYVt59SYLY": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Watchlist",
+   "key_points": [
+    "Jeremy's public portfolio reached an all-time high of $4.6 million.",
+    "CELH and ELF were given the highest scores among growth holdings (9.5/10), driven by massive expansion and margin improvement potential.",
+    "NKE was rated a generational 10/10 buy, representing a rare once-a-decade valuation opportunity.",
+    "AMZN and META remain Jeremy's top mega-cap conviction holdings, both earning a 9/10 rating.",
+    "TSLA and UBER were rated poorly (3/10) due to stagnating fundamentals and impending robotaxi disruption questions.",
+    "Emphasized sticking to the GVD (Growth, Value, Dividend) framework and listening to earnings calls to ensure high-conviction portfolio construction."
+   ],
+   "market_view": "Jeremy's public portfolio crossed a fresh all-time high of $4.6M, driven by broad strength across growth and value pillars. He urges investors to stay diversified across growth, value, and dividend stocks and think on a multi-year horizon.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies",
+     "is_own_position": true,
+     "position_note": "Over 1,000 shares shown, total value ~$130K",
+     "price": "",
+     "rationale": "Rated 7/10; valuation has contracted back to the $120s-$130s with forward P/E in the 30s against 70%+ expected revenue growth, making it a decent buy.",
+     "ticker": "PLTR",
+     "timeframe": "",
+     "timestamp": "02:28"
+    },
+    {
+     "action": "MENTION",
+     "company": "Apple Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 5/10; although protected by an unbreakable hardware ecosystem, the 35 forward P/E is too rich for modest low-teens revenue and EPS growth.",
+     "ticker": "AAPL",
+     "timeframe": "",
+     "timestamp": "03:50"
+    },
+    {
+     "action": "MENTION",
+     "company": "Microsoft Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 6/10; viewed as a better risk-reward than Apple due to stronger expected top-line growth and major AI positioning.",
+     "ticker": "MSFT",
+     "timeframe": "",
+     "timestamp": "05:04"
+    },
+    {
+     "action": "MENTION",
+     "company": "Oracle Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 5/10; despite strong business fundamentals, Jeremy refuses to touch it due to a deteriorating balance sheet and a recent S&P rating downgrade to BBB-.",
+     "ticker": "ORCL",
+     "timeframe": "",
+     "timestamp": "05:46"
+    },
+    {
+     "action": "MENTION",
+     "company": "Shopify Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 7/10; calls it one of the most underrated tech platforms with 30%+ expected revenue growth and forward P/E in the 30s.",
+     "ticker": "SHOP",
+     "timeframe": "",
+     "timestamp": "07:01"
+    },
+    {
+     "action": "HOLD",
+     "company": "Amazon.com, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$386K, up $167K",
+     "price": "",
+     "rationale": "Rated 9/10; remains an essential core long-term compounder trading at an attractive forward multiple in the 20s with rapid EPS growth.",
+     "ticker": "AMZN",
+     "timeframe": "",
+     "timestamp": "07:34"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$660K, up $562K (+572%)",
+     "price": "",
+     "rationale": "Rated 9/10; trading under 20x forward earnings with 30% revenue growth, held back only by investor skepticism over aggressive CapEx spend.",
+     "ticker": "META",
+     "timeframe": "",
+     "timestamp": "10:02"
+    },
+    {
+     "action": "HOLD",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": true,
+     "position_note": "1,222 shares, valued at ~$137K, up ~$15K",
+     "price": "",
+     "rationale": "Rated 8.5/10; identified as one of the best enterprise software platforms positioned to capitalize on and thrive alongside AI.",
+     "ticker": "NOW",
+     "timeframe": "",
+     "timestamp": "11:27"
+    },
+    {
+     "action": "MENTION",
+     "company": "Uber Technologies, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 3/10; warns that autonomous robotaxi fleets from Waymo, Tesla, and Amazon Zoox threaten to compress Uber's pricing power and valuation multiples over the next five years.",
+     "ticker": "UBER",
+     "timeframe": "",
+     "timestamp": "12:45"
+    },
+    {
+     "action": "MENTION",
+     "company": "Salesforce, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 8.5/10; after a 32% pullback YTD, forward valuation has dropped into the low teens with double-digit top-line potential.",
+     "ticker": "CRM",
+     "timeframe": "",
+     "timestamp": "16:01"
+    },
+    {
+     "action": "MENTION",
+     "company": "Netflix, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 9/10; faces virtually no direct peers in streaming, offering strong double-digit growth and a reasonable forward P/E of 20.",
+     "ticker": "NFLX",
+     "timeframe": "",
+     "timestamp": "16:41"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$78K, up $43K (+125%)",
+     "price": "",
+     "rationale": "Rated 6.5/10; still a decent hold, but Jeremy has doubts regarding aggressive analyst consensus estimates compared to Meta or Amazon.",
+     "ticker": "GOOG",
+     "timeframe": "",
+     "timestamp": "17:51"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$532K, with over $1M in lifetime gains",
+     "price": "",
+     "rationale": "Rated 7.5/10; sees AMD as an eventual $1.5T-$2T market cap company, though acknowledges valuation multiples are stretched as the chip cycle matures.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "18:48"
+    },
+    {
+     "action": "HOLD",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$90K, up $49K (+118%)",
+     "price": "",
+     "rationale": "Rated 8.5/10; 30%+ revenue expansion and rapidly growing member base give it the potential to become a $100B+ financial powerhouse over time.",
+     "ticker": "SOFI",
+     "timeframe": "",
+     "timestamp": "21:10"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory Incorporated",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$264K, up $132K (+100%)",
+     "price": "",
+     "rationale": "Rated 8/10; despite doubling from his cost basis, the stock is still just reaching the bottom end of fair value with new concept expansions underway.",
+     "ticker": "CAKE",
+     "timeframe": "",
+     "timestamp": "22:18"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$134K, up $21K",
+     "price": "",
+     "rationale": "Rated 9.5/10; considers it one of the absolute best buying opportunities in the market with massive domestic and international rollout runways across Celsius, Alani Nu, and Rockstar.",
+     "ticker": "CELH",
+     "timeframe": "",
+     "timestamp": "23:36"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Position valued at ~$83K, up $70K (+525%)",
+     "price": "",
+     "rationale": "Rated 9.5/10; top-tier cosmetic growth beast capable of compounding at 15-25% annually with significant margin expansion ahead as transitory headwinds fade.",
+     "ticker": "ELF",
+     "timeframe": "",
+     "timestamp": "24:39"
+    },
+    {
+     "action": "MENTION",
+     "company": "Tesla, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 3/10; revenue growth has slumped to 2%, EPS has collapsed, valuation is extremely rich, and commercial humanoid robots remain decades away.",
+     "ticker": "TSLA",
+     "timeframe": "",
+     "timestamp": "26:02"
+    },
+    {
+     "action": "MENTION",
+     "company": "Robinhood Markets, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 5/10; best purchased during broad market downturns rather than when equity indices are trading at all-time highs.",
+     "ticker": "HOOD",
+     "timeframe": "",
+     "timestamp": "29:50"
+    },
+    {
+     "action": "WATCH",
+     "company": "NIKE, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Rated 10/10; views the drop into the low $40s as a rare generational buying opportunity for one of the world's premier consumer brands.",
+     "ticker": "NKE",
+     "timeframe": "",
+     "timestamp": "33:22"
+    }
+   ],
+   "summary": "Jeremy reviews and ranks dozens of prominent stocks on a 1-to-10 scale based on long-term attractiveness to buy right now. He highlights Celsius (CELH) and e.l.f. Beauty (ELF) as near-perfect 9.5 ratings, and ranks Nike (NKE) as a generational 10/10 buying opportunity in the $40s. He also shares portfolio holdings including Amazon, Meta, ServiceNow, and Cheesecake Factory while reiterating his 'GVD' (Growth, Value, Dividend) diversification philosophy as his public account reached a new record high of $4.6 million.",
+   "topics": [
+    "Stock Rankings",
+    "Growth Stocks",
+    "Tech Stocks",
+    "Valuation",
+    "Portfolio Strategy"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2163,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "wWYVt59SYLY",
   "last_attempt_at": "2026-11-16T06:55:44Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-17T08:12:18Z",
   "published_at": "2026-07-13T21:22:11Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/wWYVt59SYLY/mqdefault.jpg",
   "title": "I rank the BEST Stocks You Should Buy Right Now‼️",
+  "tokens": 190882,
   "url": "https://www.youtube.com/watch?v=wWYVt59SYLY"
  },
  "wdLT163J364": {
