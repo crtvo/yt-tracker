@@ -1830,7 +1830,7 @@
   "duration_sec": 2227,
   "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "9EZzyjAZ-Zc",
-  "last_attempt_at": "2026-11-17T08:18:06Z",
+  "last_attempt_at": "2026-11-18T07:48:28Z",
   "live_status": "none",
   "published_at": "2026-07-07T22:01:39Z",
   "status": "pending",
@@ -10512,6 +10512,147 @@
   "thumbnail": "https://i.ytimg.com/vi/wFy5J-ObxtA/mqdefault.jpg",
   "title": "Top 7 Stocks to Buy Now‼️",
   "url": "https://www.youtube.com/watch?v=wFy5J-ObxtA"
+ },
+ "wPsNyd0fP2k": {
+  "analysis": {
+   "category": "Buy/Sell Decision",
+   "key_points": [
+    "Believes the market could be in a 2018-style dynamic where the Nasdaq eventually falls 20%+ and the S&P 500 drops 15%+.",
+    "Deployed roughly $50,000 buying shares of Netflix (NFLX), SoFi (SOFI), and Restoration Hardware (RH).",
+    "Holds $750,000 in dry powder ready to deploy if the market continues to weaken into year-end.",
+    "Warns that Nvidia faces severe margin compression and circular financing unwind risks despite strong current earnings.",
+    "Cautious on Robinhood (HOOD) due to massive retail margin debt that could unwind painfully in a major correction.",
+    "Maintains long-term optimism on Big Tech holdings (Meta, Amazon, Alphabet) but anticipates short-term volatility from heavy capex."
+   ],
+   "market_view": "The market may experience a deeper 2018-style correction with the Nasdaq dropping 20%+ and S&P 500 down 15%+ as speculative excess and AI circular financing unwind, though this presents attractive multi-year buying opportunities.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "BUY",
+     "company": "Netflix",
+     "is_own_position": true,
+     "position_note": "Bought 500 shares (~$29.8k allocation)",
+     "price": "$59.62",
+     "rationale": "Jeremy considers Netflix his biggest purchase of the day, projecting 30%+ annualized returns from 2027 to 2030 under his base-case model.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "43:35"
+    },
+    {
+     "action": "ADD",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Bought 1,000 shares ($14,300 total)",
+     "price": "$14.30",
+     "rationale": "He consistently buys SoFi whenever it trades under $15, though he keeps the overall sizing moderate due to the inherent risks of financial institutions.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "43:05"
+    },
+    {
+     "action": "ADD",
+     "company": "RH",
+     "is_own_position": true,
+     "position_note": "Bought 50 shares (~$5.8k total)",
+     "price": "$116.23",
+     "rationale": "Believes unloved 'real world economy' stocks like RH offer substantial 3x-4x upside over the next 2-3 years, though position sizing remains controlled due to macro and balance-sheet risks.",
+     "ticker": "RH",
+     "timeframe": "this video",
+     "timestamp": "41:59"
+    },
+    {
+     "action": "WATCH",
+     "company": "Robinhood Markets",
+     "is_own_position": false,
+     "position_note": "Interested in buying in the $30s-$40s if Nasdaq drops further",
+     "price": "",
+     "rationale": "Likes Robinhood long term, but is holding off because rapid deceleration and elevated customer margin debt make it vulnerable to a sharp selloff if the broader market drops.",
+     "ticker": "HOOD",
+     "timeframe": "this video",
+     "timestamp": "17:05"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Despite blowout current numbers, he warns of an 'earnings bubble,' circular vendor financing unraveling, loss of leadership, and potential gross/net margin collapse from 60%+ levels.",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "08:14"
+    },
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Sees AMD as having a cleaner long-term growth story than Nvidia, predicting AMD will take significant GPU market share by undercutting prices over the next several years.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "22:30"
+    },
+    {
+     "action": "HOLD",
+     "company": "Amazon",
+     "is_own_position": true,
+     "position_note": "Core long-term position",
+     "price": "",
+     "rationale": "Very optimistic on a 5-7 year horizon, but cautions that aggressive capex spending could pressure the stock over the next 12 months.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "32:05"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Large portfolio position",
+     "price": "",
+     "rationale": "Extremely bullish on a multi-year horizon, but cautious about the next 12 months due to heavy infrastructure spend and macro uncertainty.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "32:05"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet",
+     "is_own_position": true,
+     "position_note": "Core long-term position",
+     "price": "",
+     "rationale": "Bullish long term, but acknowledges the short-term headwinds from massive capital expenditures across mega-cap tech.",
+     "ticker": "GOOGL",
+     "timeframe": "this video",
+     "timestamp": "32:05"
+    }
+   ],
+   "summary": "Jeremy reviews the ongoing market correction, noting that the Nasdaq is down roughly 14% and many high-flying AI and tech stocks have plunged 35% to 50% from recent highs. He argues the market may be facing a late-2018 style drawdown where speculative stocks get hit first, followed by broader indexes like the S&P 500. Reacting to CNBC commentary from Tom Lee and Steve Eisman, Jeremy warns about potential circular financing and peak margins at Nvidia, while highlighting risks for hyperscalers. Taking advantage of the pullback, Jeremy deployed approximately $50,000 into three stock purchases while keeping $750,000 in cash ready for further declines.",
+   "topics": [
+    "Market Correction",
+    "Stock Buys",
+    "Nvidia Earnings",
+    "AI Trade",
+    "Tech Stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
+  "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
+  "channel_title": "Jeremy Lefebvre Makes Money",
+  "duration_sec": 2710,
+  "id": "wPsNyd0fP2k",
+  "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-18T07:47:00Z",
+  "published_at": "2026-11-18T01:20:59Z",
+  "status": "ok",
+  "thumbnail": "https://i.ytimg.com/vi/wPsNyd0fP2k/mqdefault.jpg",
+  "title": "This is the big one‼️",
+  "tokens": 234291,
+  "url": "https://www.youtube.com/watch?v=wPsNyd0fP2k"
  },
  "wWYVt59SYLY": {
   "analysis": {
