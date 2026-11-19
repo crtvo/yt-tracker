@@ -1824,18 +1824,102 @@
   "url": "https://www.youtube.com/watch?v=97X9ww_4lUk"
  },
  "9EZzyjAZ-Zc": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Public portfolio reached a new all-time high value of $4,555,457.19.",
+    "Warning 1: Avoid turning from a long-term fundamental investor into a short-term price-action gambler during volatile 'wear-out' market swings.",
+    "Warning 2: Avoid newly issued IPOs and SPACs, noting roughly 60-70% underperform the broader market in their first 1-3 years and 90% trade below opening highs.",
+    "Maintains AMD position despite trimmed estimates over chip ordering concerns; base case target is $900–$1,000 over the next several years.",
+    "Bullish on Celsius Holdings (CELH), viewing the Texas AG marketing investigation as reminiscent of Monster Beverage's past resolved legal hurdles.",
+    "Sees strong rebound potential for SoFi Technologies (SOFI) as inflation concerns cool and rate cut sentiment returns.",
+    "Expects Meta (META) to remain range-bound ($550–$750) in the near term due to massive CapEx expenditures, while remaining a long-term multi-thousand-dollar stock."
+   ],
+   "market_view": "Jeremy notes that the market is in a highly volatile 'wear-out phase' dominated by traders and algorithmic flows, but long-term fundamental compounding remains intact across high-quality businesses.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Up over $1M in public account; plans to sell the majority if it reaches $1,000 this year",
+     "price": "",
+     "rationale": "Slightly lowered forward expectations due to potential chip overordering concerns, but base-case valuation still targets $900 to $1,000 over the coming years.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "07:35"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Holds 4,544 shares valued at ~$144K",
+     "price": "",
+     "rationale": "Believes the Texas AG marketing investigation is a rite of passage similar to Monster Beverage's past lawsuits that created prime buying opportunities.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "23:50"
+    },
+    {
+     "action": "HOLD",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Holds 5,000 shares valued at ~$88.5K",
+     "price": "",
+     "rationale": "Expects sentiment and stock momentum to recover rapidly as oil prices stabilize and inflation fears die down.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "28:00"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Holds 1,125 shares valued at ~$84.7K",
+     "price": "",
+     "rationale": "Believes the momentum run is far from over and projects the stock will surpass $100 before 2026 ends.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "27:20"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Holds 1,000 shares valued at ~$622K",
+     "price": "",
+     "rationale": "Expects shares to stay range-bound between $550 and $750 until massive AI CapEx spending normalizes, though long-term target is $1,000 to $2,000.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "29:45"
+    }
+   ],
+   "summary": "Jeremy Lefebvre records from a New York City hotel room, reflecting on his public portfolio reaching a new all-time high of approximately $4.55 million. He issues two major warnings for investors: do not let high volatility during the 'wear-out phase' turn you into an emotional short-term gambler, and avoid chasing freshly public IPOs and SPACs. He also highlights several high-conviction holdings poised for upside, focusing on Celsius Holdings, SoFi Technologies, e.l.f. Beauty, AMD, and Meta Platforms.",
+   "topics": [
+    "Market Volatility",
+    "IPO Investing",
+    "Semiconductors",
+    "AI Capex",
+    "Fintech"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2227,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "9EZzyjAZ-Zc",
   "last_attempt_at": "2026-11-18T20:56:44Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-19T20:54:09Z",
   "published_at": "2026-07-07T22:01:39Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/9EZzyjAZ-Zc/mqdefault.jpg",
   "title": "INVESTORS are about to LOSE THEIR MIND‼️",
+  "tokens": 193038,
   "url": "https://www.youtube.com/watch?v=9EZzyjAZ-Zc"
  },
  "9cG_DXwC3ig": {
@@ -11745,18 +11829,183 @@
   "url": "https://www.youtube.com/watch?v=ys4-KxMcmmI"
  },
  "zKQzbjBwGVM": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Buy/Sell Decision",
+   "key_points": [
+    "Trimmed 1,222 shares of Cheesecake Factory (CAKE) for ~$143,800 to redeploy into higher-upside opportunities.",
+    "Deployed CAKE proceeds into CELH ($33k), SOFI ($36k), NFLX ($33k), AXP ($24k), and WYNN ($17k).",
+    "Warns investors to stay away from four major traps: margin debt, short-dated call options, leveraged ETFs, and ignoring bear cases.",
+    "Discusses the weakness in SaaS stocks, attributing part of the selling pressure to liquidity drain ahead of the massive Anthropic IPO.",
+    "Notes commodities (oil, copper, GSG) and precious metals have dropped sharply, which should help inflation into 2027.",
+    "Expects significant tax-loss harvesting to pressure beaten-down semiconductor stocks over the next six weeks before a potential rebound."
+   ],
+   "market_view": "Jeremy sees the recent selloff in tech and commodities as creating generational buying opportunities over the next 5 to 10 years, though beaten-down momentum and semiconductor stocks may face further tax-loss harvesting through year-end. His public account stands near $4.9M.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "META",
+     "weight_pct": 27.55
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 12.53
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 7.94
+    },
+    {
+     "ticker": "GOOGL",
+     "weight_pct": 5.66
+    },
+    {
+     "ticker": "BABA",
+     "weight_pct": 5.13
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 4.87
+    },
+    {
+     "ticker": "CRM",
+     "weight_pct": 4.12
+    },
+    {
+     "ticker": "NFLX",
+     "weight_pct": 4.11
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 3.19
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "TRIM",
+     "company": "The Cheesecake Factory",
+     "is_own_position": true,
+     "position_note": "Sold 1,222 shares for ~$143,802 in a private account; still holds large positions across portfolios",
+     "price": "$120.05",
+     "rationale": "Trimmed shares because the rapid price run-up pulled forward future gains, reducing projected base-case CAGR to around 14% and making capital reallocation more attractive.",
+     "ticker": "CAKE",
+     "timeframe": "this video",
+     "timestamp": "30:17"
+    },
+    {
+     "action": "ADD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Bought 1,000 shares ($33,020)",
+     "price": "$33.02",
+     "rationale": "Views current valuation in the low $30s as deeply conservative with potential for mid-20s% to 30%+ annual returns back toward $100+ over the coming years.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "31:12"
+    },
+    {
+     "action": "ADD",
+     "company": "Wynn Resorts",
+     "is_own_position": true,
+     "position_note": "Bought 200 shares ($16,685)",
+     "price": "$83.42",
+     "rationale": "Anticipates a strong multi-year cycle leading up to and following the 2027 opening of the $5.7B UAE integrated resort on Al Marjan Island.",
+     "ticker": "WYNN",
+     "timeframe": "this video",
+     "timestamp": "31:18"
+    },
+    {
+     "action": "ADD",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Bought 2,523 shares ($36,280)",
+     "price": "$14.38",
+     "rationale": "Believes SoFi has the trajectory to become a top 10 global financial institution over the next decade as long as it avoids excessive leverage.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "32:26"
+    },
+    {
+     "action": "ADD",
+     "company": "Netflix",
+     "is_own_position": true,
+     "position_note": "Bought 550 shares ($33,137)",
+     "price": "$60.25",
+     "rationale": "Calculates an attractive 31% base-case CAGR potential through 2030, offering an exceptional risk-reward profile even if estimates come in lower.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "33:33"
+    },
+    {
+     "action": "ADD",
+     "company": "American Express",
+     "is_own_position": true,
+     "position_note": "Bought 75 shares ($23,742)",
+     "price": "$316.57",
+     "rationale": "Values the recurring, affluent customer base and safety of the business model, projecting 20-30% base-case CAGR and mid-teens returns even in a bear case.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "33:41"
+    },
+    {
+     "action": "HOLD",
+     "company": "Salesforce",
+     "is_own_position": true,
+     "position_note": "4.12% of public portfolio (~$202,776)",
+     "price": "",
+     "rationale": "Prefers Salesforce over other SaaS peers due to double-digit top-line growth and a more reasonable valuation relative to its cash flow generation.",
+     "ticker": "CRM",
+     "timeframe": "this video",
+     "timestamp": "24:21"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies",
+     "is_own_position": true,
+     "position_note": "3.19% of public portfolio (~$156,670)",
+     "price": "",
+     "rationale": "Remains high conviction on Palantir's execution and operational numbers, noting valuation is gradually becoming more attractive as earnings expand.",
+     "ticker": "PLTR",
+     "timeframe": "this video",
+     "timestamp": "24:25"
+    },
+    {
+     "action": "MENTION",
+     "company": "ServiceNow",
+     "is_own_position": false,
+     "position_note": "Previously sold entire position",
+     "price": "",
+     "rationale": "Noted ServiceNow broke below $90; reiterated he exited due to slowing growth and declining profitability relative to its multiple.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "23:41"
+    }
+   ],
+   "summary": "Jeremy discusses recent market volatility, highlighting severe drawdowns in popular semiconductor and tech stocks alongside commodity drops. He reveals that he trimmed 1,222 shares of The Cheesecake Factory (CAKE) after a massive run-up reduced its future return profile. He reallocated the approximately $143,800 in proceeds into five stocks offering higher projected upside: Celsius Holdings, Wynn Resorts, SoFi, Netflix, and American Express. Additionally, he provides advice on risk management and explains why SaaS stocks are experiencing selling pressure ahead of the Anthropic IPO.",
+   "topics": [
+    "Portfolio Update",
+    "Stock Sales",
+    "Stock Purchases",
+    "SaaS Stocks",
+    "Risk Management",
+    "Valuation"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2384,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "zKQzbjBwGVM",
   "last_attempt_at": "2026-11-19T07:46:44Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-19T20:52:58Z",
   "published_at": "2026-11-18T23:49:17Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/zKQzbjBwGVM/mqdefault.jpg",
   "title": "I Just Sold",
+  "tokens": 208382,
   "url": "https://www.youtube.com/watch?v=zKQzbjBwGVM"
  },
  "zkqzQYjpMX8": {
