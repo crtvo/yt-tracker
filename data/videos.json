@@ -1585,7 +1585,9 @@
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2321,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "4rA7rLSow8s",
+  "last_attempt_at": "2026-11-20T07:38:31Z",
   "live_status": "none",
   "published_at": "2026-07-01T22:44:51Z",
   "status": "pending",
@@ -6478,6 +6480,147 @@
   "thumbnail": "https://i.ytimg.com/vi/TwRRJa-qVCE/mqdefault.jpg",
   "title": "GREAT NEWS for AMD, MICRON, ELF & CAKE investors‼️",
   "url": "https://www.youtube.com/watch?v=TwRRJa-qVCE"
+ },
+ "UQrjH9VzL5c": {
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "The Nasdaq has entered a medium correction phase, falling over 15% from recent highs.",
+    "Hunterbrook Capital released a short seller report on AMD alleging export rule violations, which Jeremy views as unfounded and misleading.",
+    "Jeremy maintains a long-term price target of $1,000 to $2,000 for AMD, citing strong server market share gains and competitive advantages.",
+    "Jeremy deployed $70,000 across 6 stocks: CRM, HNST, RH, CELH, SOFI, and NFLX.",
+    "He has an additional $650,000 in cash ready to deploy into high-conviction holdings if market weakness continues through year-end.",
+    "VIX spikes near or above 30 signal strong historical buying opportunities, though they do not guarantee the exact market bottom.",
+    "Anticipates significant tax-loss harvesting pressure on heavily beaten-down mega-cap tech stocks throughout December."
+   ],
+   "market_view": "Views the current 15%+ Nasdaq pullback as a prime long-term buying opportunity similar to late 2018. While tax-loss harvesting could cause further downside into December, he is aggressively buying dips with plans to deploy up to $650,000 more.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "CELH",
+     "weight_pct": 5.83
+    },
+    {
+     "ticker": "NFLX",
+     "weight_pct": 5.43
+    },
+    {
+     "ticker": "HNST",
+     "weight_pct": 4.2
+    },
+    {
+     "ticker": "CRM",
+     "weight_pct": 4.16
+    },
+    {
+     "ticker": "EL",
+     "weight_pct": 3.87
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Holds 2,555.45 shares worth ~$1.25M",
+     "price": "",
+     "rationale": "Dismisses the Hunterbrook short report as frivolous and believes AMD's server market share gains and strong positioning make it a $1,000 to $2,000 stock over the long term.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "48:54"
+    },
+    {
+     "action": "ADD",
+     "company": "Salesforce",
+     "is_own_position": true,
+     "position_note": "Bought 100 shares; position now 4.16% of public account",
+     "price": "183.00",
+     "rationale": "Added to the existing position as valuation compressed during the broader tech selloff.",
+     "ticker": "CRM",
+     "timeframe": "this video",
+     "timestamp": "53:30"
+    },
+    {
+     "action": "ADD",
+     "company": "The Honest Company",
+     "is_own_position": true,
+     "position_note": "Bought 2,222 shares; position now 4.20% of public account",
+     "price": "4.46",
+     "rationale": "Considers Honest under $5/share to be the most attractive small-cap stock under a $1 billion valuation in the market.",
+     "ticker": "HNST",
+     "timeframe": "this video",
+     "timestamp": "53:36"
+    },
+    {
+     "action": "ADD",
+     "company": "RH",
+     "is_own_position": true,
+     "position_note": "Bought 100 shares",
+     "price": "110.20",
+     "rationale": "Taking advantage of severe retail and consumer discretionary weakness to accumulate shares.",
+     "ticker": "RH",
+     "timeframe": "this video",
+     "timestamp": "53:57"
+    },
+    {
+     "action": "ADD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Bought 500 shares; position now 5.83% of public account",
+     "price": "30.85",
+     "rationale": "Adding heavily to one of his highest-conviction holdings as the share price sits at heavily discounted levels.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "54:00"
+    },
+    {
+     "action": "ADD",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Bought 777 shares",
+     "price": "13.67",
+     "rationale": "Views SoFi under $15 as a major pricing mistake by the market, though he maintains controlled position sizing due to it being a financial stock.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "54:05"
+    },
+    {
+     "action": "ADD",
+     "company": "Netflix",
+     "is_own_position": true,
+     "position_note": "Bought 400 shares; position now 5.43% of public account",
+     "price": "58.30",
+     "rationale": "Made a large buy of Netflix shares as it trades around a 50% discount from previous 52-week highs.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "54:32"
+    }
+   ],
+   "summary": "Jeremy addresses the current stock market correction, noting that the Nasdaq has dropped over 15% from its highs, accompanied by sharp declines in tech stocks, crypto, and precious metals. He breaks down and debunks a short report against AMD released by Hunterbrook, reiterating his long-term price target of $1,000 to $2,000 per share. Viewing the market pullback as a major buying opportunity rather than a reason to panic, he invested $70,000 across six stocks today and is prepared to deploy another $650,000 if weakness persists into December.",
+   "topics": [
+    "Market Correction",
+    "AMD Short Report",
+    "Stock Buys",
+    "Tax-Loss Harvesting",
+    "VIX"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
+  "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
+  "channel_title": "Financial Education",
+  "duration_sec": 3434,
+  "id": "UQrjH9VzL5c",
+  "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-20T07:37:00Z",
+  "published_at": "2026-11-20T01:36:41Z",
+  "status": "ok",
+  "thumbnail": "https://i.ytimg.com/vi/UQrjH9VzL5c/mqdefault.jpg",
+  "title": "AMD & Market Emergency‼️",
+  "tokens": 296414,
+  "url": "https://www.youtube.com/watch?v=UQrjH9VzL5c"
  },
  "UuNTz0_IDPA": {
   "analysis": {
