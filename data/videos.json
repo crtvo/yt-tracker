@@ -1581,18 +1581,177 @@
   "url": "https://www.youtube.com/watch?v=4jHsv4_P_D4"
  },
  "4rA7rLSow8s": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Public portfolio reached a new all-time high of $4,509,853.47 despite AMD dropping over 5%.",
+    "Meta is reportedly developing a cloud service to sell excess AI computing capacity, suggesting potential industry-wide over-ordering of AI chips.",
+    "Moderating CaPex would hurt chipmakers (NVDA, AMD, MU) but provide margin expansion, higher free cash flow, and buyback power for hyperscalers (META, AMZN, GOOG, MSFT).",
+    "Jeremy hedges across both market outcomes by holding AMD heavy alongside Meta, Amazon, and Google.",
+    "Jeremy predicts Celsius Holdings (CELH) is primed for an explosive 2x+ multi-month surge and expects it to surpass previous all-time highs before 2029.",
+    "To avoid blowing up portfolios near highs, Jeremy stresses the GVD framework (growth, value, dividend), avoiding margin, shunning greedy short-term options, and investing with a 2030s perspective."
+   ],
+   "market_view": "Jeremy remains bullish long-term with his portfolio at a new all-time high of $4.5M+, noting that whether AI chip demand surges further or big tech moderates CaPex, his barbell approach across chip suppliers and hyperscalers covers all scenarios.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 30.8
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 13.6
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 8.4
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 5.76
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 4.32
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "30.80% of account ($1,381,948.40)",
+     "price": "",
+     "rationale": "AMD pulled back over 5% on the day, but Jeremy remains heavily invested as he expects shock-and-awe quarters ahead and notes AMD has benefited the least among major chipmakers.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "00:19"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms, Inc.",
+     "is_own_position": true,
+     "position_note": "13.60% of account ($612,910.00)",
+     "price": "",
+     "rationale": "Meta shares rallied after Bloomberg reported plans to sell excess AI compute capacity; Jeremy views founder-led Mark Zuckerberg as exceptionally aggressive and capable of driving strong monetization from AI infrastructure.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "04:13"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Owned in public portfolio; believes it is a huge buy at current $31 price",
+     "price": "",
+     "rationale": "Jeremy believes CELH has bottomed and has a multi-year track record of doubling in a matter of months after major crashes, predicting it will take out all-time highs before 2029.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "22:12"
+    },
+    {
+     "action": "HOLD",
+     "company": "Amazon.com, Inc.",
+     "is_own_position": true,
+     "position_note": "8.40% of account ($375,843.50)",
+     "price": "",
+     "rationale": "Amazon provides balance against semiconductor volatility and generates enormous high-margin revenue from digital advertising alongside AWS.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "14:51"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet Inc.",
+     "is_own_position": true,
+     "position_note": "222 shares owned ($79,451.58 value)",
+     "price": "",
+     "rationale": "Google is held as part of Jeremy's core mega-cap tech basket that benefits if hyperscalers rein in CaPex spending.",
+     "ticker": "GOOG",
+     "timeframe": "this video",
+     "timestamp": "15:14"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Owned in public portfolio",
+     "price": "",
+     "rationale": "Jeremy highlighted ELF's 60%+ run from its June 5 bottom as proof of how rapidly high-growth retail winners can rebound after violent selloffs.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "01:28"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Jeremy warns that Nvidia faces risks if hyperscalers realize they over-ordered AI chips and reduce future hardware procurement.",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "09:27"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Jeremy feels Micron stock may be nearing a cyclical top this year despite outstanding 300%+ revenue growth, cautioning that any CaPex slowdown will impact sentiment.",
+     "ticker": "MU",
+     "timeframe": "this video",
+     "timestamp": "19:50"
+    },
+    {
+     "action": "MENTION",
+     "company": "Microsoft Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Microsoft has faced pressure across SaaS, and questions exist regarding whether Meta's planned compute resale could challenge Azure's long-term growth trajectory.",
+     "ticker": "MSFT",
+     "timeframe": "this video",
+     "timestamp": "16:51"
+    },
+    {
+     "action": "MENTION",
+     "company": "NIKE, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Jeremy noted Nike rising following bad earnings news, calling it one of the most bullish signals a stock price can display.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "01:07"
+    }
+   ],
+   "summary": "Jeremy announces that his public portfolio reached a new all-time high of over $4.5 million, driven by strong rallies in Meta, Celsius, and Amazon despite a pullback in AMD. He breaks down reports that Meta plans to sell excess AI compute capacity through a cloud service, exploring whether big tech has over-ordered AI chips and how that affects semiconductor stocks versus hyperscalers. To hedge this dynamic, Jeremy maintains heavy exposure to both chipmakers and large-cap tech spenders. Additionally, he highlights Celsius Holdings (CELH) as the next stock poised for a massive 2x+ rebound similar to e.l.f. Beauty, while providing risk-management rules to protect wealth during market peaks.",
+   "topics": [
+    "Portfolio Update",
+    "Meta AI Cloud",
+    "AI Chips & CaPex",
+    "Celsius Holdings",
+    "Risk Management"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2321,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "4rA7rLSow8s",
   "last_attempt_at": "2026-11-20T07:38:31Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-21T19:42:04Z",
   "published_at": "2026-07-01T22:44:51Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/4rA7rLSow8s/mqdefault.jpg",
   "title": "Early Investors will change their life‼️",
+  "tokens": 202492,
   "url": "https://www.youtube.com/watch?v=4rA7rLSow8s"
  },
  "5OwUA8N5-9o": {
@@ -3386,7 +3545,9 @@
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2192,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "G2u_yXppyfI",
+  "last_attempt_at": "2026-11-21T19:47:25Z",
   "live_status": "none",
   "published_at": "2026-06-30T00:23:22Z",
   "status": "pending",
@@ -9861,16 +10022,138 @@
   "url": "https://www.youtube.com/watch?v=pMQj9ZcEbQI"
  },
  "pO0slBoC9XE": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "AMD position has generated nearly $1.2M in unrealized gains in his public account alone, with Jeremy projecting it could hit $1,000+ before topping out next year.",
+    "e.l.f. Beauty (ELF) rebounded 50% from its recent $49 lows; Jeremy targets $120–$140 over the next 6 to 12 months.",
+    "Celsius (CELH) is viewed as a prime candidate for an explosive double from $28 to $56+ once sentiment shifts.",
+    "Nike (NKE) posted mixed earnings (graded B+), with strong gross margins and 3% North American growth offset by steep international declines.",
+    "Lululemon (LULU) has been added to his potential buy list for the first time following its sharp valuation contraction.",
+    "Reacting to CNBC, Jeremy predicts the semiconductor trade could cool off around Q1 2027 when mega-cap tech capex growth moderates."
+   ],
+   "market_view": "The broader market rally is set to expand beyond mega-cap tech into beaten-down consumer and cyclical names as comparisons ease and margins recover, while semiconductor momentum will likely peak in early 2027.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 0
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Owns 2,555 shares in public account valued at ~$1.48M (up over $1.19M); plans to sell a good portion once it tops next year",
+     "price": "111.61",
+     "rationale": "Wall Street price targets continue to lag behind actual performance, and data center demand could push shares to $1,000+ before a cyclical top next year.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "00:10"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Bought recently around $49; up 50% in three weeks",
+     "price": "49.09",
+     "rationale": "Believes the core business momentum, international expansion, and the Rhode brand acquisition will drive shares toward $120–$140 over the next 6–12 months.",
+     "ticker": "ELF",
+     "timeframe": "recently",
+     "timestamp": "10:02"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Long-term core position",
+     "price": "",
+     "rationale": "Views the stock as dead money right now but considers it one of the best risk/reward opportunities in the market, capable of doubling from $28 to $56 in a matter of weeks.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "12:47"
+    },
+    {
+     "action": "WATCH",
+     "company": "Lululemon Athletica",
+     "is_own_position": false,
+     "position_note": "Added to potential stocks to buy watchlist",
+     "price": "",
+     "rationale": "The valuation has compressed enough after a prolonged pullback to make the stock attractive for the first time.",
+     "ticker": "LULU",
+     "timeframe": "this video",
+     "timestamp": "15:43"
+    },
+    {
+     "action": "HOLD",
+     "company": "Nike",
+     "is_own_position": true,
+     "position_note": "Holding for a projected 12–24 month turnaround",
+     "price": "",
+     "rationale": "North America is growing and margins recovered via tariff relief, but international markets must return to growth over the next 6–12 months for the stock to double.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "16:30"
+    },
+    {
+     "action": "HOLD",
+     "company": "Amazon.com",
+     "is_own_position": true,
+     "position_note": "One of the largest positions in his public account; down ~11.5% MTD",
+     "price": "",
+     "rationale": "A recent pullback provides an attractive setup as broader tech consolidation continues.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "26:58"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Owns position; down ~12% MTD",
+     "price": "",
+     "rationale": "Views the recent pullback from highs as a standard consolidation that will eventually resolve to the upside.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "27:08"
+    },
+    {
+     "action": "MENTION",
+     "company": "Caterpillar",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Highlighted as a non-tech industrial business demonstrating strong projected EPS growth (~32%).",
+     "ticker": "CAT",
+     "timeframe": "this video",
+     "timestamp": "30:14"
+    }
+   ],
+   "summary": "Jeremy Lefebvre breaks down major moves in his portfolio, highlighted by AMD's continued surge past $578 per share and e.l.f. Beauty's rapid 50% bounce off recent lows. He reviews Nike's latest quarterly earnings, noting solid North American growth and margin expansion, but cautions that international markets must improve for the stock to double. He also adds Lululemon to his watchlist as consumer stocks get oversold and highlights Celsius as his highest-conviction rebound play. Finally, he reacts to a CNBC Halftime Report segment on market momentum, arguing that non-tech and consumer stocks are set to drive the next leg of the bull market.",
+   "topics": [
+    "Semiconductors",
+    "Consumer Stocks",
+    "Earnings Reaction",
+    "Momentum",
+    "Tech Capex"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2344,
   "id": "pO0slBoC9XE",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-21T19:46:12Z",
   "published_at": "2026-07-01T01:29:06Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/pO0slBoC9XE/mqdefault.jpg",
   "title": "This stock has more potential upside than anything I have seen‼️",
+  "tokens": 202985,
   "url": "https://www.youtube.com/watch?v=pO0slBoC9XE"
  },
  "pP76GX3Ap1g": {
@@ -10714,18 +10997,144 @@
   "url": "https://www.youtube.com/watch?v=tUDXGrN1eMk"
  },
  "thDu_XGcHMI": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Buy/Sell Decision",
+   "key_points": [
+    "Tech and AI-related stocks have experienced sharp drawdowns, with multiple names down 30% to over 80% from recent highs.",
+    "Jeremy reacted to clips of Tom Lee, Ed Yardeni, and Dan Ives discussing AI data center buildouts, valuations, and economic resilience.",
+    "Deployed $88,000 into 7 individual stocks during the market drop: AMZN, ELF, AXP, RH, WYNN, SOFI, and CELH.",
+    "Warns investors against using margin, options, or over-concentrating in single sectors, advising a long-term 5- to 15-year perspective.",
+    "Notes that the market correction resembles the 2018 playbook, potentially offering a short-term rebound followed by tax-loss selling into December."
+   ],
+   "market_view": "Jeremy believes the market is experiencing panic-driven capitulation similar to late 2018, which creates exceptional long-term buying opportunities despite the risk of further tax-loss harvesting into December.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ADD",
+     "company": "Amazon",
+     "is_own_position": true,
+     "position_note": "Bought 50 shares",
+     "price": "$250.66",
+     "rationale": "Added to his existing position during the widespread market sell-off.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "39:17"
+    },
+    {
+     "action": "ADD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Bought 100 shares",
+     "price": "$104.32",
+     "rationale": "Accumulated more shares during the market weakness.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "39:19"
+    },
+    {
+     "action": "ADD",
+     "company": "American Express",
+     "is_own_position": true,
+     "position_note": "Bought 50 shares",
+     "price": "$306.75",
+     "rationale": "Added shares of a high-quality financial company on the pullback.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "39:20"
+    },
+    {
+     "action": "ADD",
+     "company": "RH",
+     "is_own_position": true,
+     "position_note": "Bought 100 shares",
+     "price": "$108.90",
+     "rationale": "Purchased additional shares as the broader market tumbled.",
+     "ticker": "RH",
+     "timeframe": "this video",
+     "timestamp": "39:22"
+    },
+    {
+     "action": "ADD",
+     "company": "Wynn Resorts",
+     "is_own_position": true,
+     "position_note": "Bought 100 shares",
+     "price": "$80.35",
+     "rationale": "Expanded his stake to capitalize on consumer and travel spending among retirees.",
+     "ticker": "WYNN",
+     "timeframe": "this video",
+     "timestamp": "39:23"
+    },
+    {
+     "action": "ADD",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Bought 1,200 shares",
+     "price": "$12.78",
+     "rationale": "Added heavily to his position as part of his $88,000 buying spree.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "39:25"
+    },
+    {
+     "action": "ADD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Bought 500 shares",
+     "price": "$29.09",
+     "rationale": "Bought more shares of the beverage growth company during the market drawdown.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "39:26"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Purchased under $100 years ago",
+     "price": "",
+     "rationale": "Holding his long-term position, noting that despite the recent China-exposure short report and pullback, the long-term fundamentals remain strong.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "04:26"
+    },
+    {
+     "action": "MENTION",
+     "company": "Nvidia",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed the drop from highs, forward valuation multiple around 11, and market sentiment shifting negative post-earnings despite solid financial results.",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "08:41"
+    }
+   ],
+   "summary": "Jeremy discusses extreme panic and capitulation in tech and semiconductor stocks, arguing that the sell-off is driven by short-term sentiment rather than broken fundamentals. He reacts to market commentary from Tom Lee, Ed Yardeni, and Dan Ives, agreeing that AI infrastructure spending remains in its early stages. Taking advantage of the panic, Jeremy bought $88,000 worth of shares across seven stocks.",
+   "topics": [
+    "Market Correction",
+    "Tech Stocks",
+    "AI Trade",
+    "Semiconductors",
+    "Dip Buying"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2397,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "thDu_XGcHMI",
   "last_attempt_at": "2026-11-21T07:29:49Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-21T19:37:14Z",
   "published_at": "2026-11-20T20:14:05Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/thDu_XGcHMI/mqdefault.jpg",
   "title": "once in 20 year panic‼️",
+  "tokens": 207466,
   "url": "https://www.youtube.com/watch?v=thDu_XGcHMI"
  },
  "uHuitqm_jIQ": {
