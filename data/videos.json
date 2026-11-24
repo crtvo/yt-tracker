@@ -3541,18 +3541,124 @@
   "url": "https://www.youtube.com/watch?v=FmLqqOOH8iA"
  },
  "G2u_yXppyfI": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Stock Deep Dive",
+   "key_points": [
+    "Jeremy's public portfolio gained over $72,000 in a single day, led by AMD crossing over $1M in total unrealized gains.",
+    "Memory chip component costs for the next-generation iPhone are projected to skyrocket, drawing antitrust lawsuits and government scrutiny for Micron, SK Hynix, and Samsung.",
+    "Jeremy cautions that memory chip makers like Micron (trading at a low 12 forward P/E) are cyclical traps near the top of their earnings boom.",
+    "A forward P/E of 20 serves as Jeremy's baseline market valuation; multiples above 20 require strong, reliable EPS growth to justify the premium.",
+    "Jeremy is heavily bullish on e.l.f. Beauty (ELF), showing his positions across multiple accounts and projecting a return to $100–$140 within 6–12 months and $200+ long term.",
+    "Improving Michigan Consumer Sentiment is expected to lift beaten-down retail and consumer discretionary stocks, including ELF, Nike, Estee Lauder, and Lululemon."
+   ],
+   "market_view": "Jeremy remains overall bullish on the ongoing AI cycle, noting similarities to the 1990s internet boom that suggest several years of expansion remain. He also expects consumer sentiment to recover over the next 12 to 24 months, providing a strong tailwind to beaten-down consumer discretionary stocks.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds across multiple accounts: ~$251k in Ally portfolio, ~$104k in Chase portfolio, plus public and Patreon accounts; recently added shares at $49.09 on June 5th",
+     "price": "",
+     "rationale": "Believes the stock has carved out a crystal-clear bottom and will return to its 12-month highs of $120–$140 within 6–12 months, viewing it as a $200+ stock long term.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "29:56"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Over $1.08M total profit in public account (+381%)",
+     "price": "",
+     "rationale": "High forward P/E is justified by massive expected EPS growth (projected +163% current year and +70% next year), rapidly eating into its valuation multiple.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "20:45"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms, Inc.",
+     "is_own_position": true,
+     "position_note": "+$464k total profit (+473%) in public account",
+     "price": "",
+     "rationale": "Trades at a modest forward P/E under 17 despite massive AI cap-ex investments, making it attractive compared to the overall market average.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "17:28"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Warns that its low forward P/E of 12 is deceptive because memory chips are highly cyclical, and soaring prices are provoking lawsuits, government scrutiny, and potential in-house competition from big tech spenders.",
+     "ticker": "MU",
+     "timeframe": "this video",
+     "timestamp": "06:28"
+    },
+    {
+     "action": "MENTION",
+     "company": "Microsoft Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Notes the stock has been an underperformer among big tech, down ~26% over the past year despite positive headline catalysts.",
+     "ticker": "MSFT",
+     "timeframe": "this video",
+     "timestamp": "13:14"
+    },
+    {
+     "action": "MENTION",
+     "company": "American Express Company",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Used as an example of a high-moat, highly stable business model that justifies a premium multiple (30–35 P/E) due to sticky customer retention.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "22:45"
+    },
+    {
+     "action": "MENTION",
+     "company": "Nike, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Identified as a beaten-down consumer stock poised to benefit significantly as consumer sentiment recovers over the next 1–2 years.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "34:50"
+    }
+   ],
+   "summary": "Jeremy highlights a massive daily gain in his public portfolio, driven by big tech holdings like AMD, Meta, Amazon, and Google. He analyzes soaring memory chip prices affecting companies like Micron, Samsung, and Apple, warning that memory makers may become victims of their own success through antitrust scrutiny and tech giants building in-house solutions. Jeremy then provides a masterclass on valuing stocks using forward P/E ratios and warns against buying cyclical stocks at low peak multiples. Finally, he presents a strong bullish case for e.l.f. Beauty (ELF), arguing it has carved out a clear bottom and is poised to rebound to $100–$140 within 6 to 12 months.",
+   "topics": [
+    "Portfolio Update",
+    "ELF Beauty",
+    "Memory Chips",
+    "Micron",
+    "Stock Valuation",
+    "Consumer Sentiment"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2192,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "G2u_yXppyfI",
   "last_attempt_at": "2026-11-22T19:52:45Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-24T00:07:50Z",
   "published_at": "2026-06-30T00:23:22Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/G2u_yXppyfI/mqdefault.jpg",
   "title": "This stock is ready to EXPLODE‼️",
+  "tokens": 190815,
   "url": "https://www.youtube.com/watch?v=G2u_yXppyfI"
  },
  "Gy3fzD0h4Ns": {
@@ -8638,7 +8744,9 @@
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 3562,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "dDcol7evk20",
+  "last_attempt_at": "2026-11-24T00:09:13Z",
   "live_status": "none",
   "published_at": "2026-06-26T01:12:28Z",
   "status": "pending",
