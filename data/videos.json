@@ -6754,7 +6754,9 @@
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2187,
+  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "TwRRJa-qVCE",
+  "last_attempt_at": "2026-11-25T22:09:01Z",
   "live_status": "none",
   "published_at": "2026-06-25T00:54:23Z",
   "status": "pending",
@@ -7590,18 +7592,149 @@
   "url": "https://www.youtube.com/watch?v=XostOIXQ7Mw"
  },
  "YUzb-q54dk4": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Jeremy predicts a brutal tax-loss harvesting sell-off in the first three weeks of December, mirroring December 2022.",
+    "The day before Thanksgiving historically averages a +1.11% return on the NASDAQ, but Jeremy warns that any red day would be a terrible omen.",
+    "His public portfolio stands at $4,527,633.31, buffered against tech carnage by holding non-tech dividend and value stocks like Nike, Estee Lauder, and Salesforce.",
+    "Wall Street analysts still display too much 'buy the dip' optimism, suggesting capitulation and a true market bottom have not yet occurred.",
+    "Jeremy highlights six core holdings to aggressively accumulate on further December dips: AMD, RH, CELH, SOFI, NFLX, and AXP.",
+    "Despite seeing AMD dip to the $390s, he refrained from adding because his multi-million dollar AMD position is already overweight.",
+    "Forecasts a rotation in Q1 where mega-caps face scrutiny over massive CapEx budgets, driving capital back into depressed AI infrastructure providers."
+   ],
+   "market_view": "Expects a typical pre-Thanksgiving relief bounce, followed by heavy tax-loss selling across tech and semiconductor stocks in early December, setting up an exceptional long-term buying opportunity ahead of a Q1 rotation.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 23.32
+    },
+    {
+     "ticker": "NFLX",
+     "weight_pct": 5.78
+    },
+    {
+     "ticker": "CELH",
+     "weight_pct": 5.67
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 5.51
+    },
+    {
+     "ticker": "RH",
+     "weight_pct": 2.28
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 2.21
+    }
+   ],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 2,555 shares worth ~$1.05M; considers under $450 a buy and under $375 a heavy load zone",
+     "price": "",
+     "rationale": "Considered buying when it briefly breached below $400, but refrained because his holding is already oversized and represents substantial portfolio risk if concentrated further.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "14:21"
+    },
+    {
+     "action": "HOLD",
+     "company": "RH",
+     "is_own_position": true,
+     "position_note": "Holds 1,000 shares worth ~$103K; considers under $125 a buy and under $100 a load zone",
+     "price": "",
+     "rationale": "High-risk, high-reward play tied to a future housing recovery with substantial upside to $450, though position size must stay controlled due to debt risks.",
+     "ticker": "RH",
+     "timeframe": "this video",
+     "timestamp": "18:01"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 9,000 shares worth ~$256K; considers under $33 a buy and under $28 a load zone",
+     "price": "",
+     "rationale": "Believes the company's fundamentals and upcoming financial numbers will be strong, seeing it as an eventual $100 stock long-term.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "19:46"
+    },
+    {
+     "action": "HOLD",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 7,777 shares worth ~$100K; considers under $20 a buy and under $15 a load zone",
+     "price": "",
+     "rationale": "Views SoFi as a potential future financial giant with massive upside, though expects further tax-loss harvesting pressure in December could drag it toward $10-$11.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "20:16"
+    },
+    {
+     "action": "HOLD",
+     "company": "Netflix, Inc.",
+     "is_own_position": true,
+     "position_note": "Holds 4,444 shares worth ~$261K; considers under $60 a load zone",
+     "price": "",
+     "rationale": "Views Netflix's subscription model and cash-generation flywheel as one of the best businesses ever created, viewing current weakness as tax-loss harvesting.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "21:30"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "Holds 808 shares worth ~$249K; considers under $330 a buy and under $300 a load zone",
+     "price": "",
+     "rationale": "Praises its balance sheet, customer demographic, and consistent earnings power at an attractive valuation.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "23:14"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Believes the stock could make new lower lows in December despite Jensen Huang's public return, warning investors against being overconfident that the bottom is already in.",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "30:30"
+    }
+   ],
+   "summary": "Jeremy reviews a highly volatile market day, noting that his public portfolio held up relatively well (down less than 2%) due to his Growth, Value, and Dividend strategy. He warns investors that the market is likely facing a severe tax-loss harvesting sell-off during the first three weeks of December, similar to 2022, before reaching a true bottom. Jeremy highlights his top six high-conviction stocks to accumulate during pullbacks, including AMD, RH, Celsius, SoFi, Netflix, and American Express. Reacting to CNBC commentary from Tom Lee, Julian Emanuel, and Adam Parker, he argues that Wall Street remains too optimistic and that an upcoming CapEx concern could trigger a rotation from mega-cap spenders back into beaten-down AI hardware suppliers early next year.",
+   "topics": [
+    "Market Volatility",
+    "Tax-loss Harvesting",
+    "AI Stocks",
+    "Semiconductors",
+    "Portfolio Strategy"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2685,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "YUzb-q54dk4",
   "last_attempt_at": "2026-11-25T08:56:13Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-latest",
+  "processed_at": "2026-11-25T21:53:41Z",
   "published_at": "2026-11-25T01:26:55Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/YUzb-q54dk4/mqdefault.jpg",
   "title": "The Best Buying Opportunity in YEARS‼️",
+  "tokens": 233063,
   "url": "https://www.youtube.com/watch?v=YUzb-q54dk4"
  },
  "Yk_psjvfzDI": {
@@ -8755,18 +8888,189 @@
   "url": "https://www.youtube.com/watch?v=d2cOEptle44"
  },
  "dDcol7evk20": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Jeremy views the run in memory chip stocks (Micron, SanDisk, SK Hynix) as a cyclical boom that will peak in 2026 rather than a permanent paradigm shift.",
+    "Rapidly escalating memory chip prices threaten to reduce consumer and enterprise hardware demand as devices and data centers become increasingly expensive.",
+    "e.l.f. Beauty (ELF) is identified by Jeremy as his top opportunity in the entire stock market, with expectations of reaching $200+.",
+    "Jeremy is heavily allocating capital into beaten-down consumer names including Nike, Estée Lauder, American Express, and Revolve.",
+    "Mega-cap tech names (Meta, Amazon, Netflix) and SaaS stocks are currently experiencing extreme pessimism, making them prime candidates to accumulate over the next 12–18 months.",
+    "Caterpillar (CAT) is highlighted as an ideal future short candidate once data center and AI capital expenditure cycles peak, because its stock trades strictly on fundamentals and backlogs that can be cancelled."
+   ],
+   "market_view": "Jeremy anticipates potential short-term summer churn or a market drawdown driven by rising margin debt and macro uncertainty, followed by an aggressive rally into 2027 and 2028 as corporate earnings re-accelerate.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ACCUMULATE",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Targeting $200+ long term",
+     "price": "",
+     "rationale": "Jeremy considers ELF the best risk/reward opportunity in the stock market over the rest of the year and into the future as fundamentals, margins, and earnings growth continue to impress.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "11:23"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "NIKE, Inc.",
+     "is_own_position": true,
+     "position_note": "Buying heavily",
+     "price": "",
+     "rationale": "Jeremy has been aggressively buying shares during the broad slump in consumer stocks, forecasting a massive recovery rally in 2027–2028.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "16:34"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "The Estée Lauder Companies Inc.",
+     "is_own_position": true,
+     "position_note": "Buying heavily",
+     "price": "",
+     "rationale": "Jeremy is loading up on Estée Lauder during severe consumer stock weakness in anticipation of multi-year outperformance.",
+     "ticker": "EL",
+     "timeframe": "this video",
+     "timestamp": "16:36"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "Buying heavily",
+     "price": "",
+     "rationale": "Jeremy is accumulating shares alongside his major bets on consumer sector recovery.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "16:37"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Revolve Group, Inc.",
+     "is_own_position": true,
+     "position_note": "Stepping up buys recently",
+     "price": "",
+     "rationale": "Jeremy recently increased his buying pace in Revolve, seeing it as an overlooked sleeper consumer play.",
+     "ticker": "RVLV",
+     "timeframe": "this video",
+     "timestamp": "16:40"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory Incorporated",
+     "is_own_position": true,
+     "position_note": "Pausing new buys",
+     "price": "",
+     "rationale": "After aggressively buying over the past several years, Jeremy is pulling back on adding new shares as the stock hits consistent new highs and better opportunities exist elsewhere.",
+     "ticker": "CAKE",
+     "timeframe": "this video",
+     "timestamp": "11:08"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Meta Platforms, Inc.",
+     "is_own_position": true,
+     "position_note": "Load up and hold in the filing cabinet",
+     "price": "",
+     "rationale": "Jeremy advises accumulating Meta during the current period of negative market sentiment and high CapEx spending before explosive multi-year share price appreciation returns.",
+     "ticker": "META",
+     "timeframe": "next 12-18 months",
+     "timestamp": "13:08"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Amazon.com, Inc.",
+     "is_own_position": true,
+     "position_note": "Load up and hold in the filing cabinet",
+     "price": "",
+     "rationale": "Jeremy views current market skepticism regarding Amazon's heavy AI spending as a prime buying opportunity to accumulate shares over the next 12 to 18 months.",
+     "ticker": "AMZN",
+     "timeframe": "next 12-18 months",
+     "timestamp": "13:08"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Netflix, Inc.",
+     "is_own_position": true,
+     "position_note": "Load up and hold in the filing cabinet",
+     "price": "",
+     "rationale": "Jeremy views the valuation reset as attractive for long-term accumulation despite current price weakness.",
+     "ticker": "NFLX",
+     "timeframe": "next 12-18 months",
+     "timestamp": "14:02"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Jeremy warns that Micron is a classic commodity cyclical stock whose valuation multiple looks deceptively low at peak earnings, predicting the stock will peak this year.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "02:35"
+    },
+    {
+     "action": "WATCH",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Stock price peak projected for 2027",
+     "price": "",
+     "rationale": "Jeremy believes AMD will experience major earnings acceleration quarters starting later this year, leading to a share price peak around 2027.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "06:36"
+    },
+    {
+     "action": "WATCH",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Jeremy notes Palantir's forward valuation is compressing rapidly alongside broad SaaS sector weakness, expecting strong buying pressure if the stock dips below $100.",
+     "ticker": "PLTR",
+     "timeframe": "",
+     "timestamp": "08:25"
+    },
+    {
+     "action": "MENTION",
+     "company": "Caterpillar Inc.",
+     "is_own_position": false,
+     "position_note": "Potential future short candidate",
+     "price": "",
+     "rationale": "Jeremy highlights Caterpillar as a stock driven purely by fundamentals and backlog data, warning that when the data center and CapEx cycle eventually slows, CAT shares will decline sharply.",
+     "ticker": "CAT",
+     "timeframe": "",
+     "timestamp": "21:39"
+    }
+   ],
+   "summary": "Jeremy Lefebvre reacts to CNBC commentary analyzing Micron's earnings surge and the broader AI infrastructure trade versus mega-cap tech. He argues that memory chip makers like Micron are purely cyclical and likely to peak in stock price in 2026 before entering a churn and eventual down-cycle, cautioning that soaring memory chip prices will hurt demand across consumer hardware and hyper-scalers. Meanwhile, Jeremy is heavily accumulating beaten-down consumer stocks and selectively adding to out-of-favor hyper-scalers and SaaS companies for a multi-year setup into 2027–2028.",
+   "topics": [
+    "AI Stocks",
+    "Semiconductors",
+    "Consumer Stocks",
+    "Market Rotation",
+    "Valuation"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 3562,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "dDcol7evk20",
   "last_attempt_at": "2026-11-24T00:09:13Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-25T22:05:17Z",
   "published_at": "2026-06-26T01:12:28Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/dDcol7evk20/mqdefault.jpg",
   "title": "Early Buyers of this Stock will be forever GRATEFUL‼️",
+  "tokens": 306995,
   "url": "https://www.youtube.com/watch?v=dDcol7evk20"
  },
  "dwY2kV7fIyc": {
@@ -8797,18 +9101,221 @@
   "url": "https://www.youtube.com/watch?v=eugYDXXxerU"
  },
  "gCWCEbs54n0": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Jeremy's public Fidelity portfolio rallied over $200k in a single day to reach ~$4.62 million.",
+    "He warns against assuming the market bottom is set, citing the 2018 fractal pattern and anticipated tax-loss harvesting through late December.",
+    "Nvidia's 31%+ single-day surge on Jensen Huang's return is viewed as an unsustainable panic buy vulnerable to December selling.",
+    "AMD is projected to surpass Nvidia's data center revenue growth rate over upcoming quarters, with additional tailwinds from gaming and client recovery.",
+    "Jeremy plans to heavily accumulate Netflix, American Express, and potentially SoFi and RH into year-end tax-loss weakness.",
+    "He confirmed selling out of FuboTV (FUBO) at a loss due to lackluster organic and subscriber growth."
+   ],
+   "market_view": "Jeremy remains cautious in the short term, warning that December could bring heavy tax-loss harvesting and further drawdowns matching 2018 market behavior, though he is extremely bullish long term and preparing to buy dips.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 25.07
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 12.8
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 8.45
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 8.21
+    },
+    {
+     "ticker": "CELH",
+     "weight_pct": 5.37
+    },
+    {
+     "ticker": "NFLX",
+     "weight_pct": 5.35
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 4.3
+    },
+    {
+     "ticker": "CRM",
+     "weight_pct": 4.25
+    },
+    {
+     "ticker": "HNST",
+     "weight_pct": 4.09
+    },
+    {
+     "ticker": "EL",
+     "weight_pct": 4.05
+    },
+    {
+     "ticker": "ELF",
+     "weight_pct": 3.7
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 3.49
+    },
+    {
+     "ticker": "NKE",
+     "weight_pct": 3.03
+    },
+    {
+     "ticker": "RH",
+     "weight_pct": 2.33
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 2.21
+    },
+    {
+     "ticker": "RVLV",
+     "weight_pct": 1.68
+    }
+   ],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "25.07% of portfolio (~$1.16M)",
+     "price": "",
+     "rationale": "Believes the stock is headed to $1,000–$2,000 long-term as data center revenue growth accelerates past Nvidia and gaming rebounds in 2027.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "34:36"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Viewed the 31%+ one-day rally as disorderly panic buying; believes executive distractions and year-end tax-loss harvesting could cause the stock to retest lows.",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "13:40"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Netflix, Inc.",
+     "is_own_position": true,
+     "position_note": "5.35% of portfolio (~$247k)",
+     "price": "",
+     "rationale": "Currently down on the position and expects tax-loss harvesting pressure in December, which he intends to use to heavily buy more shares.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "40:10"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "American Express Company",
+     "is_own_position": true,
+     "position_note": "4.30% of portfolio (~$199k)",
+     "price": "",
+     "rationale": "Anticipates modest tax-loss selling in December and plans to aggressively buy more shares into year-end.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "40:15"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": true,
+     "position_note": "2.21% of portfolio (~$102k)",
+     "price": "",
+     "rationale": "Wants to expand the position toward 10,000 shares if year-end tax-loss selling creates attractive entry points.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "41:11"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "RH",
+     "is_own_position": true,
+     "position_note": "2.33% of portfolio (~$108k)",
+     "price": "",
+     "rationale": "Bullish on the housing market recovery and plans to accumulate more shares during anticipated December tax-loss harvesting.",
+     "ticker": "RH",
+     "timeframe": "this video",
+     "timestamp": "41:07"
+    },
+    {
+     "action": "SELL",
+     "company": "FuboTV Inc.",
+     "is_own_position": true,
+     "position_note": "Sold entire position in public account for a loss",
+     "price": "",
+     "rationale": "Decided organic subscriber and revenue growth rates are too minimal to justify holding in the public portfolio.",
+     "ticker": "FUBO",
+     "timeframe": "this video",
+     "timestamp": "46:18"
+    },
+    {
+     "action": "HOLD",
+     "company": "NIKE, Inc.",
+     "is_own_position": true,
+     "position_note": "3.03% of portfolio (~$140k)",
+     "price": "",
+     "rationale": "Down significantly on the position, but maintains conviction that margins and EPS will recover faster than revenue over the long run.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "40:55"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "5.37% of portfolio (~$248k)",
+     "price": "",
+     "rationale": "Expects Celsius to become a massive position and have an epic stock run between 2027 and 2029.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "41:30"
+    },
+    {
+     "action": "HOLD",
+     "company": "Salesforce, Inc.",
+     "is_own_position": true,
+     "position_note": "4.25% of portfolio (~$197k)",
+     "price": "",
+     "rationale": "Content holding existing shares given ample other opportunities in the market.",
+     "ticker": "CRM",
+     "timeframe": "this video",
+     "timestamp": "40:33"
+    }
+   ],
+   "summary": "Jeremy discusses the massive market swing from Friday's panic selloff to a massive short squeeze and panic-buying rally, bringing his public Fidelity portfolio to over $4.62 million. He cautions that this rally may mirror 2018's relief bounces and warns that severe tax-loss harvesting could drag beaten-down stocks lower in December. He provides an in-depth comparison of AMD versus Nvidia, arguing AMD is poised to outperform in data center growth and gaming turnarounds. Finally, he reviews his entire public portfolio, highlighting plans to accumulate select beaten-down positions into year-end while holding high-conviction winners.",
+   "topics": [
+    "Short Squeeze",
+    "Tax-Loss Harvesting",
+    "AI Trade",
+    "Portfolio Update",
+    "Semiconductors"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2943,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "gCWCEbs54n0",
   "last_attempt_at": "2026-11-24T10:14:08Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-3.8-flash",
+  "processed_at": "2026-11-25T22:01:14Z",
   "published_at": "2026-11-24T00:22:10Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/gCWCEbs54n0/mqdefault.jpg",
   "title": "Once in 20 year Short Squeeze‼️",
+  "tokens": 254636,
   "url": "https://www.youtube.com/watch?v=gCWCEbs54n0"
  },
  "hGruKBJfqIM": {
