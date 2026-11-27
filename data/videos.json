@@ -1568,16 +1568,156 @@
   "url": "https://www.youtube.com/watch?v=4TDE3Qu1oUs"
  },
  "4jHsv4_P_D4": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Stock Deep Dive",
+   "key_points": [
+    "Do not let short-term market fears or geopolitical news deter you from investing.",
+    "ServiceNow and Salesforce are highlighted as high-growth enterprise software giants trading at attractive valuations.",
+    "E.l.f. Beauty and its peer brands represent exceptional consumer demand and massive international growth potential.",
+    "Nike is considered at its most attractive buying opportunity since Michael Jordan's first retirement.",
+    "Celsius Holdings offers massive expansion potential in the energy drink category, paired with strong strategic backing from Pepsi.",
+    "SoFi Technologies continues to scale rapidly, positioning itself as a dominant future financial giant."
+   ],
+   "market_view": "The creator believes that market highs and macroeconomic fears are temporary, encouraging investors to focus on multi-decade growth and ignore short-term volatility.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 2.55
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 3.25
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 1.95
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 3.68
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 1.0
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 1.23
+    },
+    {
+     "ticker": "ELF",
+     "weight_pct": 3.86
+    },
+    {
+     "ticker": "NOW",
+     "weight_pct": 1.22
+    },
+    {
+     "ticker": "EL",
+     "weight_pct": 3.53
+    },
+    {
+     "ticker": "CELH",
+     "weight_pct": 3.11
+    },
+    {
+     "ticker": "CRM",
+     "weight_pct": 5.11
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ACCUMULATE",
+     "company": "ServiceNow",
+     "is_own_position": true,
+     "position_note": "Combo buy with Salesforce, part of long-term tech holdings.",
+     "price": "",
+     "rationale": "ServiceNow is trading at very attractive valuations relative to its strong revenue and free cash flow growth rates.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "10:48"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Salesforce",
+     "is_own_position": true,
+     "position_note": "Combo buy with ServiceNow, part of long-term tech holdings.",
+     "price": "",
+     "rationale": "Salesforce has solid forward P/E ratios and huge AI-related upside potential through stakes like Anthropic.",
+     "ticker": "CRM",
+     "timeframe": "this video",
+     "timestamp": "10:48"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "E.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Up 634% in his public account; long-term position.",
+     "price": "",
+     "rationale": "Exceptional customer demand, affordable high-quality products, and incredible consecutive quarters of net sales growth make E.l.f. a top pick.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "16:13"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Nike",
+     "is_own_position": true,
+     "position_note": "Long-term position.",
+     "price": "",
+     "rationale": "Nike is experiencing its most attractive buying opportunity since Jordan's first retirement, offering massive upside over the next decade.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "21:45"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Up 25% in his public account; long-term position.",
+     "price": "",
+     "rationale": "International expansion potential and strategic partnership with Pepsi make Celsius an incredible growth opportunity.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "22:46"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Up 123% in his public account; long-term position.",
+     "price": "",
+     "rationale": "SoFi is rapidly attracting young customers and scaling into a true financial giant.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "33:35"
+    }
+   ],
+   "summary": "The creator discusses current market sentiment, addressing fears related to economic data and geopolitical news. He emphasizes a long-term perspective and presents five top stock picks to buy now: ServiceNow, Salesforce, E.l.f. Beauty, Nike, Celsius Holdings, and SoFi Technologies. The main takeaway is to ignore short-term market noise and focus on high-growth, high-quality businesses for the long term.",
+   "topics": [
+    "Market Outlook",
+    "Growth Stocks",
+    "Valuation",
+    "Long-term Investing",
+    "Portfolio Strategy"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2259,
   "id": "4jHsv4_P_D4",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T09:06:08Z",
   "published_at": "2026-06-02T00:46:07Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/4jHsv4_P_D4/mqdefault.jpg",
   "title": "This Stock will PRINT Millionaires‼️",
+  "tokens": 194683,
   "url": "https://www.youtube.com/watch?v=4jHsv4_P_D4"
  },
  "4rA7rLSow8s": {
@@ -2250,18 +2390,170 @@
   "url": "https://www.youtube.com/watch?v=9EZzyjAZ-Zc"
  },
  "9cG_DXwC3ig": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Public account value reached $4.38,454.46 with a daily gain of over $178,000 driven by AMD and tech momentum.",
+    "Investors should avoid market timing and trying to time crashes, as long-term consistent buying consistently outperforms trying to sit on the sidelines.",
+    "AMD's launch of the Ryzen AI Halo platform positions it as a major competitor in the AI chip space against Nvidia.",
+    "Long-term hype cycles built on strong fundamentals provide massive multi-bagger gains for stocks like Tesla, Palantir, and Elf.",
+    "Jeremy outlines his multi-tier profit-taking strategy for AMD and Palantir, scaling out shares at predetermined stock price milestones while holding a core long-term position."
+   ],
+   "market_view": "Public account value stands at $4,384,544.66 with a daily gain of $178,241.97. The overall market is experiencing strong momentum, and Jeremy emphasizes focusing on individual high-quality stocks rather than attempting to time macroeconomic conditions or interest rate cycles.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 32.0
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 13.6
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 8.7
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 4.2
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 3.1
+    },
+    {
+     "ticker": "PYPL",
+     "weight_pct": 2.9
+    },
+    {
+     "ticker": "NOW",
+     "weight_pct": 2.6
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 1.9
+    },
+    {
+     "ticker": "ELF",
+     "weight_pct": 1.6
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Public account holds 2,555 shares; planning tiered profit-taking at $700, $900, $1,100, and holding 1,000 shares long-term.",
+     "price": "",
+     "rationale": "Jeremy is holding a large position in AMD, planning to trim shares gradually as the stock hits price milestones while keeping a core long-term stake.",
+     "ticker": "AMD",
+     "timeframe": "long-term",
+     "timestamp": ""
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": true,
+     "position_note": "Public account holds 1,000 shares long-term after previous profit-taking.",
+     "price": "",
+     "rationale": "Jeremy previously cached profits on Palantir and is now holding a core position for the long term.",
+     "ticker": "PLTR",
+     "timeframe": "long-term",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "NIKE, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a turnaround play showing recent momentum and strong brand recognition.",
+     "ticker": "NKE",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Reviewed based on recent Nielsen volume data showing healthy growth and average price increases.",
+     "ticker": "CELH",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "MENTION",
+     "company": "The Cheesecake Factory Incorporated",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a solid stock, though less attractive now due to a lower dividend yield following a strong stock run.",
+     "ticker": "CAKE",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "WATCH",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Identified as a strong long-term buy candidate that may see better momentum once the current tech chip cycle cools.",
+     "ticker": "NOW",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "WATCH",
+     "company": "Salesforce, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Highlighted as a great long-term opportunity expected to benefit from tech sector rotations.",
+     "ticker": "CRM",
+     "timeframe": "",
+     "timestamp": ""
+    },
+    {
+     "action": "WATCH",
+     "company": "American Express Company",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Highlighted as a consistent money-making financial stock trading down about 10% year-to-date, offering a solid entry opportunity.",
+     "ticker": "AXP",
+     "timeframe": "",
+     "timestamp": ""
+    }
+   ],
+   "summary": "Jeremy Lefebvre celebrates his public account hitting over $4.38 million following a strong day led by AMD, Meta, Amazon, and other top holdings. He discusses the dangers of market timing, shares his thoughts on the Nvidia versus AMD AI chip race, and outlines his long-term strategy for trimming and holding winning stocks like AMD and Palantir. He also reviews various individual stocks including Nike, Celsius, Cheesecake Factory, ServiceNow, and American Express.",
+   "topics": [
+    "Portfolio Update",
+    "AMD",
+    "AI Chips",
+    "Stock Market Hype Cycles",
+    "Long-Term Investing"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2935,
-  "error": "All models busy or out of quota (gemini-flash-latest:busy, gemini-flash-lite-latest:busy, gemini-3.8-flash:busy)",
   "id": "9cG_DXwC3ig",
   "last_attempt_at": "2026-11-26T22:11:20Z",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:51:02Z",
   "published_at": "2026-06-15T22:41:23Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/9cG_DXwC3ig/mqdefault.jpg",
   "title": "This Stock is Going to $1,000 per share‼️",
+  "tokens": 252050,
   "url": "https://www.youtube.com/watch?v=9cG_DXwC3ig"
  },
  "B47EnyWN18E": {
@@ -3282,16 +3574,274 @@
   "url": "https://www.youtube.com/watch?v=DvV6-C0-AR4"
  },
  "EHbqQ8VANC8": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Jeremy deployed $89,000 buying shares of SoFi, e.l.f. Beauty, and Celsius.",
+    "He addresses market anxieties around tech sector momentum, comparing current conditions to historical run-ups.",
+    "He reacts to CNBC Halftime Report commentary discussing consolidation in major tech and semiconductor stocks.",
+    "He highlights that valuation stretch in high-growth companies requires patience over a multi-year horizon."
+   ],
+   "market_view": "The overall market is experiencing healthy consolidation in high-growth tech and semiconductor stocks, which is normal after strong runs. Long-term fundamentals remain intact, and short-term volatility should not distract from multi-year growth trends.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "MENTION",
+     "company": "Shopify Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as an example of a strong long-term growth opportunity trading up near 8 percent.",
+     "ticker": "SHOP",
+     "timeframe": "",
+     "timestamp": "01:51"
+    },
+    {
+     "action": "MENTION",
+     "company": "American Express Company",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as an S-tier stock with strong fundamentals and solid future earnings growth.",
+     "ticker": "AXP",
+     "timeframe": "",
+     "timestamp": "01:57"
+    },
+    {
+     "action": "HOLD",
+     "company": "Alphabet Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "He has already taken some profits on Google due to stretched valuations but is keeping the rest of his shares.",
+     "ticker": "GOOGL",
+     "timeframe": "",
+     "timestamp": "02:15"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms, Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "He considers Meta a strong growth company and is holding his position despite short-term valuation and spending noise.",
+     "ticker": "META",
+     "timeframe": "",
+     "timestamp": "02:35"
+    },
+    {
+     "action": "MENTION",
+     "company": "Amazon.com, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a strong business with low risk and great long-term appreciation potential over five years.",
+     "ticker": "AMZN",
+     "timeframe": "",
+     "timestamp": "02:38"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as a much faster-growing company relative to older big tech peers.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": "02:44"
+    },
+    {
+     "action": "MENTION",
+     "company": "Microsoft Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a foundational tech stock with ongoing debates about its growth rate relative to competitors.",
+     "ticker": "MSFT",
+     "timeframe": "",
+     "timestamp": "02:48"
+    },
+    {
+     "action": "MENTION",
+     "company": "FuboTV Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as a stock with a long way to run in its market cycle.",
+     "ticker": "FUBO",
+     "timeframe": "",
+     "timestamp": "02:58"
+    },
+    {
+     "action": "MENTION",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Highlighted as a SaaS stock showing continued momentum and potential for new all-time highs.",
+     "ticker": "NOW",
+     "timeframe": "",
+     "timestamp": "03:04"
+    },
+    {
+     "action": "MENTION",
+     "company": "Salesforce, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a quality software stock that should see new all-time highs within an 18-month horizon.",
+     "ticker": "CRM",
+     "timeframe": "",
+     "timestamp": "03:32"
+    },
+    {
+     "action": "MENTION",
+     "company": "PayPal Holdings, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Described as functioning like an ATM machine for its business model.",
+     "ticker": "PYPL",
+     "timeframe": "",
+     "timestamp": "03:44"
+    },
+    {
+     "action": "MENTION",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as a historical holding he bought much cheaper, highlighting the massive long-term gains possible.",
+     "ticker": "PLTR",
+     "timeframe": "",
+     "timestamp": "03:47"
+    },
+    {
+     "action": "MENTION",
+     "company": "NIKE, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned briefly when discussing valuation and historical picks.",
+     "ticker": "NKE",
+     "timeframe": "",
+     "timestamp": "03:55"
+    },
+    {
+     "action": "ADD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Bought 1,350 shares",
+     "price": "$27.74",
+     "rationale": "Added to his position because he views the recent sell-off and low-risk valuation as an incredible buying opportunity.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "17:41"
+    },
+    {
+     "action": "ADD",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": true,
+     "position_note": "Bought 933 shares",
+     "price": "$17.13",
+     "rationale": "Added significantly to his SoFi position because the fundamental business has drastically improved since he first bought it at single digits.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "17:41"
+    },
+    {
+     "action": "ADD",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Bought 700 shares",
+     "price": "$50.64",
+     "rationale": "Added to his e.l.f. Beauty position at attractive prices, citing strong multi-year growth and easing tariff fears.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "17:41"
+    },
+    {
+     "action": "MENTION",
+     "company": "Broadcom Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed following its recent earnings report, revenue miss, and modest stock pullback.",
+     "ticker": "AVGO",
+     "timeframe": "",
+     "timestamp": "21:47"
+    },
+    {
+     "action": "MENTION",
+     "company": "CrowdStrike Holdings, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as part of the broader discussion on tech sector high-flyers and performance pullbacks.",
+     "ticker": "CRWD",
+     "timeframe": "",
+     "timestamp": "23:33"
+    },
+    {
+     "action": "MENTION",
+     "company": "Palo Alto Networks, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned during sector rotation discussions on tech performance.",
+     "ticker": "PANW",
+     "timeframe": "",
+     "timestamp": "23:40"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed regarding its parabolic run-up and the necessity of expecting healthy consolidation periods.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "24:06"
+    },
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a long-term core holding with robust structural demand for GPUs and CPUs, despite near-term price dips.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "24:32"
+    }
+   ],
+   "summary": "Jeremy Lefebvre discusses $89,000 of recent stock purchases and reacts to CNBC market commentary regarding tech sector volatility and consolidation. He emphasizes a long-term approach to high-growth stocks like SoFi, e.l.f. Beauty, and Celsius despite short-term market fluctuations and sentiment shifts. He also warns against reacting impulsively to short-term political or news-driven market noise.",
+   "topics": [
+    "Portfolio Update",
+    "Buy/Sell Decision",
+    "Market Commentary",
+    "Growth Stocks",
+    "Tech Sector"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2379,
   "id": "EHbqQ8VANC8",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:58:24Z",
   "published_at": "2026-06-04T23:00:01Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/EHbqQ8VANC8/mqdefault.jpg",
   "title": "I bought Palantir for $7 in 2022. This Stock is NEXT‼️",
+  "tokens": 205626,
   "url": "https://www.youtube.com/watch?v=EHbqQ8VANC8"
  },
  "EiRAMR8ixEA": {
@@ -3425,16 +3975,103 @@
   "url": "https://www.youtube.com/watch?v=EiRAMR8ixEA"
  },
  "FLfRxSDaKUw": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Portfolio reached over $4.1M, highlighted by strong gains in AMD and other core holdings.",
+    "Discusses realistic timelines and compounding compound interest models to reach $100k, $1M, and $10M portfolios.",
+    "Analyzes AAII investor sentiment and CNN Fear & Greed Index, concluding that current market fear indicates the market is not topping.",
+    "Bullish on Nike, e.l.f. Beauty, Celsius Holdings, AMD, and ServiceNow, expecting major upside over the next 6 to 12 months."
+   ],
+   "market_view": "Public portfolio reached $4,138,417.13. Overall market sentiment shows excessive fear and skepticism, which historically signals an upcoming rally rather than a market top.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 30.0
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Position value over $1.24M, total gain over $964k",
+     "price": "490.33",
+     "rationale": "AMD is rolling with strong gains and has shown zero signs that its AI-driven run is over.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "00:18"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Nike, Inc.",
+     "is_own_position": true,
+     "position_note": "Put chips on the table and buying aggressively",
+     "price": "43.23",
+     "rationale": "Nike is deeply oversold amid weak consumer sentiment, and a dramatic move up toward 60+ is expected soon.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "29:46"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "e.l.f. Beauty, Inc.",
+     "is_own_position": true,
+     "position_note": "Buying relentlessly with long-term target over $200",
+     "price": "52.28",
+     "rationale": "e.l.f. Beauty is heavily oversold near its strong support level and has a long-term growth trajectory toward $200+.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "30:50"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Mid 20s price level",
+     "price": "28.00",
+     "rationale": "Celsius is poised for a massive run back into the mid 40s within the next 9 to 12 months based on solid volume and fundamentals.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "33:46"
+    },
+    {
+     "action": "HOLD",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": true,
+     "position_note": "Clearly bottomed in an upward cycle",
+     "price": "114.19",
+     "rationale": "ServiceNow has clearly bottomed and entered an upward cycle with growing momentum.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "36:46"
+    }
+   ],
+   "summary": "Jeremy Lefebvre reviews his current portfolio performance, which crossed $4.1M, and breaks down the time needed to scale portfolios to $100k, $1M, and $10M. He then analyzes broader economic indicators, investor sentiment, and cryptocurrency markets before diving into deep dives on Nike, e.l.f. Beauty, Celsius Holdings, AMD, and ServiceNow, arguing that market fears are overblown and certain strong stocks are heavily oversold.",
+   "topics": [
+    "Portfolio Growth",
+    "Compounding Interest",
+    "Market Sentiment",
+    "Stock Analysis",
+    "AI Stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2267,
   "id": "FLfRxSDaKUw",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:57:49Z",
   "published_at": "2026-06-08T23:34:30Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/FLfRxSDaKUw/mqdefault.jpg",
   "title": "This stock is ready to EXPLODE‼️",
+  "tokens": 195029,
   "url": "https://www.youtube.com/watch?v=FLfRxSDaKUw"
  },
  "FcN3VBT_86I": {
@@ -4031,16 +4668,197 @@
   "url": "https://www.youtube.com/watch?v=H8_z-4sMRWw"
  },
  "IKAbT988Gko": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Education",
+   "key_points": [
+    "Have more income than expenses so you can invest at least twice a month.",
+    "Stay on offense rather than playing defense during market volatility.",
+    "Focus on the long term (10-20+ years) and assume a 100-year life span.",
+    "Perform SWOT analysis and read 10-Ks, 10-Qs, and earnings calls.",
+    "Focus on companies with strong revenue growth, low debt, and high cash levels.",
+    "Avoid heavily hyped stocks where risk-reward is unfavorable and valuations are stretched.",
+    "Build a balanced portfolio of growth, value, and dividend stocks.",
+    "Do not use margin or options unless you are an experienced professional."
+   ],
+   "market_view": "Jeremy remains strongly bullish on the long-term potential of the stock market and showcases multiple 7-figure and multi-million dollar portfolios as proof of what is possible.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 28.89
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 14.82
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 10.32
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 5.92
+    },
+    {
+     "ticker": "CRM",
+     "weight_pct": 5.25
+    },
+    {
+     "ticker": "NKE",
+     "weight_pct": 3.73
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 3.65
+    },
+    {
+     "ticker": "EL",
+     "weight_pct": 3.42
+    },
+    {
+     "ticker": "HON",
+     "weight_pct": 3.14
+    },
+    {
+     "ticker": "CELH",
+     "weight_pct": 3.14
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 3.09
+    },
+    {
+     "ticker": "PYPL",
+     "weight_pct": 2.22
+    },
+    {
+     "ticker": "NOW",
+     "weight_pct": 1.99
+    },
+    {
+     "ticker": "GOOG",
+     "weight_pct": 1.98
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 1.97
+    },
+    {
+     "ticker": "RKLB",
+     "weight_pct": 1.95
+    },
+    {
+     "ticker": "ELF",
+     "weight_pct": 1.63
+    },
+    {
+     "ticker": "FUBO",
+     "weight_pct": 1.34
+    }
+   ],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings, Inc.",
+     "is_own_position": true,
+     "position_note": "Public account position value is $126,076.01 with total gain/loss of +$15,401.33 (+13.91%).",
+     "price": "24.90",
+     "rationale": "Celsius is highlighted as a massive long-term growth opportunity with strong upside in the energy drink market and international expansion.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "14:27"
+    },
+    {
+     "action": "MENTION",
+     "company": "The Estee Lauder Companies Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as an example of a stock discussed within general analysis.",
+     "ticker": "EL",
+     "timeframe": "this video",
+     "timestamp": "17:50"
+    },
+    {
+     "action": "MENTION",
+     "company": "Monster Beverage Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a historical example of a massive non-tech stock winner over a 25-year period.",
+     "ticker": "MNST",
+     "timeframe": "25 years ago",
+     "timestamp": "18:33"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA Corporation",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as a stock that experienced immense hype last year, leading to a crowded trade.",
+     "ticker": "NVDA",
+     "timeframe": "last year",
+     "timestamp": "20:20"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies Inc.",
+     "is_own_position": true,
+     "position_note": "Public account position value is $130,211.27 with total gain/loss of +$122,876.27 (+1,675.24%).",
+     "price": "7.18",
+     "rationale": "Jeremy previously took profits during Palantir's massive hype run but maintains a core holding due to strong long-term fundamentals.",
+     "ticker": "PLTR",
+     "timeframe": "this video",
+     "timestamp": "20:49"
+    },
+    {
+     "action": "HOLD",
+     "company": "SoFi Technologies, Inc.",
+     "is_own_position": true,
+     "position_note": "Public account position value is $79,350.00 with total gain/loss of +$37,327.32 (+91.10%).",
+     "price": "11.74",
+     "rationale": "SoFi is viewed as a massive long-term growth opportunity with the potential to become a financial giant if management keeps the company afloat during recessions.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "22:24"
+    },
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices, Inc.",
+     "is_own_position": true,
+     "position_note": "Public account position value is $1,155,882.80 with total gain/loss of +$870,713.04 (+305.51%).",
+     "price": "109.56",
+     "rationale": "AMD is held as a core position due to its up-ticking gross and net margins and strong future demand for CPU and GPU products.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "29:46"
+    }
+   ],
+   "summary": "Jeremy shares seven vital rules for getting rich in the stock market over the long term. He emphasizes having more income than expenses, maintaining an offensive mindset, focusing on long-term horizons, using SWOT and fundamental analysis, buying high-growth companies with strong balance sheets and expanding margins, avoiding over-hyped stocks, and not over-smarting yourself with leverage or options.",
+   "topics": [
+    "long-term investing",
+    "fundamental analysis",
+    "growth stocks",
+    "portfolio building",
+    "balance sheet analysis"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2375,
   "id": "IKAbT988Gko",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:56:18Z",
   "published_at": "2026-06-10T23:37:20Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/IKAbT988Gko/mqdefault.jpg",
   "title": "How to Get Filthy Rich in the Stock Market‼️",
+  "tokens": 204934,
   "url": "https://www.youtube.com/watch?v=IKAbT988Gko"
  },
  "J7qgSR8vzzA": {
@@ -5892,16 +6710,111 @@
   "url": "https://www.youtube.com/watch?v=NWR1BRFnsrY"
  },
  "NecdRfAJVt4": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Portfolio hit an all-time high of $4.278 million, proving that doom-and-gloom predictions about hitting market peaks are often wrong.",
+    "Analyzed Salesforce and Snowflake earnings, giving Snowflake a D+ for ongoing losses and Salesforce an A- for strong margins and execution.",
+    "Addressed Amazon and Meta's massive spending on AI and cloud, arguing that investors give Amazon and Google a pass on heavy capex while questioning Meta.",
+    "Reacted to CNBC coverage on Micron, defending Micron's strong earnings and rejecting the idea that it is purely a meme stock.",
+    "Reiterated that his largest positions like Salesforce and ServiceNow are long-term compounders that will benefit immensely from AI adoption as enterprise usage grows."
+   ],
+   "market_view": "The market is in an uptrend, and hitting all-time highs in a portfolio usually indicates that more highs are coming rather than a sudden crash.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "ACCUMULATE",
+     "company": "Salesforce, Inc.",
+     "is_own_position": true,
+     "position_note": "A big position; creator states he bought a lot of shares and plans to buy more.",
+     "price": "",
+     "rationale": "Solid financial results with an A- grade on earnings, strong operating margins, and growing agentic AI revenue make it a great long-term hold.",
+     "ticker": "CRM",
+     "timeframe": "this video",
+     "timestamp": "00:43"
+    },
+    {
+     "action": "MENTION",
+     "company": "Snowflake Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Snowflake reported 33% revenue growth and improving operating expenses, but still receives a D+ grade due to net losses.",
+     "ticker": "SNOW",
+     "timeframe": "this video",
+     "timestamp": "00:43"
+    },
+    {
+     "action": "MENTION",
+     "company": "Amazon.com, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Amazon benefits from Snowflake buying billions in AWS chips and maintaining massive cloud spending.",
+     "ticker": "AMZN",
+     "timeframe": "this video",
+     "timestamp": "05:22"
+    },
+    {
+     "action": "MENTION",
+     "company": "Meta Platforms, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Meta is pushing heavily into subscriptions and AI infrastructure, but lacks the same market pass on capex spending that Amazon and Google receive.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "05:28"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology, Inc.",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Micron is experiencing a massive supercycle of memory demand and surging earnings, though long-term margin sustainability remains debated.",
+     "ticker": "MU",
+     "timeframe": "this video",
+     "timestamp": "20:04"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "ServiceNow, Inc.",
+     "is_own_position": true,
+     "position_note": "A pretty big position; creator plans to keep buying.",
+     "price": "",
+     "rationale": "Positioned well alongside Salesforce to capture long-term enterprise AI agent growth.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "13:59"
+    }
+   ],
+   "summary": "Jeremy Lefebvre celebrates his portfolio hitting a new all-time high of $4.278 million and discusses why hitting new highs usually precedes more highs rather than a market crash. He then reviews recent earnings and guidance for Salesforce, Snowflake, Amazon, and Micron, debating market commentators on whether high-flyers like Micron are overextended or still have room to run. He reaffirms his long-term bullish stance on his core holdings while analyzing AI revenue trends across major tech companies.",
+   "topics": [
+    "Portfolio All-Time High",
+    "Salesforce Earnings",
+    "Snowflake Earnings",
+    "Micron Stock",
+    "AI Agents",
+    "Market Commentary"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2321,
   "id": "NecdRfAJVt4",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T09:07:24Z",
   "published_at": "2026-05-28T00:27:31Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/NecdRfAJVt4/mqdefault.jpg",
   "title": "Buy this stock as soon as possible‼️",
+  "tokens": 199589,
   "url": "https://www.youtube.com/watch?v=NecdRfAJVt4"
  },
  "NnHk7xjejmA": {
@@ -10450,16 +11363,299 @@
   "url": "https://www.youtube.com/watch?v=icM65FPixWU"
  },
  "j9Z3xpiE0R4": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "AI-related tech stocks are experiencing a massive bull run while consumer and non-tech blue chips are severely depressed.",
+    "Many top-tier companies in retail, finance, and consumer discretionary are trading significantly below their all-time highs despite solid business fundamentals.",
+    "Upcoming mega IPOs like SpaceX and OpenAI are expected to draw significant momentum and capital away from other market areas.",
+    "The broader market will likely go through a volatile patch over the next few quarters as liquidity shifts.",
+    "Jeremy reviews his public Fidelity account holdings, including positions in AMD, Meta, and various consumer stocks."
+   ],
+   "market_view": "The market is sharply divided between AI winners and struggling traditional sectors, with a major IPO wave threatening to pull liquidity from other asset classes.",
+   "portfolio_snapshot": [
+    {
+     "ticker": "AMD",
+     "weight_pct": 21.3
+    },
+    {
+     "ticker": "META",
+     "weight_pct": 13.5
+    },
+    {
+     "ticker": "CAKE",
+     "weight_pct": 10.9
+    },
+    {
+     "ticker": "AMZN",
+     "weight_pct": 8.7
+    },
+    {
+     "ticker": "NKE",
+     "weight_pct": 8.1
+    },
+    {
+     "ticker": "AXP",
+     "weight_pct": 8.0
+    },
+    {
+     "ticker": "EL",
+     "weight_pct": 7.9
+    },
+    {
+     "ticker": "CRM",
+     "weight_pct": 7.5
+    },
+    {
+     "ticker": "PLTR",
+     "weight_pct": 5.8
+    },
+    {
+     "ticker": "GOOG",
+     "weight_pct": 3.0
+    },
+    {
+     "ticker": "SOFI",
+     "weight_pct": 2.1
+    },
+    {
+     "ticker": "CELH",
+     "weight_pct": 1.7
+    },
+    {
+     "ticker": "PYPL",
+     "weight_pct": 0.9
+    },
+    {
+     "ticker": "FUBO",
+     "weight_pct": 0.1
+    }
+   ],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Portfolio value over $1.38M with over $1.1M in profit.",
+     "price": "$542.52",
+     "rationale": "Holding as a top AI beneficiary experiencing strong momentum.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "00:34"
+    },
+    {
+     "action": "HOLD",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Portfolio value over $876K with over $526K in profit.",
+     "price": "$622.98",
+     "rationale": "Holding as part of the core tech winners.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "00:59"
+    },
+    {
+     "action": "MENTION",
+     "company": "ServiceNow",
+     "is_own_position": false,
+     "position_note": "Down roughly 19.5% year to date.",
+     "price": "$117.90",
+     "rationale": "Discussed as an example of a high-quality growth stock that has sold off significantly this year.",
+     "ticker": "NOW",
+     "timeframe": "this video",
+     "timestamp": "04:15"
+    },
+    {
+     "action": "MENTION",
+     "company": "Shopify",
+     "is_own_position": false,
+     "position_note": "Down nearly 29% year to date.",
+     "price": "$112.94",
+     "rationale": "Highlighted as a top business trading at a steep discount despite strong fundamentals.",
+     "ticker": "SHOP",
+     "timeframe": "this video",
+     "timestamp": "04:36"
+    },
+    {
+     "action": "HOLD",
+     "company": "SoFi Technologies",
+     "is_own_position": true,
+     "position_note": "Down over 40% year to date.",
+     "price": "$16.68",
+     "rationale": "Jeremy views SoFi as one of the best fintech growth companies despite its year-to-date pullback.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "04:54"
+    },
+    {
+     "action": "HOLD",
+     "company": "Salesforce",
+     "is_own_position": true,
+     "position_note": "Down nearly 25% year to date.",
+     "price": "$190.61",
+     "rationale": "Maintained in the portfolio as a high-quality enterprise SaaS player under solid leadership.",
+     "ticker": "CRM",
+     "timeframe": "this video",
+     "timestamp": "05:10"
+    },
+    {
+     "action": "HOLD",
+     "company": "Palantir Technologies",
+     "is_own_position": true,
+     "position_note": "Down nearly 19% year to date.",
+     "price": "$142.20",
+     "rationale": "Maintained as a top-tier growth and AI software investment.",
+     "ticker": "PLTR",
+     "timeframe": "this video",
+     "timestamp": "05:27"
+    },
+    {
+     "action": "HOLD",
+     "company": "Nike",
+     "is_own_position": true,
+     "position_note": "Down over 31% year to date.",
+     "price": "$43.81",
+     "rationale": "Kept as a consumer discretionary staple expected to recover when consumer spending cycles turn.",
+     "ticker": "NKE",
+     "timeframe": "this video",
+     "timestamp": "06:01"
+    },
+    {
+     "action": "HOLD",
+     "company": "Estee Lauder",
+     "is_own_position": true,
+     "position_note": "Down nearly 25% year to date.",
+     "price": "$82.05",
+     "rationale": "Held despite severe price correction, considered a fundamentally sound cosmetics leader.",
+     "ticker": "EL",
+     "timeframe": "this video",
+     "timestamp": "06:15"
+    },
+    {
+     "action": "MENTION",
+     "company": "Wynn Resorts",
+     "is_own_position": false,
+     "position_note": "Down nearly 14% year to date.",
+     "price": "$104.95",
+     "rationale": "Discussed to show weakness in consumer discretionary and travel-related stocks.",
+     "ticker": "WYNN",
+     "timeframe": "this video",
+     "timestamp": "07:15"
+    },
+    {
+     "action": "HOLD",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Down nearly 38% year to date.",
+     "price": "$30.01",
+     "rationale": "Maintained as a high-growth beverage player facing a broader consumer pullback.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "07:21"
+    },
+    {
+     "action": "HOLD",
+     "company": "American Express",
+     "is_own_position": true,
+     "position_note": "Down over 19% year to date.",
+     "price": "$300.57",
+     "rationale": "Retained as an elite quality financial stock despite recent sector headwinds.",
+     "ticker": "AXP",
+     "timeframe": "this video",
+     "timestamp": "07:43"
+    },
+    {
+     "action": "HOLD",
+     "company": "Cheesecake Factory",
+     "is_own_position": true,
+     "position_note": "Up over 22% year to date.",
+     "price": "$64.88",
+     "rationale": "Highlighted as an outlier outperforming in the restaurant space.",
+     "ticker": "CAKE",
+     "timeframe": "this video",
+     "timestamp": "09:24"
+    },
+    {
+     "action": "MENTION",
+     "company": "McDonald's",
+     "is_own_position": false,
+     "position_note": "Down over 9% year to date.",
+     "price": "$273.29",
+     "rationale": "Discussed as a rare large-cap defensive name showing notable weakness.",
+     "ticker": "MCD",
+     "timeframe": "this video",
+     "timestamp": "09:37"
+    },
+    {
+     "action": "MENTION",
+     "company": "Chipotle Mexican Grill",
+     "is_own_position": false,
+     "position_note": "Down over 23% year to date.",
+     "price": "$28.74",
+     "rationale": "Noted for a steep pullback from previous highs.",
+     "ticker": "CMG",
+     "timeframe": "this video",
+     "timestamp": "10:01"
+    },
+    {
+     "action": "MENTION",
+     "company": "Yum! Brands",
+     "is_own_position": false,
+     "position_note": "Down less than 1% year to date.",
+     "price": "$148.44",
+     "rationale": "Discussed among restaurant stocks showing relative stability compared to peers.",
+     "ticker": "YUM",
+     "timeframe": "this video",
+     "timestamp": "10:30"
+    },
+    {
+     "action": "MENTION",
+     "company": "Texas Roadhouse",
+     "is_own_position": false,
+     "position_note": "Down nearly 3% year to date.",
+     "price": "$66.19",
+     "rationale": "Praised as one of the best-run companies in the restaurant sector.",
+     "ticker": "TXRH",
+     "timeframe": "this video",
+     "timestamp": "10:43"
+    },
+    {
+     "action": "MENTION",
+     "company": "Netflix",
+     "is_own_position": false,
+     "position_note": "Down over 32% year to date.",
+     "price": "$81.52",
+     "rationale": "Used as an example of a former Wall Street darling that is currently neglected and left for dead.",
+     "ticker": "NFLX",
+     "timeframe": "this video",
+     "timestamp": "29:51"
+    }
+   ],
+   "summary": "Jeremy reviews his multi-million dollar portfolio performance and addresses the market divergence between high-performing AI-related stocks and beaten-down blue-chip consumer stocks. He highlights that despite short-term pain in non-AI sectors, many high-quality businesses are heavily discounted and will eventually recover. He also discusses upcoming mega IPOs and their potential impact on market liquidity.",
+   "topics": [
+    "AI stocks",
+    "market divergence",
+    "IPO market",
+    "portfolio update",
+    "growth stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 2386,
   "id": "j9Z3xpiE0R4",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:59:06Z",
   "published_at": "2026-06-04T00:57:24Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/j9Z3xpiE0R4/mqdefault.jpg",
   "title": "The Market is preparing for UNBELIEVABLE MOVE‼️",
+  "tokens": 206861,
   "url": "https://www.youtube.com/watch?v=j9Z3xpiE0R4"
  },
  "jmPb-t2WSvQ": {
@@ -10792,16 +11988,98 @@
   "url": "https://www.youtube.com/watch?v=kk5_a94VOS0"
  },
  "lZ57UuJOYYY": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Portfolio Update",
+   "key_points": [
+    "Total portfolio value reached $57,000 at the close.",
+    "Nearly half of investors are currently bearish on the market over the next six months, creating a bullish contrarian signal.",
+    "Celsius is highlighted as the number one stock he is buying right now at $28 per share.",
+    "Updates on other stocks like Elf Beauty, Nike, and Cheesecake Factory are provided."
+   ],
+   "market_view": "Total portfolio value stands at $57,000. Nearly half of investors are bearish for the next six months, which provides a bullish contrarian indicator for the market.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "BUY",
+     "company": "Celsius Holdings",
+     "is_own_position": true,
+     "position_note": "Just bought a bunch of shares today.",
+     "price": "$28",
+     "rationale": "Considered the number one stock to buy right now with strong long-term growth potential and international expansion runway.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "01:43"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Owns the stock at $60, seeing a recent run-up.",
+     "price": "$60",
+     "rationale": "Creator loves the stock and notes it has started a new run recently.",
+     "ticker": "ELF",
+     "timeframe": "recently",
+     "timestamp": "02:27"
+    },
+    {
+     "action": "HOLD",
+     "company": "Nike",
+     "is_own_position": true,
+     "position_note": "Long-term holding.",
+     "price": "",
+     "rationale": "Creator reiterates that he likes Nike.",
+     "ticker": "NKE",
+     "timeframe": "long-term",
+     "timestamp": "02:30"
+    },
+    {
+     "action": "HOLD",
+     "company": "The Cheesecake Factory",
+     "is_own_position": true,
+     "position_note": "Up to $75 plus, considering pausing new purchases due to high run-up.",
+     "price": "$75+",
+     "rationale": "Has run up significantly, prompting consideration to stop buying for now.",
+     "ticker": "CAKE",
+     "timeframe": "recently",
+     "timestamp": "02:32"
+    },
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned briefly as part of the party.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "02:40"
+    }
+   ],
+   "summary": "The creator provides a portfolio update, noting his total portfolio value reached $57,000, and discusses his favorite stock to buy right now. He reviews current market sentiment and highlights several specific stocks he is monitoring, accumulating, or bullish on. The video concludes with a reminder about recent educational content and community engagement.",
+   "topics": [
+    "Portfolio Update",
+    "Celsius",
+    "Investor Sentiment",
+    "Stock Analysis",
+    "Growth Stocks"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 180,
   "id": "lZ57UuJOYYY",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:51:36Z",
   "published_at": "2026-06-12T20:49:46Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/lZ57UuJOYYY/mqdefault.jpg",
   "title": "I’m Loading the Boat on this Stock‼️ Epic Growth Ahead",
+  "tokens": 18441,
   "url": "https://www.youtube.com/watch?v=lZ57UuJOYYY"
  },
  "lxEwtPOZqOw": {
@@ -11944,16 +13222,144 @@
   "url": "https://www.youtube.com/watch?v=pahf8lmurnE"
  },
  "qXM5TnZ6IKM": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Stock Deep Dive",
+   "key_points": [
+    "AMD hits a new all-time high of $521, with strong long-term growth driven by CPU and GPU demand.",
+    "Ulta Beauty reported solid Q1 earnings with 5.3% comparable sales growth, viewed as a positive indicator for EL and ELF stocks.",
+    "Tom Lee predicts massive S&P 500 gains post-2026, though short-term market consolidation or pullbacks remain possible.",
+    "Dan Niles shares insights on the massive monetization potential of AI across tech giants like Meta and Nvidia.",
+    "Long-term investors are advised to hold quality positions rather than attempting to time short-term market fluctuations."
+   ],
+   "market_view": "The overall market remains fundamentally strong with massive long-term tailwinds from AI and secular growth, though short-term volatility or pullbacks are always possible.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Up several million dollars on position",
+     "price": "",
+     "rationale": "Maintains a large holding and has no intention of selling despite the stock reaching all-time highs, citing strong long-term semiconductor and AI demand.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "01:38"
+    },
+    {
+     "action": "HOLD",
+     "company": "e.l.f. Beauty",
+     "is_own_position": true,
+     "position_note": "Long-term position since 2019 at around $7 per share",
+     "price": "",
+     "rationale": "Holding the position as it represents a stellar generational buying opportunity benefiting from strong retail trends.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "19:20"
+    },
+    {
+     "action": "MENTION",
+     "company": "The Estee Lauder Companies",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed in relation to Ulta Beauty's strong earnings results and cross-business opportunities.",
+     "ticker": "EL",
+     "timeframe": "this video",
+     "timestamp": "17:40"
+    },
+    {
+     "action": "MENTION",
+     "company": "SoFi Technologies",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Addressed the stock's recent price drop, noting that falling Treasury yields should act as a positive catalyst.",
+     "ticker": "SOFI",
+     "timeframe": "this video",
+     "timestamp": "20:23"
+    },
+    {
+     "action": "ACCUMULATE",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "Substantial position held for the long term",
+     "price": "",
+     "rationale": "Considers Meta an exceptional long-term hold with significant upside as it scales monetization of its massive user base through AI.",
+     "ticker": "META",
+     "timeframe": "this video",
+     "timestamp": "48:30"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as the undisputed leader in AI training hardware and a benchmark for semiconductor growth.",
+     "ticker": "NVDA",
+     "timeframe": "this video",
+     "timestamp": "04:30"
+    },
+    {
+     "action": "MENTION",
+     "company": "Intel",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned regarding its positioning in server CPUs and potential foundry benefits.",
+     "ticker": "INTC",
+     "timeframe": "this video",
+     "timestamp": "05:35"
+    },
+    {
+     "action": "MENTION",
+     "company": "Apple",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Referenced as a potential foundry customer and beneficiary of broader tech industry trends.",
+     "ticker": "AAPL",
+     "timeframe": "this video",
+     "timestamp": "44:45"
+    },
+    {
+     "action": "MENTION",
+     "company": "PayPal Holdings",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as an interesting potential acquisition or turnaround candidate in fintech.",
+     "ticker": "PYPL",
+     "timeframe": "this video",
+     "timestamp": "57:36"
+    }
+   ],
+   "summary": "Jeremy Lefebvre discusses AMD hitting a new all-time high, reacts to various market commentaries including Tom Lee and Dan Niles, and reviews earnings reports for Ulta Beauty. He maintains a bullish outlook on AMD, ELF, SOFI, Meta, and others, emphasizing long-term secular growth trends in AI, semiconductors, and software. He also advises investors not to time the market.",
+   "topics": [
+    "AMD",
+    "Ulta Beauty",
+    "AI stocks",
+    "Semiconductors",
+    "Market Commentary",
+    "Portfolio Management"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 3524,
   "id": "qXM5TnZ6IKM",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:59:46Z",
   "published_at": "2026-06-02T23:10:32Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/qXM5TnZ6IKM/mqdefault.jpg",
   "title": "AMD, ELF & SOFI Investors Get Ready‼️",
+  "tokens": 302015,
   "url": "https://www.youtube.com/watch?v=qXM5TnZ6IKM"
  },
  "rWGCYCtZMKM": {
@@ -12412,16 +13818,98 @@
   "url": "https://www.youtube.com/watch?v=sgawBWvCG2Y"
  },
  "skiruCmsaSQ": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Stocks like elf beauty and Revolv are seeing strong upward momentum.",
+    "Investors shouldn't panic over short-term pullbacks in stocks like AMD after massive long-term gains.",
+    "Long-term investing and avoiding emotional trend-following are key to making life-changing money in the stock market.",
+    "The creator recommends focusing on 20-30 great long-term buying opportunities rather than chasing short-term price fluctuations."
+   ],
+   "market_view": "The market offers great long-term buying opportunities for investors who stay focused and avoid short-term emotional trading.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "MENTION",
+     "company": "e.l.f. Beauty",
+     "is_own_position": false,
+     "position_note": "Up 18% over the past three trading days and 4.4% today.",
+     "price": "",
+     "rationale": "Mentioned as an example of a stock climbing back up and experiencing strong upward momentum.",
+     "ticker": "ELF",
+     "timeframe": "this video",
+     "timestamp": "00:16"
+    },
+    {
+     "action": "MENTION",
+     "company": "Cheesecake Factory",
+     "is_own_position": false,
+     "position_note": "Up 4% today; discussed growth from a $30 stock over several years.",
+     "price": "$70",
+     "rationale": "Mentioned as an example of a long-term successful investment that has grown significantly over time.",
+     "ticker": "CAKE",
+     "timeframe": "this video",
+     "timestamp": "00:29"
+    },
+    {
+     "action": "MENTION",
+     "company": "Revolve Group",
+     "is_own_position": false,
+     "position_note": "Up 3%+ today.",
+     "price": "",
+     "rationale": "Highlighted as a stock continuing to move higher.",
+     "ticker": "RVLV",
+     "timeframe": "this video",
+     "timestamp": "00:42"
+    },
+    {
+     "action": "MENTION",
+     "company": "Celsius Holdings",
+     "is_own_position": false,
+     "position_note": "Starting to see upward momentum with a long run ahead.",
+     "price": "",
+     "rationale": "Discussed as a stock with solid long-term potential and future momentum.",
+     "ticker": "CELH",
+     "timeframe": "this video",
+     "timestamp": "00:47"
+    },
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices",
+     "is_own_position": false,
+     "position_note": "Up 267% over the past year.",
+     "price": "",
+     "rationale": "Addressed panic selling and short-term worries, emphasizing its massive multi-year gains and long-term viability.",
+     "ticker": "AMD",
+     "timeframe": "this video",
+     "timestamp": "00:57"
+    }
+   ],
+   "summary": "Jeremy Lefebvre discusses market movements and warns investors against trend-following or panicking over short-term price drops in popular stocks like AMD. He highlights several strong long-term opportunities in the market and encourages a long-term mindset instead of jumping in and out of positions. Finally, he previews his latest YouTube video on market rotation and key stocks to watch.",
+   "topics": [
+    "Market Commentary",
+    "Stock Analysis",
+    "Long-Term Investing",
+    "Trend Following",
+    "AMD"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 180,
   "id": "skiruCmsaSQ",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:56:33Z",
   "published_at": "2026-06-10T20:26:43Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/skiruCmsaSQ/mqdefault.jpg",
   "title": "This Stock is ready to EXPLODE‼️",
+  "tokens": 18388,
   "url": "https://www.youtube.com/watch?v=skiruCmsaSQ"
  },
  "t4BJTz6YniU": {
@@ -12475,16 +13963,65 @@
   "url": "https://www.youtube.com/watch?v=t4BJTz6YniU"
  },
  "tUDXGrN1eMk": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Education",
+   "key_points": [
+    "Semiconductor stocks like AMD and Micron have generated massive wealth for investors.",
+    "The ideal time to take profits is one to two years before profit cycles peak.",
+    "Investors should not sell 100% of their position at once, but can scale out gradually over time.",
+    "Timing your exit depends on when you expect the profit cycle to peak."
+   ],
+   "market_view": "The overall market view is optimistic regarding high-performing semiconductor stocks, emphasizing strategic profit-taking ahead of cyclical peaks.",
+   "portfolio_snapshot": [],
+   "sentiment": "bullish",
+   "stock_moves": [
+    {
+     "action": "HOLD",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Portfolio includes multi-million dollar gains in AMD stock.",
+     "price": "",
+     "rationale": "The creator owns AMD and suggests holding or timing exits based on when profit cycles peak.",
+     "ticker": "AMD",
+     "timeframe": "long-term",
+     "timestamp": "00:38"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as an example of a semiconductor stock alongside AMD for exit timing strategies.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "00:01"
+    }
+   ],
+   "summary": "The creator discusses when investors should sell semiconductor stocks like AMD and Micron after experiencing massive gains. He advises that the best time to take profits is typically one to two years before a profit cycle peaks. He notes that investors who believe profit cycles will peak in 2027 should sell now, whereas those anticipating later peaks can wait.",
+   "topics": [
+    "Semiconductors",
+    "Profit Taking",
+    "Stock Selling Strategy",
+    "AMD",
+    "Micron"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UCnMn36GT_H0X-w5_ckLtlgQ",
   "channel_title": "Financial Education",
   "duration_sec": 180,
   "id": "tUDXGrN1eMk",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T09:06:21Z",
   "published_at": "2026-05-28T19:08:28Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/tUDXGrN1eMk/mqdefault.jpg",
   "title": "AMD & MU‼️ Here’s WHEN TO SELL",
+  "tokens": 18077,
   "url": "https://www.youtube.com/watch?v=tUDXGrN1eMk"
  },
  "thDu_XGcHMI": {
@@ -12643,16 +14180,176 @@
   "url": "https://www.youtube.com/watch?v=uHuitqm_jIQ"
  },
  "vfEgIlRyzCs": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Analyzed whether tech stocks have corrected enough following recent market pullbacks.",
+    "Discussed commentary from financial experts like Julian Emanuel, Mike Wilson, and Rick Rieder regarding market valuations and positioning.",
+    "Highlighted strong momentum in specific non-tech stocks and consumer discretionary names.",
+    "Addressed questions around Meta's valuation and capital expenditures.",
+    "Reiterated views on long-term market resilience and the importance of focusing on fundamentals rather than short-term noise."
+   ],
+   "market_view": "The market is experiencing a healthy positioning unwind and sector rotation rather than a major bear market, with strong underlying fundamentals supporting long-term growth.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "MENTION",
+     "company": "Nike",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as continuing a steady upward move with solid recent performance.",
+     "ticker": "NKE",
+     "timeframe": "",
+     "timestamp": "01:46"
+    },
+    {
+     "action": "MENTION",
+     "company": "Cheesecake Factory",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Highlighted as remaining red-hot with strong positive momentum.",
+     "ticker": "CAKE",
+     "timeframe": "",
+     "timestamp": "01:50"
+    },
+    {
+     "action": "MENTION",
+     "company": "e.l.f. Beauty",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Noted for a massive rebound from recent lows, climbing significantly over a short period.",
+     "ticker": "ELF",
+     "timeframe": "",
+     "timestamp": "02:00"
+    },
+    {
+     "action": "MENTION",
+     "company": "Revolve Group",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed its strong recovery and ongoing upward trend following prior lows.",
+     "ticker": "RVLV",
+     "timeframe": "",
+     "timestamp": "02:40"
+    },
+    {
+     "action": "MENTION",
+     "company": "Meta Platforms",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Addressed market frustrations regarding its lack of movement, noting it requires clear answers on capital expenditure or strategic planning before breaking out.",
+     "ticker": "META",
+     "timeframe": "",
+     "timestamp": "02:45"
+    },
+    {
+     "action": "MENTION",
+     "company": "Netflix",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Evaluated its valuation and transition into a solid growth company despite a lack of recent speculative hype.",
+     "ticker": "NFLX",
+     "timeframe": "",
+     "timestamp": "05:22"
+    },
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Cited as one of the chip stocks capturing market excitement during rallies.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "06:06"
+    },
+    {
+     "action": "MENTION",
+     "company": "Micron Technology",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Noted for significant daily gains and strong momentum driven by semiconductor demand.",
+     "ticker": "MU",
+     "timeframe": "",
+     "timestamp": "06:08"
+    },
+    {
+     "action": "MENTION",
+     "company": "Oracle",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed in the context of recent equity offerings and valuation debates regarding AI compute spending.",
+     "ticker": "ORCL",
+     "timeframe": "",
+     "timestamp": "10:35"
+    },
+    {
+     "action": "MENTION",
+     "company": "Microsoft",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as a major mega-cap player experiencing pullbacks from its 52-week highs.",
+     "ticker": "MSFT",
+     "timeframe": "",
+     "timestamp": "16:27"
+    },
+    {
+     "action": "MENTION",
+     "company": "Amazon",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed as a key mega-cap leader trading off its recent highs amid market rotation.",
+     "ticker": "AMZN",
+     "timeframe": "",
+     "timestamp": "16:34"
+    },
+    {
+     "action": "MENTION",
+     "company": "NVIDIA",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned alongside other mega-caps experiencing pullbacks from 52-week highs.",
+     "ticker": "NVDA",
+     "timeframe": "",
+     "timestamp": "16:36"
+    }
+   ],
+   "summary": "Jeremy Lefebvre reacts to various market commentaries from CNBC and Bloomberg, discussing whether tech has corrected enough and evaluating the broader stock market outlook. He reviews several stocks including Nike, Cheesecake Factory, Revolve, and Meta, analyzing market sentiment, valuations, and the ongoing rotation between sectors. He emphasizes that despite short-term volatility and various market debates, many quality stocks and sectors remain resilient or present compelling long-term opportunities.",
+   "topics": [
+    "Tech Sector Correction",
+    "Market Sentiment",
+    "Valuations",
+    "Earnings Growth",
+    "Consumer Discretionary"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2231,
   "id": "vfEgIlRyzCs",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:55:22Z",
   "published_at": "2026-06-11T23:53:13Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/vfEgIlRyzCs/mqdefault.jpg",
   "title": "The Flip is On‼️ This Stock will move big now",
+  "tokens": 192118,
   "url": "https://www.youtube.com/watch?v=vfEgIlRyzCs"
  },
  "wFy5J-ObxtA": {
@@ -13197,16 +14894,121 @@
   "url": "https://www.youtube.com/watch?v=wgVqeTIWXmk"
  },
  "xHH5Jc5VH2s": {
-  "attempts": 0,
+  "analysis": {
+   "category": "Market Commentary",
+   "key_points": [
+    "Market experiences a sector rotation out of mega-cap tech into consumer discretionary and cyclical stocks.",
+    "Major indices see a pullback, but experts and the creator view it as a healthy consolidation rather than a market crash.",
+    "Consumer discretionary and housing stocks show strong momentum, signaling positive economic expectations.",
+    "Long-term investors are advised to ignore short-term volatility and avoid panicking during market pullbacks.",
+    "Upcoming IPOs and tech sell-offs are discussed as opportunities for portfolio rebalancing."
+   ],
+   "market_view": "The market is undergoing a healthy sector rotation from mega-cap tech into cyclical and consumer discretionary stocks, reflecting ongoing adjustments rather than a major downturn.",
+   "portfolio_snapshot": [],
+   "sentiment": "mixed",
+   "stock_moves": [
+    {
+     "action": "MENTION",
+     "company": "Advanced Micro Devices",
+     "is_own_position": true,
+     "position_note": "Number one biggest position, down over 3%",
+     "price": "",
+     "rationale": "Discussed as his largest position experiencing a minor pullback during the tech sector dip.",
+     "ticker": "AMD",
+     "timeframe": "",
+     "timestamp": "00:10"
+    },
+    {
+     "action": "MENTION",
+     "company": "e.l.f. Beauty",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as an example of consumer discretionary and staple stocks seeing strong momentum.",
+     "ticker": "ELF",
+     "timeframe": "",
+     "timestamp": "01:54"
+    },
+    {
+     "action": "MENTION",
+     "company": "Revolve Group",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Highlighted as a consumer discretionary stock showing positive momentum.",
+     "ticker": "REVOLVE",
+     "timeframe": "",
+     "timestamp": "02:02"
+    },
+    {
+     "action": "MENTION",
+     "company": "Nike",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned among consumer stocks climbing back up.",
+     "ticker": "NKE",
+     "timeframe": "",
+     "timestamp": "02:05"
+    },
+    {
+     "action": "MENTION",
+     "company": "American Express",
+     "is_own_position": false,
+     "position_note": "",
+     "price": "",
+     "rationale": "Mentioned as part of consumer discretionary momentum.",
+     "ticker": "AXP",
+     "timeframe": "",
+     "timestamp": "02:08"
+    },
+    {
+     "action": "MENTION",
+     "company": "Meta Platforms",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed regarding previous capex spending and future revenue growth expectations.",
+     "ticker": "META",
+     "timeframe": "",
+     "timestamp": "04:34"
+    },
+    {
+     "action": "MENTION",
+     "company": "Apple",
+     "is_own_position": true,
+     "position_note": "",
+     "price": "",
+     "rationale": "Discussed regarding recent weakness and lack of major product innovation relative to its valuation.",
+     "ticker": "AAPL",
+     "timeframe": "",
+     "timestamp": "03:41"
+    }
+   ],
+   "summary": "Jeremy Lefebvre discusses recent market volatility and the ongoing rotation out of mega-cap tech stocks into cyclical and consumer discretionary sectors. He reacts to CNBC commentary from Tom Lee and Joe Terranova, emphasizing that market pullbacks and rotations are normal parts of a healthy bull market rather than signs of trouble. Jeremy advises long-term investors to stay focused on quality and be mentally prepared for various market scenarios.",
+   "topics": [
+    "Market Rotation",
+    "Tech Stocks",
+    "Consumer Discretionary",
+    "Housing Stocks",
+    "Market Sentiment"
+   ]
+  },
+  "analysis_version": 1,
+  "attempts": 1,
   "channel_id": "UC12lnsYNt8_VthTNOuOGTmQ",
   "channel_title": "Jeremy Lefebvre Makes Money",
   "duration_sec": 2236,
   "id": "xHH5Jc5VH2s",
   "live_status": "none",
+  "method": "video",
+  "model": "gemini-flash-lite-latest",
+  "processed_at": "2026-11-27T08:57:15Z",
   "published_at": "2026-06-10T00:13:32Z",
-  "status": "pending",
+  "status": "ok",
   "thumbnail": "https://i.ytimg.com/vi/xHH5Jc5VH2s/mqdefault.jpg",
   "title": "It’s happening investors‼️ Do this Now",
+  "tokens": 192134,
   "url": "https://www.youtube.com/watch?v=xHH5Jc5VH2s"
  },
  "xjVfKyMrx5E": {
